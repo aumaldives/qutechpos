@@ -89,6 +89,76 @@
 
 <?php $__env->stopSection(); ?>
 <?php $__env->startSection('css'); ?>
+	<style>
+		/* Protection against Tailwind CSS interference on POS page */
+		/* Ensure barcode scanner input works properly */
+		#search_product {
+			/* Force Bootstrap form-control styles */
+			display: block !important;
+			width: 100% !important;
+			padding: 6px 12px !important;
+			font-size: 14px !important;
+			line-height: 1.42857143 !important;
+			color: #555 !important;
+			background-color: #fff !important;
+			background-image: none !important;
+			border: 1px solid #ccc !important;
+			border-radius: 4px !important;
+			box-shadow: inset 0 1px 1px rgba(0,0,0,.075) !important;
+			transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s !important;
+			/* Ensure input receives keyboard events for barcode scanning */
+			pointer-events: auto !important;
+			user-select: text !important;
+			-webkit-user-select: text !important;
+			-moz-user-select: text !important;
+			-ms-user-select: text !important;
+		}
+
+		#search_product:focus {
+			border-color: #66afe9 !important;
+			outline: 0 !important;
+			box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(102,175,233,.6) !important;
+		}
+
+		/* Protect all POS form inputs from Tailwind reset */
+		.content input.form-control,
+		.content select.form-control,
+		.content textarea.form-control {
+			/* Re-apply essential Bootstrap styles */
+			display: block !important;
+			width: 100% !important;
+			padding: 6px 12px !important;
+			font-size: 14px !important;
+			line-height: 1.42857143 !important;
+			color: #555 !important;
+			background-color: #fff !important;
+			background-image: none !important;
+			border: 1px solid #ccc !important;
+			border-radius: 4px !important;
+			box-shadow: inset 0 1px 1px rgba(0,0,0,.075) !important;
+			transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s !important;
+		}
+
+		/* Protect button styles */
+		.content button.btn,
+		.content a.btn {
+			font-family: inherit !important;
+		}
+
+		/* Ensure Font Awesome icons display properly - DO NOT override font-family */
+		.content i.fa,
+		.content i.fas,
+		.content i.far,
+		.content i.fal,
+		.content i.fab,
+		.content i.fa-solid,
+		.content i.fa-regular,
+		.content i.fa-light,
+		.content i.fa-brands {
+			font-family: "Font Awesome 6 Pro", "Font Awesome 6 Free", "FontAwesome" !important;
+			font-style: normal;
+		}
+	</style>
 	<!-- include module css -->
     <?php if(!empty($pos_module_data)): ?>
         <?php $__currentLoopData = $pos_module_data; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $key => $value): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>
@@ -99,6 +169,84 @@
     <?php endif; ?>
 <?php $__env->stopSection(); ?>
 <?php $__env->startSection('javascript'); ?>
+	<script>
+		// Remove any Tailwind CSS from other pages that might interfere
+		document.addEventListener('DOMContentLoaded', function() {
+			// Remove Tailwind CSS links if they exist from other pages
+			var tailwindLinks = document.querySelectorAll('link[id*="tailwind"]');
+			tailwindLinks.forEach(function(link) {
+				console.log('Removing interfering CSS:', link.id);
+				link.remove();
+			});
+
+			// Fix price_group NaN issue - ensure it has a valid value
+			var priceGroupInput = document.getElementById('price_group');
+			if (priceGroupInput) {
+				var priceGroupValue = priceGroupInput.value;
+				console.log('POS: Initial price_group value:', priceGroupValue);
+
+				// If price_group is empty or invalid, try to get from hidden_price_group
+				if (!priceGroupValue || priceGroupValue === '' || isNaN(priceGroupValue)) {
+					var hiddenPriceGroup = document.getElementById('hidden_price_group');
+					if (hiddenPriceGroup && hiddenPriceGroup.value) {
+						priceGroupInput.value = hiddenPriceGroup.value;
+						console.log('POS: Set price_group from hidden_price_group:', hiddenPriceGroup.value);
+					} else {
+						// Set a default value of 0 if no price group exists
+						priceGroupInput.value = '0';
+						console.log('POS: Set default price_group to 0');
+					}
+				}
+				console.log('POS: Final price_group value:', priceGroupInput.value);
+			} else {
+				console.warn('POS: price_group input not found');
+			}
+
+			// Verify search_product input is ready
+			var searchInput = document.getElementById('search_product');
+			if (searchInput) {
+				console.log('POS: search_product input found and ready for barcode scanning');
+				console.log('POS: search_product disabled:', searchInput.disabled);
+				console.log('POS: search_product autofocus:', searchInput.hasAttribute('autofocus'));
+
+				// Force focus on the search input after a short delay
+				setTimeout(function() {
+					searchInput.focus();
+					console.log('POS: search_product focused');
+				}, 500);
+			} else {
+				console.error('POS: search_product input NOT found!');
+			}
+		});
+
+		// Add runtime fix for NaN price_group issue
+		$(document).ready(function() {
+			// Ensure price_group always has a valid numeric value
+			function ensureValidPriceGroup() {
+				var $priceGroup = $('#price_group');
+				if ($priceGroup.length) {
+					var val = $priceGroup.val();
+					if (!val || val === '' || isNaN(parseInt(val))) {
+						var fallback = $('#hidden_price_group').val() || '0';
+						$priceGroup.val(fallback);
+						console.log('POS: Fixed price_group from empty/NaN to:', fallback);
+					}
+				}
+			}
+
+			// Run on page load
+			ensureValidPriceGroup();
+
+			// Run before any AJAX call that might use price_group
+			$(document).ajaxSend(function(event, jqxhr, settings) {
+				if (settings.url && settings.url.includes('/pos/get_product_row')) {
+					ensureValidPriceGroup();
+				}
+			});
+
+			console.log('POS: price_group NaN protection enabled');
+		});
+	</script>
 	<script src="<?php echo e(asset('js/pos.js?v=' . $asset_v), false); ?>"></script>
 	<script src="<?php echo e(asset('js/modal-fix.js?v=' . $asset_v), false); ?>"></script>
 	<script src="<?php echo e(asset('js/printer.js?v=' . $asset_v), false); ?>"></script>
