@@ -142,30 +142,48 @@
 
         <!-- RIGHT SIDE: Branding -->
         <div class="bg-gradient-to-br from-green-50 to-green-100 p-6 lg:p-8 flex flex-col items-center justify-center text-center">
-            <div class="space-y-8">
+            <div class="space-y-6">
                 <!-- Welcome Text -->
                 <div>
                     <p class="text-xl lg:text-2xl font-light text-gray-600 mb-2">Welcome to</p>
                     <h1 class="text-5xl lg:text-7xl font-black text-green-500 leading-tight">
-                        
+
                     </h1>
                 </div>
 
-                <!-- Store Logo -->
-                <div class="my-8">
+                <!-- Store Logo - Made Smaller -->
+                <div class="my-4">
                     <img src="{{ asset('assets/AgroMart.png') }}"
                          alt="Store Logo"
-                         class="max-w-xs lg:max-w-md mx-auto rounded-3xl shadow-lg">
+                         class="max-w-[200px] lg:max-w-[280px] mx-auto rounded-3xl shadow-lg">
+                </div>
+
+                <!-- Bank Account Details -->
+                <div class="bg-white rounded-2xl shadow-xl p-8 max-w-lg mx-auto border-2 border-green-200">
+                    <h3 class="text-2xl font-bold text-gray-700 mb-6 text-left">Bank Details</h3>
+                    <div class="space-y-4">
+                        <div class="flex items-center gap-4">
+                            <img src="{{ asset('assets/bml-icon.png') }}"
+                                 alt="BML Bank"
+                                 class="w-8 h-8 rounded-lg shadow-md flex-shrink-0">
+                            <p class="text-3xl font-bold text-gray-800 tracking-wider">
+                                773 <span style="text-decoration: underline;">0</span><span style="text-decoration: underline;">0</span>00 777869
+                            </p>
+                        </div>
+                        <p class="text-3xl font-bold text-green-600 text-left ml-12">
+                            AGRO MART
+                        </p>
+                    </div>
                 </div>
 
                 <!-- Marketing Messages -->
-                <div class="space-y-4 text-lg lg:text-xl text-gray-700">
+                <div class="space-y-3 text-lg lg:text-xl text-gray-700">
                     <p class="font-semibold">🌿 Fresh Products Daily</p>
                     <p class="font-semibold">✓ Quality Guaranteed</p>
                 </div>
 
                 <!-- Footer Message -->
-                <div class="mt-12">
+                <div class="mt-8">
                     <p class="text-base lg:text-lg text-gray-600 font-light">
                         Thank you for shopping with us
                     </p>
