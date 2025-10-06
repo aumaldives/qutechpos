@@ -2,6 +2,20 @@
 
 @section('title', __('sale.pos_sale'))
 
+@section('css')
+<style>
+    body, html {
+        overscroll-behavior: none;
+    }
+    .pos_product_div {
+        min-height: 400px;
+        max-height: calc(100vh - 400px);
+        overflow-y: auto;
+        margin-bottom: 20px;
+    }
+</style>
+@endsection
+
 @section('content')
 <section class="content no-print">
 	<input type="hidden" id="amount_rounding_method" value="{{$pos_settings['amount_rounding_method'] ?? ''}}">
@@ -31,6 +45,8 @@
 								@include('sale_pos.partials.pos_form_totals')
 
 								@include('sale_pos.partials.payment_modal')
+
+								@include('sale_pos.partials.cash_payment_modal')
 
 								@if(empty($pos_settings['disable_suspend']))
 									@include('sale_pos.partials.suspend_note_modal')

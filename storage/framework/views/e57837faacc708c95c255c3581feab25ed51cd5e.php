@@ -1,5 +1,19 @@
 <?php $__env->startSection('title', __('sale.pos_sale')); ?>
 
+<?php $__env->startSection('css'); ?>
+<style>
+    body, html {
+        overscroll-behavior: none;
+    }
+    .pos_product_div {
+        min-height: 400px;
+        max-height: calc(100vh - 400px);
+        overflow-y: auto;
+        margin-bottom: 20px;
+    }
+</style>
+<?php $__env->stopSection(); ?>
+
 <?php $__env->startSection('content'); ?>
 <section class="content no-print">
 	<input type="hidden" id="amount_rounding_method" value="<?php echo e($pos_settings['amount_rounding_method'] ?? '', false); ?>">
@@ -32,6 +46,8 @@
 								<?php echo $__env->make('sale_pos.partials.pos_form_totals', \Illuminate\Support\Arr::except(get_defined_vars(), ['__data', '__path']))->render(); ?>
 
 								<?php echo $__env->make('sale_pos.partials.payment_modal', \Illuminate\Support\Arr::except(get_defined_vars(), ['__data', '__path']))->render(); ?>
+
+								<?php echo $__env->make('sale_pos.partials.cash_payment_modal', \Illuminate\Support\Arr::except(get_defined_vars(), ['__data', '__path']))->render(); ?>
 
 								<?php if(empty($pos_settings['disable_suspend'])): ?>
 									<?php echo $__env->make('sale_pos.partials.suspend_note_modal', \Illuminate\Support\Arr::except(get_defined_vars(), ['__data', '__path']))->render(); ?>
@@ -202,12 +218,19 @@
 			z-index: 100;
 			border-top: 1px solid #ddd;
 			margin: 0 !important;
-			padding: 10px 0;
+			padding: 10px 15px;
 			order: 999;
+			width: 100%;
 		}
 
 		.pos_form_totals table {
 			margin-bottom: 0 !important;
+			width: 100%;
+		}
+
+		.pos_form_totals .col-md-12 {
+			padding-left: 0;
+			padding-right: 0;
 		}
 
 		/* Custom scrollbar for product table row */

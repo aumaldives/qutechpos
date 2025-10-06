@@ -1723,6 +1723,7 @@ class Util
         }
 
         //Create the user
+        $user_details['is_email_verified'] = 1;
         $user = User::create($user_details);
 
         if ($user_details['user_type'] == 'user') {

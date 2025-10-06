@@ -2,8 +2,8 @@
 /node_modules
 /public/build
 /public/hot
-/public/js
-/public/css
+/public/
+/public/
 /public/vendor/filament-phone-input
 /public/storage
 /storage/*.key

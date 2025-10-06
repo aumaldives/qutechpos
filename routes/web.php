@@ -324,6 +324,9 @@ Route::middleware(['setData', 'auth', 'SetSessionData', 'language', 'timezone', 
 
     Route::resource('pos', SellPosController::class);
 
+    // POS V2 with Tailwind CSS
+    Route::get('posv2/create', [SellPosController::class, 'createV2'])->name('posv2.create');
+
     // Warranty Management Routes
     Route::get('/warranty-management', [WarrantyManagementController::class, 'index'])->name('warranty-management.index');
     Route::get('/warranty-management/data', [WarrantyManagementController::class, 'getWarrantyData'])->name('warranty-management.data');

@@ -273,8 +273,170 @@ class SellPosController extends Controller
         $users = config('constants.enable_contact_assign') ? User::forDropdown($business_id, false, false, false, true) : [];
 
         $plasticbagSettingRow = DB::table('plasticbag_settings')->where('business_id', $business_id)->count() > 0 ? (array) DB::table('plasticbag_settings')->where('business_id', $business_id)->first() : [];
-        
+
+        // Enable cash denomination display for POS
+        $show_denomination = true;
+
         return view('sale_pos.create')
+            ->with(compact(
+                'edit_discount',
+                'edit_price',
+                'business_locations',
+                'bl_attributes',
+                'business_details',
+                'taxes',
+                'payment_types',
+                'walk_in_customer',
+                'payment_lines',
+                'default_location',
+                'shortcuts',
+                'commission_agent',
+                'categories',
+                'brands',
+                'pos_settings',
+                'change_return',
+                'types',
+                'customer_groups',
+                'accounts',
+                'price_groups',
+                'types_of_service',
+                'default_price_group_id',
+                'shipping_statuses',
+                'default_datetime',
+                'featured_products',
+                'sub_type',
+                'pos_module_data',
+                'invoice_schemes',
+                'default_invoice_schemes',
+                'invoice_layouts',
+                'users',
+                'isPlasticbagEnabled',
+                'plasticbagSettingRow',
+                'show_denomination'
+
+            ));
+    }
+
+    /**
+     * POS V2 with Tailwind CSS - same as create() but with modernized view
+     */
+    public function createV2()
+    {
+        $isPlasticbagEnabled = false;
+        $business_id = request()->session()->get('user.business_id');
+        if (auth()->user()->can('superadmin')) {
+            $isPlasticbagEnabled = $this->moduleUtil->isModuleInstalled('Plasticbag');
+        } else {
+            $isPlasticbagEnabled = (bool) $this->moduleUtil->hasThePermissionInSubscription($business_id, 'plasticbag_module', 'superadmin_package');
+        }
+
+        if (! (auth()->user()->can('superadmin') || auth()->user()->can('sell.create') || ($this->moduleUtil->hasThePermissionInSubscription($business_id, 'repair_module') && auth()->user()->can('repair.create')))) {
+            abort(403, 'Unauthorized action.');
+        }
+
+        //Check if subscribed or not, then check for users quota
+        if (! $this->moduleUtil->isSubscribed($business_id)) {
+            return $this->moduleUtil->expiredResponse(action([\App\Http\Controllers\HomeController::class, 'index']));
+        } elseif (! $this->moduleUtil->isQuotaAvailable('invoices', $business_id)) {
+            return $this->moduleUtil->quotaExpiredResponse('invoices', $business_id, action([\App\Http\Controllers\SellPosController::class, 'index']));
+        }
+
+        //like:repair
+        $sub_type = request()->get('sub_type');
+
+
+        //Check if there is a open register, if no then redirect to Create Register screen.
+        if ($this->cashRegisterUtil->countOpenedRegister() == 0) {
+            return redirect()->action([\App\Http\Controllers\CashRegisterController::class, 'create'], ['sub_type' => $sub_type]);
+        }
+
+        $register_details = $this->cashRegisterUtil->getCurrentCashRegister(auth()->user()->id);
+
+        $walk_in_customer = $this->contactUtil->getWalkInCustomer($business_id);
+
+        $business_details = $this->businessUtil->getDetails($business_id);
+        $taxes = TaxRate::forBusinessDropdown($business_id, true, true);
+
+        $payment_lines[] = $this->dummyPaymentLine;
+
+        $default_location = ! empty($register_details->location_id) ? BusinessLocation::findOrFail($register_details->location_id) : null;
+
+        $business_locations = BusinessLocation::forDropdown($business_id, false, true);
+        $bl_attributes = $business_locations['attributes'];
+        $business_locations = $business_locations['locations'];
+
+        //set first location as default locaton
+        if (empty($default_location)) {
+            foreach ($business_locations as $id => $name) {
+                $default_location = BusinessLocation::findOrFail($id);
+                break;
+            }
+        }
+
+        $payment_types = $this->productUtil->payment_types(null, true, $business_id);
+
+        //Shortcuts
+        $shortcuts = json_decode($business_details->keyboard_shortcuts, true);
+        $pos_settings = empty($business_details->pos_settings) ? $this->businessUtil->defaultPosSettings() : json_decode($business_details->pos_settings, true);
+
+        $commsn_agnt_setting = $business_details->sales_cmsn_agnt;
+        $commission_agent = [];
+        if ($commsn_agnt_setting == 'user') {
+            $commission_agent = User::forDropdown($business_id, false);
+        } elseif ($commsn_agnt_setting == 'cmsn_agnt') {
+            $commission_agent = User::saleCommissionAgentsDropdown($business_id, false);
+        }
+
+        //If brands, category are enabled then send else false.
+        $categories = (request()->session()->get('business.enable_category') == 1) ? Category::catAndSubCategories($business_id) : false;
+        $brands = (request()->session()->get('business.enable_brand') == 1) ? Brands::forDropdown($business_id)
+                    ->prepend(__('lang_v1.all_brands'), 'all') : false;
+
+        $change_return = $this->dummyPaymentLine;
+
+        $types = Contact::getContactTypes();
+        $customer_groups = CustomerGroup::forDropdown($business_id);
+
+        //Accounts
+        $accounts = [];
+        if ($this->moduleUtil->isModuleEnabled('account')) {
+            $accounts = Account::forDropdown($business_id, true, false, true);
+        }
+
+        //Selling Price Group Dropdown
+        $price_groups = SellingPriceGroup::forDropdown($business_id);
+
+        $default_price_group_id = ! empty($default_location->selling_price_group_id) && array_key_exists($default_location->selling_price_group_id, $price_groups) ? $default_location->selling_price_group_id : null;
+
+        //Types of service
+        $types_of_service = [];
+        if ($this->moduleUtil->isModuleEnabled('types_of_service')) {
+            $types_of_service = TypesOfService::forDropdown($business_id);
+        }
+
+        $shipping_statuses = $this->transactionUtil->shipping_statuses();
+
+        $default_datetime = $this->businessUtil->format_date('now', true);
+
+        $featured_products = ! empty($default_location) ? $default_location->getFeaturedProducts() : [];
+
+        //pos screen view from module
+        $pos_module_data = $this->moduleUtil->getModuleData('get_pos_screen_view', ['sub_type' => $sub_type, 'job_sheet_id' => request()->get('job_sheet_id')]);
+        $invoice_layouts = InvoiceLayout::forDropdown($business_id);
+
+        $invoice_schemes = InvoiceScheme::forDropdown($business_id);
+        $default_invoice_schemes = InvoiceScheme::getDefault($business_id);
+
+        $edit_discount = auth()->user()->can('edit_product_discount_from_pos_screen');
+        $edit_price = auth()->user()->can('edit_product_price_from_pos_screen');
+
+        //Added check because $users is of no use if enable_contact_assign if false
+        $users = config('constants.enable_contact_assign') ? User::forDropdown($business_id, false, false, false, true) : [];
+
+        $plasticbagSettingRow = DB::table('plasticbag_settings')->where('business_id', $business_id)->count() > 0 ? (array) DB::table('plasticbag_settings')->where('business_id', $business_id)->first() : [];
+
+        // Return POS V2 view with Tailwind CSS
+        return view('sale_pos.createv2')
             ->with(compact(
                 'edit_discount',
                 'edit_price',
@@ -1100,6 +1262,9 @@ class SellPosController extends Controller
         $users = config('constants.enable_contact_assign') ? User::forDropdown($business_id, false, false, false, true) : [];
         $only_payment = request()->segment(2) == 'payment';
 
+        // Enable cash denomination display for POS
+        $show_denomination = true;
+
         return view('sale_pos.edit')
             ->with(compact('business_details', 'taxes', 'payment_types', 'walk_in_customer',
             'sell_details', 'transaction', 'payment_lines', 'location_printer_type', 'shortcuts',
@@ -1107,7 +1272,7 @@ class SellPosController extends Controller
             'brands', 'accounts', 'waiters', 'redeem_details', 'edit_price', 'edit_discount',
             'shipping_statuses', 'warranties', 'sub_type', 'pos_module_data', 'invoice_schemes',
             'default_invoice_schemes', 'invoice_layouts', 'featured_products', 'customer_due',
-            'users', 'only_payment'));
+            'users', 'only_payment', 'show_denomination'));
     }
 
     /**
@@ -1843,8 +2008,11 @@ class SellPosController extends Controller
             $accounts = Account::forDropdown($business_id, true, false, true);
         }
 
+        // Enable cash denomination display for POS
+        $show_denomination = true;
+
         return view('sale_pos.partials.payment_row')
-            ->with(compact('payment_types', 'row_index', 'removable', 'payment_line', 'accounts'));
+            ->with(compact('payment_types', 'row_index', 'removable', 'payment_line', 'accounts', 'show_denomination'));
     }
 
     /**

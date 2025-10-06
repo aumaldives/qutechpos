@@ -726,6 +726,41 @@ $is_image_required = !empty($common_settings['is_product_image_required']) && em
     });
 
     $(document).on('change', 'select#tax_type', function() {
+      var tax_type = $(this).val();
+      var tax_rate = $('select#tax').find(':selected').data('rate');
+      tax_rate = tax_rate == undefined ? 0 : tax_rate;
+
+      // When switching to inclusive, check if we have stored original value
+      if (tax_type == 'inclusive') {
+          var $inc_field = $('input#single_dsp_inc_tax');
+          var stored_inc_value = $inc_field.data('original-inc-value');
+
+          if (stored_inc_value) {
+              // Use the stored original value to avoid rounding errors
+              $inc_field.val(parseFloat(stored_inc_value).toFixed(2));
+          } else {
+              // Calculate from exc_tax
+              var selling_price_exc = __read_number($('input#single_dsp'));
+              if (selling_price_exc && selling_price_exc > 0) {
+                  var selling_price_inc = selling_price_exc * (1 + tax_rate / 100);
+                  selling_price_inc = Math.round(selling_price_inc * 100) / 100;
+                  $inc_field.val(selling_price_inc.toFixed(2));
+              }
+          }
+      } else if (tax_type == 'exclusive') {
+          // Store the original inc value before switching
+          var $inc_field = $('input#single_dsp_inc_tax');
+          var inc_value = __read_number($inc_field);
+          if (inc_value && inc_value > 0) {
+              $inc_field.data('original-inc-value', inc_value);
+
+              // Calculate exc_tax from inc_tax
+              var selling_price_exc = (100 * inc_value) / (100 + tax_rate);
+              selling_price_exc = Math.round(selling_price_exc * 100) / 100;
+              $('input#single_dsp').val(selling_price_exc.toFixed(2));
+          }
+      }
+
       toggle_dsp_input_v2(`${id_suffix}`);
     });
   }
