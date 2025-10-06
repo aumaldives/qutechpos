@@ -156,6 +156,82 @@
 			font-family: "Font Awesome 6 Pro", "Font Awesome 6 Free", "FontAwesome" !important;
 			font-style: normal;
 		}
+
+		/* ============================================
+		   FIX: Make product table scrollable with totals at bottom
+		   ============================================ */
+
+		/* Make box-body a flex container */
+		.box-body.pb-0 {
+			display: flex;
+			flex-direction: column;
+			height: calc(100vh - 150px);
+			overflow: hidden;
+			padding-bottom: 0 !important;
+		}
+
+		/* Customer/search fields section - fixed at top */
+		.box-body.pb-0 > .row:not(:has(.pos_product_div)):not(.pos_form_totals) {
+			flex-shrink: 0;
+		}
+
+		/* Wrapper for product table - make it scrollable */
+		.box-body.pb-0 > .row:has(.pos_product_div) {
+			flex: 1 1 auto;
+			overflow-y: auto;
+			overflow-x: hidden;
+			min-height: 0;
+			margin-bottom: 0;
+		}
+
+		/* Product table inside the scrollable area */
+		.pos_product_div {
+			height: 100%;
+		}
+
+		#pos_table {
+			margin-bottom: 0;
+		}
+
+		/* Keep totals at bottom - inside box-body */
+		.pos_form_totals {
+			flex-shrink: 0;
+			background: #fff;
+			z-index: 100;
+			border-top: 1px solid #ddd;
+			margin: 0 !important;
+			padding: 10px 15px;
+			order: 999;
+			width: 100%;
+		}
+
+		.pos_form_totals table {
+			margin-bottom: 0 !important;
+			width: 100%;
+		}
+
+		.pos_form_totals .col-md-12 {
+			padding-left: 0;
+			padding-right: 0;
+		}
+
+		/* Custom scrollbar for product table row */
+		.box-body.pb-0 > .row:has(.pos_product_div)::-webkit-scrollbar {
+			width: 8px;
+		}
+
+		.box-body.pb-0 > .row:has(.pos_product_div)::-webkit-scrollbar-track {
+			background: #f1f1f1;
+		}
+
+		.box-body.pb-0 > .row:has(.pos_product_div)::-webkit-scrollbar-thumb {
+			background: #888;
+			border-radius: 4px;
+		}
+
+		.box-body.pb-0 > .row:has(.pos_product_div)::-webkit-scrollbar-thumb:hover {
+			background: #555;
+		}
 	</style>
 	<!-- include module css -->
     @if(!empty($pos_module_data))
