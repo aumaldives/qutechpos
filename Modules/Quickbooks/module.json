@@ -1,0 +1,11 @@
+{
+    "name": "Quickbooks",
+    "alias": "quickbooks",
+    "description": "",
+    "keywords": [],
+    "priority": 0,
+    "providers": [
+        "Modules\\Quickbooks\\Providers\\QuickbooksServiceProvider"
+    ],
+    "files": []
+}

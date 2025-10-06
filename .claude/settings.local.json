@@ -1,0 +1,27 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(if [ -d \"/tmp/restore_backup/public/uploads\" ])",
+      "Bash(then echo \"Uploads found in backup\")",
+      "Bash(else echo \"No uploads in backup\")",
+      "Bash(fi)",
+      "Bash(if [ -d \"/tmp/restore_backup/storage\" ])",
+      "Bash(then echo \"Storage found in backup\")",
+      "Bash(else echo \"No storage in backup\")",
+      "Bash(php:*)",
+      "Bash(composer install:*)",
+      "Bash(curl:*)",
+      "Read(//etc/nginx/**)",
+      "Bash(redis-cli:*)",
+      "Bash(sudo systemctl status:*)",
+      "Bash(sudo apt:*)",
+      "Bash(sudo apt install:*)",
+      "Bash(sudo systemctl restart:*)",
+      "Read(//tmp/dropdown-fixes-backup/**)",
+      "Bash(mysql:*)",
+      "Bash(sudo:*)"
+    ],
+    "deny": [],
+    "ask": []
+  }
+}

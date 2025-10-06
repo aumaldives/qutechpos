@@ -1,0 +1,16 @@
+{
+    "name": "Plasticbag",
+    "alias": "plasticbag",
+    "description": "Provide the functionality for plasticbag",
+    "keywords": [],
+    "active": 1,
+    "order": 0,
+    "providers": [
+        "Modules\\Plasticbag\\Providers\\PlasticbagServiceProvider"
+    ],
+    "aliases": {},
+    "files": [
+        
+    ],
+    "requires": []
+}

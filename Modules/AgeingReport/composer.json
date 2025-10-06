@@ -1,0 +1,24 @@
+{
+    "name": "pnn/ageingreport",
+    "description": "Ageing Report for UltimatePOS",
+    "authors": [
+        {
+            "name": "PNN Solutions",
+            "email": "mail.pnnsolutions@gmail.com"
+        }
+    ],    "extra": {
+        "laravel": {
+            "providers": [
+                "Modules\\AgeingReport\\Providers\\AgeingReportServiceProvider"
+            ],
+            "aliases": {
+                
+            }
+        }
+    },
+    "autoload": {
+        "psr-4": {
+            "Modules\\AgeingReport\\": ""
+        }
+    }
+}

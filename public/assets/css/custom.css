@@ -1,0 +1,412 @@
+.pdf-theme * {
+    font-family: "Poppins", "Inter", sans-serif !important;
+}
+.pdf-theme {
+    background-color: white;
+    padding: 30px;
+}
+
+.pdf-theme strong {
+    font-weight: 800 !important;
+}
+.pdf-theme .mb-8 {
+    margin-bottom: 32px;
+}
+.pdf-theme .p-5 {
+    padding: 20px;
+}
+.pdf-theme .text-13 {
+    font-size: 13px;
+}
+.pdf-theme .text-black {
+    color: #000000 !important;
+}
+.pdf-theme .leading-12 {
+    line-height: 1.pdf-theme .2 !important;
+}
+.pdf-theme .text-green-100 {
+    color: #009688;
+}
+.pdf-theme .mr-5 {
+    margin-right: 20px;
+}
+.pdf-theme .border-green-100 {
+    border-color: #009688;
+}
+.pdf-theme .border-green-300 {
+    border-color: #c6c6c6 !important;
+}
+.pdf-theme .bg-green-200 {
+    background-color: #4CAF50 !important;
+}
+.pdf-theme .mb-12 {
+    margin-bottom: 3rem !important;
+}
+.pdf-theme .text-dark-gray {
+    color: #363b45;
+}
+.pdf-theme .pt-1 {
+    padding-top: 4px !important;
+}
+.pdf-theme .tokyo-template .total-amount tfoot {
+    border-top: 1px solid #363b45;
+}
+.pdf-theme .pt-7 {
+    padding-top: 1.75rem !important;
+}
+.pdf-theme .tokyo-template .invoice-table tbody tr td {
+    border-bottom: .5px solid #bbbdbf;
+}
+.pdf-theme .tokyo-template .invoice-table tbody tr td:first-child,
+.pdf-theme .tokyo-template .invoice-table tbody tr td:nth-child(4),
+.pdf-theme .tokyo-template .invoice-table tbody tr td:nth-child(6) {
+    background-color: #eaebec;
+}
+.pdf-theme .text-green-200 {
+    color: #4CAF50 !important;
+}
+.pdf-theme .bg-white-200 {
+    background-color: #F9F9F9;
+}
+.pdf-theme .border-black-300 {
+    border-color: #bbbdbf !important;
+}
+.pdf-theme .bg-white-300 {
+    background-color: #eaebec;
+}
+.pdf-theme .text-34px {
+    font-size: 34px;
+}
+.pdf-theme .text-dark {
+    color: #060917 !important;
+}
+.pdf-theme .letter-spacing-4px {
+    letter-spacing: 4px;
+}
+.pdf-theme .text-36 {
+    font-size: 36px;
+}
+.pdf-theme .mumbai-template .top-border {
+    height: 10px;
+}
+.pdf-theme .mt-23px {
+    margin-top: 23px;
+}
+.pdf-theme .bg-black-200 {
+    background-color: #141313;
+}
+.pdf-theme .pt-10 {
+    padding-top: 40px;
+}
+.pdf-theme .london-header-section:after {
+    background-color: #fff;
+    content: "";
+    height: 100%;
+    left: -53px;
+    position: absolute;
+    top: 0;
+    transform: skew(35deg);
+    width: 75%;
+    z-index: 0;
+}
+.pdf-theme .london-header-section .invoice-text:before {
+    background-color: #fff;
+    content: "";
+    height: 100%;
+    left: -25px;
+    position: absolute;
+    top: 0;
+    transform: skew(36deg);
+    width: 50px;
+    z-index: 11;
+}
+.pdf-theme .london-header-section .invoice-text {
+    min-width: 270px;
+}
+.pdf-theme .london-header-section .invoice-text:after {
+    background-color: #000;
+    content: "";
+    height: 100%;
+    left: 25px;
+    position: absolute;
+    top: 0;
+    transform: skew(36deg);
+    width: 100%;
+    z-index: 1;
+}
+.pdf-theme .istanbul-template .invoice-header .heading-text {
+    background-image: url("../../../../../ ../../images/istanbul-bg-img.png");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    position: relative;
+    z-index: 2;
+}
+.pdf-theme .bg-brown-100 {
+    background: #9E0000 !important;
+}
+.pdf-theme .text-brown-100 {
+    color: #9E0000 !important;
+}
+.pdf-theme .text-black-200 {
+    color: #141313 !important;
+}
+.pdf-theme .mb-1 {
+    margin-bottom: 4px !important;
+}
+.pdf-theme .ps-30px {
+    padding-left: 30px
+}
+.pdf-theme .shadow-1 {
+    box-shadow: 0 0 20px rgba(173, 181, 189, .1);
+}
+.pdf-theme .pdf {
+    font-family: "Poppins" !important;
+}
+.pdf-theme .logo-img {
+    max-width: 99px;
+    min-width: 99px;
+    max-height: 66px;
+}
+.pdf-theme .px-28px {
+    padding-left: 28px;
+    padding-right: 28px;
+}
+.pdf-theme .mb-60px {
+    margin-bottom: 60px;
+}
+.pdf-theme .px-21px {
+    padding-left: 21px;
+    padding-right: 21px;
+}
+.pdf-theme .border-blue {
+    border-color: #3F51B5;
+}
+.pdf-theme .mb-5px {
+    margin-bottom: 5px;
+}
+.pdf-theme .text-nowrap {
+    white-space: nowrap !important;
+}
+.pdf-theme .mt-10 {
+    margin-top: 40px;
+}
+.pdf-theme .leading-normal {
+    line-height: 1.5 !important;
+}
+.pdf-theme .leading-18px {
+    line-height: 1.8 !important;
+}
+.pdf-theme .leading-14 {
+    line-height: 1.4 !important;
+}
+.pdf-theme .mb-3 {
+    margin-bottom: 12px !important;
+}
+.pdf-theme .text-gray-300 {
+    color: #7a7a7a !important;
+}
+.pdf-theme .rounded-tl-10px {
+    border-top-left-radius: 10px;
+}
+.pdf-theme .rounded-tr-10px {
+    border-top-right-radius: 10px;
+}
+.pdf-theme .rounded-bl-10px {
+    border-bottom-left-radius: 10px;
+}
+.pdf-theme .rounded-br-10px {
+    border-bottom-right-radius: 10px;
+}
+.pdf-theme .mt-5 {
+    margin-top: 20px;
+}
+.pdf-theme .text-15px {
+    font-size: 15px;
+}
+.pdf-theme .mb-3px {
+    margin-bottom: 3px;
+}
+.pdf-theme .px-15px {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+.pdf-theme .mb-10 {
+    margin-bottom: 40px;
+}
+.pdf-theme .rounded-10px {
+    border-radius: 10px
+}
+.pdf-theme .qr-img {
+    max-width: 110px;
+    max-height: 110px;
+}
+.pdf-theme .mb-9 {
+    margin-bottom: 36px;
+}
+.pdf-theme .uppercase {
+    text-transform: uppercase !important;
+}
+.pdf-theme .border-gray-200 {
+    border-color: #e9ecef !important;
+}
+.pdf-theme .text-gray-100 {
+    color: #6c757d !important;
+}
+.pdf-theme .hongkong-template strong {
+    font-weight: 600 !important;
+}
+.pdf-theme .bg-white-100 {
+    background-color: #f8f9fa !important;
+}
+.pdf-theme .text-gray-700 {
+    color: #495057 !important;
+}
+.pdf-theme .mumbai-template .invoice-table tbody tr:nth-child(2n),
+.pdf-theme .hongkong-template .invoice-table tbody tr:nth-child(2n),
+.pdf-theme .paris-template .invoice-table tbody tr:nth-child(2n) {
+    background-color: #ededed;
+}
+.pdf-theme .mumbai-template .invoice-table thead th:first-child,
+.pdf-theme .hongkong-template .invoice-table thead th:first-child {
+    border-bottom-left-radius: 6px;
+    border-top-left-radius: 6px;
+}
+.pdf-theme .mumbai-template .invoice-table thead th:last-child,
+.pdf-theme .hongkong-template .invoice-table thead th:last-child {
+    border-bottom-right-radius: 6px;
+    border-top-right-radius: 6px;
+}
+.pdf-theme .mumbai-template .total-amount td:first-child,
+.pdf-theme .hongkong-template .total-amount td:first-child {
+    border-bottom-left-radius: 6px;
+    border-top-left-radius: 6px;
+}
+.pdf-theme .mumbai-template .total-amount td:last-child,
+.pdf-theme .hongkong-template .total-amount td:last-child {
+    border-bottom-right-radius: 6px;
+    border-top-right-radius: 6px;
+}
+.pdf-theme .h-25 {
+    height: 25% !important;
+}
+.pdf-theme .mb-15 {
+    margin-bottom: 3 .75rem !important;
+}
+.pdf-theme .bg-gray-400 {
+    background-color: #eff3f6 !important;
+}
+.pdf-theme .d-title {
+    font-size: 50px;
+    line-height: 50px;
+    margin-bottom: 20px;
+}
+.pdf-theme .text-blue {
+    color: #3F51B5 !important;
+}
+.pdf-theme .border-white-200 {
+    border-color: #c0c0c0 !important;
+}
+.pdf-theme .py-15px {
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+.pdf-theme .border-l {
+    border-left-width: 1px;
+}
+.pdf-theme .border-r {
+    border-right-width: 1px;
+}
+.pdf-theme .px-5 {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.pdf-theme .text-34 {
+    font-size: 34px;
+}
+.pdf-theme .leading-12 {
+    line-height: 1 .2 !important;
+}
+.pdf-theme .mt-4 {
+    margin-top: 16px;
+}
+.pdf-theme .p-10 {
+    padding: 40px;
+}
+.pdf-theme .text-32 {
+    font-size: 32px;
+}
+.pdf-theme .letter-spacing-2px {
+    letter-spacing: 2px;
+}
+.pdf-theme .text-black-900 {
+    color: #242424 !important;
+}
+.pdf-theme .px-10 {
+    padding-left: 40px;
+    padding-right: 40px;
+}
+.pdf-theme .text-gray-900 {
+    color: #1a1c21 !important;
+}
+.pdf-theme .text-gray-600 {
+    color: #5e6470 !important;
+}
+.pdf-theme .istanbul-template strong {
+    font-weight: 600 !important;
+}
+.pdf-theme .text-purple-100 {
+    color: #525CBB !important;
+}
+.pdf-theme .bg-purple-100 {
+    background-color: #525CBB !important;
+}
+.pdf-theme .mt-15 {
+    margin-top: 3 .75rem !important;
+}
+.pdf-theme .pt-5 {
+    padding-top: 1 .25rem !important;
+}
+.pdf-theme .pb-5 {
+    padding-bottom: 1 .25rem !important;
+}
+.pdf-theme .mt-20 {
+    margin-top: 5rem !important;
+}
+.pdf-theme .bg-sky-100 {
+    background-color: #00BCD4 !important;
+}
+.pdf-theme .text-sky-100 {
+    color: #00BCD4 !important;
+}
+.pdf-theme .p-10px {
+    padding: 10px !important;
+}
+.pdf-theme .mt-10 {
+    margin-top: 2 .5rem !important;
+}
+.pdf-theme .my-10 {
+    margin-top: 2 .5rem !important;
+    margin-bottom: 2 .5rem !important;
+}
+.pdf-theme .mt-20 {
+    margin-top: 5rem !important;
+}
+.pdf-theme .pb-2 {
+    padding-bottom: 0 .5rem !important;
+}
+.pdf-theme .py-2 {
+    padding-top: 0 .5rem !important;
+    padding-bottom: 0 .5rem !important;
+}
+.pdf-theme .text-sky-200 {
+    color: #03A9F4 !important;
+}
+.pdf-theme .bg-sky-200 {
+    background-color: #03A9F4 !important;
+}
+.pdf-theme .paris-template .invoice-table {
+    border-bottom: .5px solid #c6c6c6;
+}
+.pdf-theme .paris-template .total-amount tbody {
+    border-bottom: 1px solid #cecece;
+}

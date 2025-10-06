@@ -1,0 +1,743 @@
+[2025-10-05 00:03:13] live.WARNING: VariationGroupPrice not found {"variation_id":"579","price_group_id":"NaN"} 
+[2025-10-05 00:03:22] live.WARNING: VariationGroupPrice not found {"variation_id":"720","price_group_id":"NaN"} 
+[2025-10-05 00:03:29] live.WARNING: VariationGroupPrice not found {"variation_id":"46","price_group_id":"NaN"} 
+[2025-10-05 00:03:36] live.WARNING: VariationGroupPrice not found {"variation_id":"724","price_group_id":"NaN"} 
+[2025-10-05 00:03:41] live.WARNING: VariationGroupPrice not found {"variation_id":"236","price_group_id":"NaN"} 
+[2025-10-05 00:03:48] live.WARNING: VariationGroupPrice not found {"variation_id":"237","price_group_id":"NaN"} 
+[2025-10-05 00:20:55] live.INFO: getCloseRegister - Register ID parameter: null  
+[2025-10-05 00:20:55] live.INFO: getCloseRegister - Register details found: YES (ID: )  
+[2025-10-05 00:20:55] live.INFO: getCloseRegister - No register ID found in register_details  
+[2025-10-05 00:22:14] live.INFO: getCloseRegister - Register ID parameter: null  
+[2025-10-05 00:22:14] live.INFO: getCloseRegister - Register details found: YES (ID: )  
+[2025-10-05 00:22:14] live.INFO: getCloseRegister - No register ID found in register_details  
+[2025-10-05 00:27:46] live.WARNING: VariationGroupPrice not found {"variation_id":"179","price_group_id":"NaN"} 
+[2025-10-05 00:28:11] live.WARNING: VariationGroupPrice not found {"variation_id":"179","price_group_id":"NaN"} 
+[2025-10-05 00:32:19] live.INFO: About to call POS Controller {"authenticated_user_id":1,"business_id":1,"request_method":"POST","request_data_keys":["location_id","contact_id","products","payment","discount_amount","discount_type","shipping_charges","sale_note","status","is_direct_sale","transaction_date","invoice_no","is_quotation","final_total","tax_rate_id","shipping_details","additional_notes","staff_note","commission_agent"],"products_count":1,"location_id":503,"contact_id":13} 
+[2025-10-05 00:50:39] live.INFO: About to call POS Controller {"authenticated_user_id":1,"business_id":1,"request_method":"POST","request_data_keys":["location_id","contact_id","products","payment","discount_amount","discount_type","shipping_charges","sale_note","status","is_direct_sale","transaction_date","invoice_no","is_quotation","final_total","tax_rate_id","shipping_details","additional_notes","staff_note","commission_agent"],"products_count":1,"location_id":503,"contact_id":13} 
+[2025-10-05 01:02:18] live.INFO: About to call POS Controller {"authenticated_user_id":1,"business_id":1,"request_method":"POST","request_data_keys":["location_id","contact_id","products","payment","discount_amount","discount_type","shipping_charges","sale_note","status","is_direct_sale","transaction_date","invoice_no","is_quotation","final_total","tax_rate_id","shipping_details","additional_notes","staff_note","commission_agent"],"products_count":1,"location_id":503,"contact_id":13} 
+[2025-10-05 01:04:39] live.INFO: About to call POS Controller {"authenticated_user_id":1,"business_id":1,"request_method":"POST","request_data_keys":["location_id","contact_id","products","payment","discount_amount","discount_type","shipping_charges","sale_note","status","is_direct_sale","transaction_date","invoice_no","is_quotation","final_total","tax_rate_id","shipping_details","additional_notes","staff_note","commission_agent"],"products_count":1,"location_id":503,"contact_id":13} 
+[2025-10-05 01:15:06] live.INFO: About to call POS Controller {"authenticated_user_id":1,"business_id":1,"request_method":"POST","request_data_keys":["location_id","contact_id","products","payment","discount_amount","discount_type","shipping_charges","sale_note","status","is_direct_sale","transaction_date","invoice_no","is_quotation","final_total","tax_rate_id","shipping_details","additional_notes","staff_note","commission_agent"],"products_count":1,"location_id":503,"contact_id":13} 
+[2025-10-05 07:40:07] live.INFO: About to call POS Controller {"authenticated_user_id":1,"business_id":1,"request_method":"POST","request_data_keys":["location_id","contact_id","products","payment","discount_amount","discount_type","shipping_charges","sale_note","status","is_direct_sale","transaction_date","invoice_no","is_quotation","final_total","tax_rate_id","shipping_details","additional_notes","staff_note","commission_agent"],"products_count":1,"location_id":503,"contact_id":13} 
+[2025-10-05 09:31:21] live.INFO: About to call POS Controller {"authenticated_user_id":1,"business_id":1,"request_method":"POST","request_data_keys":["location_id","contact_id","products","payment","discount_amount","discount_type","shipping_charges","sale_note","status","is_direct_sale","transaction_date","invoice_no","is_quotation","final_total","tax_rate_id","shipping_details","additional_notes","staff_note","commission_agent"],"products_count":1,"location_id":503,"contact_id":13} 
+[2025-10-05 09:32:22] live.INFO: About to call POS Controller {"authenticated_user_id":1,"business_id":1,"request_method":"POST","request_data_keys":["location_id","contact_id","products","payment","discount_amount","discount_type","shipping_charges","sale_note","status","is_direct_sale","transaction_date","invoice_no","is_quotation","final_total","tax_rate_id","shipping_details","additional_notes","staff_note","commission_agent"],"products_count":1,"location_id":503,"contact_id":13} 
+[2025-10-05 09:48:23] live.INFO: About to call POS Controller {"authenticated_user_id":1,"business_id":1,"request_method":"POST","request_data_keys":["location_id","contact_id","products","payment","discount_amount","discount_type","shipping_charges","sale_note","status","is_direct_sale","transaction_date","invoice_no","is_quotation","final_total","tax_rate_id","shipping_details","additional_notes","staff_note","commission_agent"],"products_count":1,"location_id":503,"contact_id":13} 
+[2025-10-05 09:50:53] live.INFO: About to call POS Controller {"authenticated_user_id":1,"business_id":1,"request_method":"POST","request_data_keys":["location_id","contact_id","products","payment","discount_amount","discount_type","shipping_charges","sale_note","status","is_direct_sale","transaction_date","invoice_no","is_quotation","final_total","tax_rate_id","shipping_details","additional_notes","staff_note","commission_agent"],"products_count":1,"location_id":503,"contact_id":13} 
+[2025-10-05 09:52:06] live.INFO: About to call POS Controller {"authenticated_user_id":1,"business_id":1,"request_method":"POST","request_data_keys":["location_id","contact_id","products","payment","discount_amount","discount_type","shipping_charges","sale_note","status","is_direct_sale","transaction_date","invoice_no","is_quotation","final_total","tax_rate_id","shipping_details","additional_notes","staff_note","commission_agent"],"products_count":1,"location_id":503,"contact_id":13} 
+[2025-10-05 10:24:38] live.INFO: About to call POS Controller {"authenticated_user_id":1,"business_id":1,"request_method":"POST","request_data_keys":["location_id","contact_id","products","payment","discount_amount","discount_type","shipping_charges","sale_note","status","is_direct_sale","transaction_date","invoice_no","is_quotation","final_total","tax_rate_id","shipping_details","additional_notes","staff_note","commission_agent"],"products_count":1,"location_id":503,"contact_id":13} 
+[2025-10-05 10:58:41] live.INFO: About to call POS Controller {"authenticated_user_id":1,"business_id":1,"request_method":"POST","request_data_keys":["location_id","contact_id","products","payment","discount_amount","discount_type","shipping_charges","sale_note","status","is_direct_sale","transaction_date","invoice_no","is_quotation","final_total","tax_rate_id","shipping_details","additional_notes","staff_note","commission_agent"],"products_count":1,"location_id":503,"contact_id":13} 
+[2025-10-05 11:26:41] live.INFO: About to call POS Controller {"authenticated_user_id":1,"business_id":1,"request_method":"POST","request_data_keys":["location_id","contact_id","products","payment","discount_amount","discount_type","shipping_charges","sale_note","status","is_direct_sale","transaction_date","invoice_no","is_quotation","final_total","tax_rate_id","shipping_details","additional_notes","staff_note","commission_agent"],"products_count":1,"location_id":503,"contact_id":13} 
+[2025-10-05 11:36:06] live.INFO: About to call POS Controller {"authenticated_user_id":1,"business_id":1,"request_method":"POST","request_data_keys":["location_id","contact_id","products","payment","discount_amount","discount_type","shipping_charges","sale_note","status","is_direct_sale","transaction_date","invoice_no","is_quotation","final_total","tax_rate_id","shipping_details","additional_notes","staff_note","commission_agent"],"products_count":1,"location_id":503,"contact_id":13} 
+[2025-10-05 12:24:41] live.INFO: About to call POS Controller {"authenticated_user_id":1,"business_id":1,"request_method":"POST","request_data_keys":["location_id","contact_id","products","payment","discount_amount","discount_type","shipping_charges","sale_note","status","is_direct_sale","transaction_date","invoice_no","is_quotation","final_total","tax_rate_id","shipping_details","additional_notes","staff_note","commission_agent"],"products_count":1,"location_id":503,"contact_id":13} 
+[2025-10-05 12:29:19] live.INFO: About to call POS Controller {"authenticated_user_id":1,"business_id":1,"request_method":"POST","request_data_keys":["location_id","contact_id","products","payment","discount_amount","discount_type","shipping_charges","sale_note","status","is_direct_sale","transaction_date","invoice_no","is_quotation","final_total","tax_rate_id","shipping_details","additional_notes","staff_note","commission_agent"],"products_count":1,"location_id":503,"contact_id":13} 
+[2025-10-05 12:41:22] live.INFO: About to call POS Controller {"authenticated_user_id":1,"business_id":1,"request_method":"POST","request_data_keys":["location_id","contact_id","products","payment","discount_amount","discount_type","shipping_charges","sale_note","status","is_direct_sale","transaction_date","invoice_no","is_quotation","final_total","tax_rate_id","shipping_details","additional_notes","staff_note","commission_agent"],"products_count":1,"location_id":503,"contact_id":13} 
+[2025-10-05 12:50:57] live.INFO: About to call POS Controller {"authenticated_user_id":1,"business_id":1,"request_method":"POST","request_data_keys":["location_id","contact_id","products","payment","discount_amount","discount_type","shipping_charges","sale_note","status","is_direct_sale","transaction_date","invoice_no","is_quotation","final_total","tax_rate_id","shipping_details","additional_notes","staff_note","commission_agent"],"products_count":1,"location_id":503,"contact_id":13} 
+[2025-10-05 12:53:37] live.INFO: About to call POS Controller {"authenticated_user_id":1,"business_id":1,"request_method":"POST","request_data_keys":["location_id","contact_id","products","payment","discount_amount","discount_type","shipping_charges","sale_note","status","is_direct_sale","transaction_date","invoice_no","is_quotation","final_total","tax_rate_id","shipping_details","additional_notes","staff_note","commission_agent"],"products_count":1,"location_id":503,"contact_id":13} 
+[2025-10-05 12:58:22] live.INFO: About to call POS Controller {"authenticated_user_id":1,"business_id":1,"request_method":"POST","request_data_keys":["location_id","contact_id","products","payment","discount_amount","discount_type","shipping_charges","sale_note","status","is_direct_sale","transaction_date","invoice_no","is_quotation","final_total","tax_rate_id","shipping_details","additional_notes","staff_note","commission_agent"],"products_count":1,"location_id":503,"contact_id":13} 
+[2025-10-05 13:26:07] live.INFO: About to call POS Controller {"authenticated_user_id":1,"business_id":1,"request_method":"POST","request_data_keys":["location_id","contact_id","products","payment","discount_amount","discount_type","shipping_charges","sale_note","status","is_direct_sale","transaction_date","invoice_no","is_quotation","final_total","tax_rate_id","shipping_details","additional_notes","staff_note","commission_agent"],"products_count":1,"location_id":503,"contact_id":13} 
+[2025-10-05 13:26:22] live.INFO: About to call POS Controller {"authenticated_user_id":1,"business_id":1,"request_method":"POST","request_data_keys":["location_id","contact_id","products","payment","discount_amount","discount_type","shipping_charges","sale_note","status","is_direct_sale","transaction_date","invoice_no","is_quotation","final_total","tax_rate_id","shipping_details","additional_notes","staff_note","commission_agent"],"products_count":1,"location_id":503,"contact_id":13} 
+[2025-10-05 13:28:22] live.INFO: About to call POS Controller {"authenticated_user_id":1,"business_id":1,"request_method":"POST","request_data_keys":["location_id","contact_id","products","payment","discount_amount","discount_type","shipping_charges","sale_note","status","is_direct_sale","transaction_date","invoice_no","is_quotation","final_total","tax_rate_id","shipping_details","additional_notes","staff_note","commission_agent"],"products_count":1,"location_id":503,"contact_id":13} 
+[2025-10-05 13:47:22] live.INFO: About to call POS Controller {"authenticated_user_id":1,"business_id":1,"request_method":"POST","request_data_keys":["location_id","contact_id","products","payment","discount_amount","discount_type","shipping_charges","sale_note","status","is_direct_sale","transaction_date","invoice_no","is_quotation","final_total","tax_rate_id","shipping_details","additional_notes","staff_note","commission_agent"],"products_count":1,"location_id":503,"contact_id":13} 
+[2025-10-05 13:48:22] live.INFO: About to call POS Controller {"authenticated_user_id":1,"business_id":1,"request_method":"POST","request_data_keys":["location_id","contact_id","products","payment","discount_amount","discount_type","shipping_charges","sale_note","status","is_direct_sale","transaction_date","invoice_no","is_quotation","final_total","tax_rate_id","shipping_details","additional_notes","staff_note","commission_agent"],"products_count":1,"location_id":503,"contact_id":13} 
+[2025-10-05 13:59:41] live.INFO: About to call POS Controller {"authenticated_user_id":1,"business_id":1,"request_method":"POST","request_data_keys":["location_id","contact_id","products","payment","discount_amount","discount_type","shipping_charges","sale_note","status","is_direct_sale","transaction_date","invoice_no","is_quotation","final_total","tax_rate_id","shipping_details","additional_notes","staff_note","commission_agent"],"products_count":1,"location_id":503,"contact_id":13} 
+[2025-10-05 14:04:06] live.INFO: About to call POS Controller {"authenticated_user_id":1,"business_id":1,"request_method":"POST","request_data_keys":["location_id","contact_id","products","payment","discount_amount","discount_type","shipping_charges","sale_note","status","is_direct_sale","transaction_date","invoice_no","is_quotation","final_total","tax_rate_id","shipping_details","additional_notes","staff_note","commission_agent"],"products_count":1,"location_id":503,"contact_id":13} 
+[2025-10-05 14:09:37] live.INFO: About to call POS Controller {"authenticated_user_id":1,"business_id":1,"request_method":"POST","request_data_keys":["location_id","contact_id","products","payment","discount_amount","discount_type","shipping_charges","sale_note","status","is_direct_sale","transaction_date","invoice_no","is_quotation","final_total","tax_rate_id","shipping_details","additional_notes","staff_note","commission_agent"],"products_count":1,"location_id":503,"contact_id":13} 
+[2025-10-05 14:10:39] live.INFO: About to call POS Controller {"authenticated_user_id":1,"business_id":1,"request_method":"POST","request_data_keys":["location_id","contact_id","products","payment","discount_amount","discount_type","shipping_charges","sale_note","status","is_direct_sale","transaction_date","invoice_no","is_quotation","final_total","tax_rate_id","shipping_details","additional_notes","staff_note","commission_agent"],"products_count":1,"location_id":503,"contact_id":13} 
+[2025-10-05 14:30:47] live.INFO: getCloseRegister - Register ID parameter: null  
+[2025-10-05 14:30:47] live.INFO: getCloseRegister - Register details found: YES (ID: )  
+[2025-10-05 14:30:47] live.INFO: getCloseRegister - No register ID found in register_details  
+[2025-10-05 14:33:22] live.INFO: About to call POS Controller {"authenticated_user_id":1,"business_id":1,"request_method":"POST","request_data_keys":["location_id","contact_id","products","payment","discount_amount","discount_type","shipping_charges","sale_note","status","is_direct_sale","transaction_date","invoice_no","is_quotation","final_total","tax_rate_id","shipping_details","additional_notes","staff_note","commission_agent"],"products_count":1,"location_id":503,"contact_id":13} 
+[2025-10-05 14:34:07] live.INFO: About to call POS Controller {"authenticated_user_id":1,"business_id":1,"request_method":"POST","request_data_keys":["location_id","contact_id","products","payment","discount_amount","discount_type","shipping_charges","sale_note","status","is_direct_sale","transaction_date","invoice_no","is_quotation","final_total","tax_rate_id","shipping_details","additional_notes","staff_note","commission_agent"],"products_count":1,"location_id":503,"contact_id":13} 
+[2025-10-05 14:48:40] live.INFO: About to call POS Controller {"authenticated_user_id":1,"business_id":1,"request_method":"POST","request_data_keys":["location_id","contact_id","products","payment","discount_amount","discount_type","shipping_charges","sale_note","status","is_direct_sale","transaction_date","invoice_no","is_quotation","final_total","tax_rate_id","shipping_details","additional_notes","staff_note","commission_agent"],"products_count":1,"location_id":503,"contact_id":13} 
+[2025-10-05 15:39:05] live.INFO: About to call POS Controller {"authenticated_user_id":1,"business_id":1,"request_method":"POST","request_data_keys":["location_id","contact_id","products","payment","discount_amount","discount_type","shipping_charges","sale_note","status","is_direct_sale","transaction_date","invoice_no","is_quotation","final_total","tax_rate_id","shipping_details","additional_notes","staff_note","commission_agent"],"products_count":1,"location_id":503,"contact_id":13} 
+[2025-10-05 15:42:42] live.INFO: About to call POS Controller {"authenticated_user_id":1,"business_id":1,"request_method":"POST","request_data_keys":["location_id","contact_id","products","payment","discount_amount","discount_type","shipping_charges","sale_note","status","is_direct_sale","transaction_date","invoice_no","is_quotation","final_total","tax_rate_id","shipping_details","additional_notes","staff_note","commission_agent"],"products_count":1,"location_id":503,"contact_id":13} 
+[2025-10-05 15:45:38] live.INFO: About to call POS Controller {"authenticated_user_id":1,"business_id":1,"request_method":"POST","request_data_keys":["location_id","contact_id","products","payment","discount_amount","discount_type","shipping_charges","sale_note","status","is_direct_sale","transaction_date","invoice_no","is_quotation","final_total","tax_rate_id","shipping_details","additional_notes","staff_note","commission_agent"],"products_count":1,"location_id":503,"contact_id":13} 
+[2025-10-05 15:57:06] live.INFO: About to call POS Controller {"authenticated_user_id":1,"business_id":1,"request_method":"POST","request_data_keys":["location_id","contact_id","products","payment","discount_amount","discount_type","shipping_charges","sale_note","status","is_direct_sale","transaction_date","invoice_no","is_quotation","final_total","tax_rate_id","shipping_details","additional_notes","staff_note","commission_agent"],"products_count":1,"location_id":503,"contact_id":13} 
+[2025-10-05 16:09:11] live.WARNING: VariationGroupPrice not found {"variation_id":"82","price_group_id":"NaN"} 
+[2025-10-05 16:09:14] live.WARNING: VariationGroupPrice not found {"variation_id":"619","price_group_id":"NaN"} 
+[2025-10-05 16:10:16] live.WARNING: VariationGroupPrice not found {"variation_id":"223","price_group_id":"NaN"} 
+[2025-10-05 16:10:33] live.WARNING: VariationGroupPrice not found {"variation_id":"38","price_group_id":"NaN"} 
+[2025-10-05 16:14:37] live.INFO: About to call POS Controller {"authenticated_user_id":1,"business_id":1,"request_method":"POST","request_data_keys":["location_id","contact_id","products","payment","discount_amount","discount_type","shipping_charges","sale_note","status","is_direct_sale","transaction_date","invoice_no","is_quotation","final_total","tax_rate_id","shipping_details","additional_notes","staff_note","commission_agent"],"products_count":1,"location_id":503,"contact_id":13} 
+[2025-10-05 16:21:17] live.INFO: About to call POS Controller {"authenticated_user_id":1,"business_id":1,"request_method":"POST","request_data_keys":["location_id","contact_id","products","payment","discount_amount","discount_type","shipping_charges","sale_note","status","is_direct_sale","transaction_date","invoice_no","is_quotation","final_total","tax_rate_id","shipping_details","additional_notes","staff_note","commission_agent"],"products_count":1,"location_id":503,"contact_id":13} 
+[2025-10-05 16:28:47] live.WARNING: VariationGroupPrice not found {"variation_id":"213","price_group_id":"NaN"} 
+[2025-10-05 16:29:10] live.WARNING: VariationGroupPrice not found {"variation_id":"214","price_group_id":"NaN"} 
+[2025-10-05 16:29:35] live.WARNING: VariationGroupPrice not found {"variation_id":"51","price_group_id":"NaN"} 
+[2025-10-05 16:29:48] live.WARNING: VariationGroupPrice not found {"variation_id":"52","price_group_id":"NaN"} 
+[2025-10-05 16:31:02] live.WARNING: VariationGroupPrice not found {"variation_id":"724","price_group_id":"NaN"} 
+[2025-10-05 16:31:43] live.WARNING: VariationGroupPrice not found {"variation_id":"721","price_group_id":"NaN"} 
+[2025-10-05 16:32:06] live.WARNING: VariationGroupPrice not found {"variation_id":"723","price_group_id":"NaN"} 
+[2025-10-05 16:33:03] live.WARNING: VariationGroupPrice not found {"variation_id":"147","price_group_id":"NaN"} 
+[2025-10-05 16:33:31] live.WARNING: VariationGroupPrice not found {"variation_id":"146","price_group_id":"NaN"} 
+[2025-10-05 16:33:59] live.WARNING: VariationGroupPrice not found {"variation_id":"145","price_group_id":"NaN"} 
+[2025-10-05 16:34:10] live.WARNING: VariationGroupPrice not found {"variation_id":"171","price_group_id":"NaN"} 
+[2025-10-05 16:34:16] live.WARNING: VariationGroupPrice not found {"variation_id":"508","price_group_id":"NaN"} 
+[2025-10-05 16:36:00] live.WARNING: VariationGroupPrice not found {"variation_id":"148","price_group_id":"NaN"} 
+[2025-10-05 16:39:07] live.INFO: About to call POS Controller {"authenticated_user_id":1,"business_id":1,"request_method":"POST","request_data_keys":["location_id","contact_id","products","payment","discount_amount","discount_type","shipping_charges","sale_note","status","is_direct_sale","transaction_date","invoice_no","is_quotation","final_total","tax_rate_id","shipping_details","additional_notes","staff_note","commission_agent"],"products_count":1,"location_id":503,"contact_id":13} 
+[2025-10-05 16:42:50] live.WARNING: VariationGroupPrice not found {"variation_id":"11","price_group_id":"NaN"} 
+[2025-10-05 16:52:34] live.ERROR: View [pos.customer_display] not found. {"userId":825,"exception":"[object] (InvalidArgumentException(code: 0): View [pos.customer_display] not found. at /var/www/html/vendor/laravel/framework/src/Illuminate/View/FileViewFinder.php:137)
+[stacktrace]
+#0 /var/www/html/vendor/laravel/framework/src/Illuminate/View/FileViewFinder.php(79): Illuminate\\View\\FileViewFinder->findInPaths()
+#1 /var/www/html/vendor/laravel/framework/src/Illuminate/View/Factory.php(137): Illuminate\\View\\FileViewFinder->find()
+#2 /var/www/html/vendor/laravel/framework/src/Illuminate/Foundation/helpers.php(1035): Illuminate\\View\\Factory->make()
+#3 /var/www/html/app/Http/Controllers/SellPosController.php(3502): view()
+#4 /var/www/html/vendor/laravel/framework/src/Illuminate/Routing/Controller.php(54): App\\Http\\Controllers\\SellPosController->customerDisplay()
+#5 /var/www/html/vendor/laravel/framework/src/Illuminate/Routing/ControllerDispatcher.php(43): Illuminate\\Routing\\Controller->callAction()
+#6 /var/www/html/vendor/laravel/framework/src/Illuminate/Routing/Route.php(259): Illuminate\\Routing\\ControllerDispatcher->dispatch()
+#7 /var/www/html/vendor/laravel/framework/src/Illuminate/Routing/Route.php(205): Illuminate\\Routing\\Route->runController()
+#8 /var/www/html/vendor/laravel/framework/src/Illuminate/Routing/Router.php(798): Illuminate\\Routing\\Route->run()
+#9 /var/www/html/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(141): Illuminate\\Routing\\Router->Illuminate\\Routing\\{closure}()
+#10 /var/www/html/app/Http/Middleware/CheckUserLogin.php(22): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#11 /var/www/html/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(180): App\\Http\\Middleware\\CheckUserLogin->handle()
+#12 /var/www/html/app/Http/Middleware/AdminSidebarMenu.php(918): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#13 /var/www/html/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(180): App\\Http\\Middleware\\AdminSidebarMenu->handle()
+#14 /var/www/html/app/Http/Middleware/Timezone.php(30): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#15 /var/www/html/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(180): App\\Http\\Middleware\\Timezone->handle()
+#16 /var/www/html/app/Http/Middleware/Language.php(25): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#17 /var/www/html/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(180): App\\Http\\Middleware\\Language->handle()
+#18 /var/www/html/app/Http/Middleware/SetSessionData.php(52): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#19 /var/www/html/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(180): App\\Http\\Middleware\\SetSessionData->handle()
+#20 /var/www/html/app/Http/Middleware/IsInstalled.php(50): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#21 /var/www/html/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(180): App\\Http\\Middleware\\IsInstalled->handle()
+#22 /var/www/html/vendor/laravel/framework/src/Illuminate/Routing/Middleware/SubstituteBindings.php(50): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#23 /var/www/html/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(180): Illuminate\\Routing\\Middleware\\SubstituteBindings->handle()
+#24 /var/www/html/vendor/laravel/framework/src/Illuminate/Auth/Middleware/Authenticate.php(44): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#25 /var/www/html/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(180): Illuminate\\Auth\\Middleware\\Authenticate->handle()
+#26 /var/www/html/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/VerifyCsrfToken.php(78): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#27 /var/www/html/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(180): Illuminate\\Foundation\\Http\\Middleware\\VerifyCsrfToken->handle()
+#28 /var/www/html/vendor/laravel/framework/src/Illuminate/View/Middleware/ShareErrorsFromSession.php(49): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#29 /var/www/html/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(180): Illuminate\\View\\Middleware\\ShareErrorsFromSession->handle()
+#30 /var/www/html/vendor/laravel/framework/src/Illuminate/Session/Middleware/StartSession.php(121): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#31 /var/www/html/vendor/laravel/framework/src/Illuminate/Session/Middleware/StartSession.php(64): Illuminate\\Session\\Middleware\\StartSession->handleStatefulRequest()
+#32 /var/www/html/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(180): Illuminate\\Session\\Middleware\\StartSession->handle()
+#33 /var/www/html/vendor/laravel/framework/src/Illuminate/Cookie/Middleware/AddQueuedCookiesToResponse.php(37): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#34 /var/www/html/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(180): Illuminate\\Cookie\\Middleware\\AddQueuedCookiesToResponse->handle()
+#35 /var/www/html/vendor/laravel/framework/src/Illuminate/Cookie/Middleware/EncryptCookies.php(67): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#36 /var/www/html/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(180): Illuminate\\Cookie\\Middleware\\EncryptCookies->handle()
+#37 /var/www/html/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(116): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#38 /var/www/html/vendor/laravel/framework/src/Illuminate/Routing/Router.php(797): Illuminate\\Pipeline\\Pipeline->then()
+#39 /var/www/html/vendor/laravel/framework/src/Illuminate/Routing/Router.php(776): Illuminate\\Routing\\Router->runRouteWithinStack()
+#40 /var/www/html/vendor/laravel/framework/src/Illuminate/Routing/Router.php(740): Illuminate\\Routing\\Router->runRoute()
+#41 /var/www/html/vendor/laravel/framework/src/Illuminate/Routing/Router.php(729): Illuminate\\Routing\\Router->dispatchToRoute()
+#42 /var/www/html/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(190): Illuminate\\Routing\\Router->dispatch()
+#43 /var/www/html/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(141): Illuminate\\Foundation\\Http\\Kernel->Illuminate\\Foundation\\Http\\{closure}()
+#44 /var/www/html/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/TransformsRequest.php(21): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#45 /var/www/html/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/ConvertEmptyStringsToNull.php(31): Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest->handle()
+#46 /var/www/html/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(180): Illuminate\\Foundation\\Http\\Middleware\\ConvertEmptyStringsToNull->handle()
+#47 /var/www/html/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/TransformsRequest.php(21): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#48 /var/www/html/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/TrimStrings.php(40): Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest->handle()
+#49 /var/www/html/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(180): Illuminate\\Foundation\\Http\\Middleware\\TrimStrings->handle()
+#50 /var/www/html/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/ValidatePostSize.php(27): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#51 /var/www/html/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(180): Illuminate\\Foundation\\Http\\Middleware\\ValidatePostSize->handle()
+#52 /var/www/html/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/PreventRequestsDuringMaintenance.php(86): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#53 /var/www/html/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(180): Illuminate\\Foundation\\Http\\Middleware\\PreventRequestsDuringMaintenance->handle()
+#54 /var/www/html/vendor/laravel/framework/src/Illuminate/Http/Middleware/HandleCors.php(49): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#55 /var/www/html/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(180): Illuminate\\Http\\Middleware\\HandleCors->handle()
+#56 /var/www/html/vendor/laravel/framework/src/Illuminate/Http/Middleware/TrustProxies.php(39): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#57 /var/www/html/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(180): Illuminate\\Http\\Middleware\\TrustProxies->handle()
+#58 /var/www/html/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(116): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#59 /var/www/html/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(165): Illuminate\\Pipeline\\Pipeline->then()
+#60 /var/www/html/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(134): Illuminate\\Foundation\\Http\\Kernel->sendRequestThroughRouter()
+#61 /var/www/html/public/index.php(51): Illuminate\\Foundation\\Http\\Kernel->handle()
+#62 {main}
+"} 
+[2025-10-05 16:53:14] live.ERROR: View [pos.customer_display] not found. {"userId":825,"exception":"[object] (InvalidArgumentException(code: 0): View [pos.customer_display] not found. at /var/www/html/vendor/laravel/framework/src/Illuminate/View/FileViewFinder.php:137)
+[stacktrace]
+#0 /var/www/html/vendor/laravel/framework/src/Illuminate/View/FileViewFinder.php(79): Illuminate\\View\\FileViewFinder->findInPaths()
+#1 /var/www/html/vendor/laravel/framework/src/Illuminate/View/Factory.php(137): Illuminate\\View\\FileViewFinder->find()
+#2 /var/www/html/vendor/laravel/framework/src/Illuminate/Foundation/helpers.php(1035): Illuminate\\View\\Factory->make()
+#3 /var/www/html/app/Http/Controllers/SellPosController.php(3502): view()
+#4 /var/www/html/vendor/laravel/framework/src/Illuminate/Routing/Controller.php(54): App\\Http\\Controllers\\SellPosController->customerDisplay()
+#5 /var/www/html/vendor/laravel/framework/src/Illuminate/Routing/ControllerDispatcher.php(43): Illuminate\\Routing\\Controller->callAction()
+#6 /var/www/html/vendor/laravel/framework/src/Illuminate/Routing/Route.php(259): Illuminate\\Routing\\ControllerDispatcher->dispatch()
+#7 /var/www/html/vendor/laravel/framework/src/Illuminate/Routing/Route.php(205): Illuminate\\Routing\\Route->runController()
+#8 /var/www/html/vendor/laravel/framework/src/Illuminate/Routing/Router.php(798): Illuminate\\Routing\\Route->run()
+#9 /var/www/html/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(141): Illuminate\\Routing\\Router->Illuminate\\Routing\\{closure}()
+#10 /var/www/html/app/Http/Middleware/CheckUserLogin.php(22): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#11 /var/www/html/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(180): App\\Http\\Middleware\\CheckUserLogin->handle()
+#12 /var/www/html/app/Http/Middleware/AdminSidebarMenu.php(918): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#13 /var/www/html/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(180): App\\Http\\Middleware\\AdminSidebarMenu->handle()
+#14 /var/www/html/app/Http/Middleware/Timezone.php(30): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#15 /var/www/html/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(180): App\\Http\\Middleware\\Timezone->handle()
+#16 /var/www/html/app/Http/Middleware/Language.php(25): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#17 /var/www/html/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(180): App\\Http\\Middleware\\Language->handle()
+#18 /var/www/html/app/Http/Middleware/SetSessionData.php(52): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#19 /var/www/html/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(180): App\\Http\\Middleware\\SetSessionData->handle()
+#20 /var/www/html/app/Http/Middleware/IsInstalled.php(50): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#21 /var/www/html/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(180): App\\Http\\Middleware\\IsInstalled->handle()
+#22 /var/www/html/vendor/laravel/framework/src/Illuminate/Routing/Middleware/SubstituteBindings.php(50): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#23 /var/www/html/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(180): Illuminate\\Routing\\Middleware\\SubstituteBindings->handle()
+#24 /var/www/html/vendor/laravel/framework/src/Illuminate/Auth/Middleware/Authenticate.php(44): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#25 /var/www/html/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(180): Illuminate\\Auth\\Middleware\\Authenticate->handle()
+#26 /var/www/html/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/VerifyCsrfToken.php(78): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#27 /var/www/html/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(180): Illuminate\\Foundation\\Http\\Middleware\\VerifyCsrfToken->handle()
+#28 /var/www/html/vendor/laravel/framework/src/Illuminate/View/Middleware/ShareErrorsFromSession.php(49): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#29 /var/www/html/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(180): Illuminate\\View\\Middleware\\ShareErrorsFromSession->handle()
+#30 /var/www/html/vendor/laravel/framework/src/Illuminate/Session/Middleware/StartSession.php(121): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#31 /var/www/html/vendor/laravel/framework/src/Illuminate/Session/Middleware/StartSession.php(64): Illuminate\\Session\\Middleware\\StartSession->handleStatefulRequest()
+#32 /var/www/html/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(180): Illuminate\\Session\\Middleware\\StartSession->handle()
+#33 /var/www/html/vendor/laravel/framework/src/Illuminate/Cookie/Middleware/AddQueuedCookiesToResponse.php(37): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#34 /var/www/html/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(180): Illuminate\\Cookie\\Middleware\\AddQueuedCookiesToResponse->handle()
+#35 /var/www/html/vendor/laravel/framework/src/Illuminate/Cookie/Middleware/EncryptCookies.php(67): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#36 /var/www/html/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(180): Illuminate\\Cookie\\Middleware\\EncryptCookies->handle()
+#37 /var/www/html/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(116): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#38 /var/www/html/vendor/laravel/framework/src/Illuminate/Routing/Router.php(797): Illuminate\\Pipeline\\Pipeline->then()
+#39 /var/www/html/vendor/laravel/framework/src/Illuminate/Routing/Router.php(776): Illuminate\\Routing\\Router->runRouteWithinStack()
+#40 /var/www/html/vendor/laravel/framework/src/Illuminate/Routing/Router.php(740): Illuminate\\Routing\\Router->runRoute()
+#41 /var/www/html/vendor/laravel/framework/src/Illuminate/Routing/Router.php(729): Illuminate\\Routing\\Router->dispatchToRoute()
+#42 /var/www/html/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(190): Illuminate\\Routing\\Router->dispatch()
+#43 /var/www/html/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(141): Illuminate\\Foundation\\Http\\Kernel->Illuminate\\Foundation\\Http\\{closure}()
+#44 /var/www/html/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/TransformsRequest.php(21): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#45 /var/www/html/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/ConvertEmptyStringsToNull.php(31): Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest->handle()
+#46 /var/www/html/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(180): Illuminate\\Foundation\\Http\\Middleware\\ConvertEmptyStringsToNull->handle()
+#47 /var/www/html/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/TransformsRequest.php(21): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#48 /var/www/html/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/TrimStrings.php(40): Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest->handle()
+#49 /var/www/html/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(180): Illuminate\\Foundation\\Http\\Middleware\\TrimStrings->handle()
+#50 /var/www/html/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/ValidatePostSize.php(27): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#51 /var/www/html/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(180): Illuminate\\Foundation\\Http\\Middleware\\ValidatePostSize->handle()
+#52 /var/www/html/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/PreventRequestsDuringMaintenance.php(86): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#53 /var/www/html/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(180): Illuminate\\Foundation\\Http\\Middleware\\PreventRequestsDuringMaintenance->handle()
+#54 /var/www/html/vendor/laravel/framework/src/Illuminate/Http/Middleware/HandleCors.php(49): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#55 /var/www/html/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(180): Illuminate\\Http\\Middleware\\HandleCors->handle()
+#56 /var/www/html/vendor/laravel/framework/src/Illuminate/Http/Middleware/TrustProxies.php(39): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#57 /var/www/html/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(180): Illuminate\\Http\\Middleware\\TrustProxies->handle()
+#58 /var/www/html/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(116): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#59 /var/www/html/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(165): Illuminate\\Pipeline\\Pipeline->then()
+#60 /var/www/html/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(134): Illuminate\\Foundation\\Http\\Kernel->sendRequestThroughRouter()
+#61 /var/www/html/public/index.php(51): Illuminate\\Foundation\\Http\\Kernel->handle()
+#62 {main}
+"} 
+[2025-10-05 16:53:27] live.ERROR: View [pos.customer_display] not found. {"userId":825,"exception":"[object] (InvalidArgumentException(code: 0): View [pos.customer_display] not found. at /var/www/html/vendor/laravel/framework/src/Illuminate/View/FileViewFinder.php:137)
+[stacktrace]
+#0 /var/www/html/vendor/laravel/framework/src/Illuminate/View/FileViewFinder.php(79): Illuminate\\View\\FileViewFinder->findInPaths()
+#1 /var/www/html/vendor/laravel/framework/src/Illuminate/View/Factory.php(137): Illuminate\\View\\FileViewFinder->find()
+#2 /var/www/html/vendor/laravel/framework/src/Illuminate/Foundation/helpers.php(1035): Illuminate\\View\\Factory->make()
+#3 /var/www/html/app/Http/Controllers/SellPosController.php(3502): view()
+#4 /var/www/html/vendor/laravel/framework/src/Illuminate/Routing/Controller.php(54): App\\Http\\Controllers\\SellPosController->customerDisplay()
+#5 /var/www/html/vendor/laravel/framework/src/Illuminate/Routing/ControllerDispatcher.php(43): Illuminate\\Routing\\Controller->callAction()
+#6 /var/www/html/vendor/laravel/framework/src/Illuminate/Routing/Route.php(259): Illuminate\\Routing\\ControllerDispatcher->dispatch()
+#7 /var/www/html/vendor/laravel/framework/src/Illuminate/Routing/Route.php(205): Illuminate\\Routing\\Route->runController()
+#8 /var/www/html/vendor/laravel/framework/src/Illuminate/Routing/Router.php(798): Illuminate\\Routing\\Route->run()
+#9 /var/www/html/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(141): Illuminate\\Routing\\Router->Illuminate\\Routing\\{closure}()
+#10 /var/www/html/app/Http/Middleware/CheckUserLogin.php(22): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#11 /var/www/html/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(180): App\\Http\\Middleware\\CheckUserLogin->handle()
+#12 /var/www/html/app/Http/Middleware/AdminSidebarMenu.php(918): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#13 /var/www/html/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(180): App\\Http\\Middleware\\AdminSidebarMenu->handle()
+#14 /var/www/html/app/Http/Middleware/Timezone.php(30): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#15 /var/www/html/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(180): App\\Http\\Middleware\\Timezone->handle()
+#16 /var/www/html/app/Http/Middleware/Language.php(25): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#17 /var/www/html/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(180): App\\Http\\Middleware\\Language->handle()
+#18 /var/www/html/app/Http/Middleware/SetSessionData.php(52): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#19 /var/www/html/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(180): App\\Http\\Middleware\\SetSessionData->handle()
+#20 /var/www/html/app/Http/Middleware/IsInstalled.php(50): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#21 /var/www/html/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(180): App\\Http\\Middleware\\IsInstalled->handle()
+#22 /var/www/html/vendor/laravel/framework/src/Illuminate/Routing/Middleware/SubstituteBindings.php(50): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#23 /var/www/html/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(180): Illuminate\\Routing\\Middleware\\SubstituteBindings->handle()
+#24 /var/www/html/vendor/laravel/framework/src/Illuminate/Auth/Middleware/Authenticate.php(44): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#25 /var/www/html/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(180): Illuminate\\Auth\\Middleware\\Authenticate->handle()
+#26 /var/www/html/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/VerifyCsrfToken.php(78): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#27 /var/www/html/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(180): Illuminate\\Foundation\\Http\\Middleware\\VerifyCsrfToken->handle()
+#28 /var/www/html/vendor/laravel/framework/src/Illuminate/View/Middleware/ShareErrorsFromSession.php(49): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#29 /var/www/html/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(180): Illuminate\\View\\Middleware\\ShareErrorsFromSession->handle()
+#30 /var/www/html/vendor/laravel/framework/src/Illuminate/Session/Middleware/StartSession.php(121): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#31 /var/www/html/vendor/laravel/framework/src/Illuminate/Session/Middleware/StartSession.php(64): Illuminate\\Session\\Middleware\\StartSession->handleStatefulRequest()
+#32 /var/www/html/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(180): Illuminate\\Session\\Middleware\\StartSession->handle()
+#33 /var/www/html/vendor/laravel/framework/src/Illuminate/Cookie/Middleware/AddQueuedCookiesToResponse.php(37): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#34 /var/www/html/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(180): Illuminate\\Cookie\\Middleware\\AddQueuedCookiesToResponse->handle()
+#35 /var/www/html/vendor/laravel/framework/src/Illuminate/Cookie/Middleware/EncryptCookies.php(67): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#36 /var/www/html/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(180): Illuminate\\Cookie\\Middleware\\EncryptCookies->handle()
+#37 /var/www/html/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(116): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#38 /var/www/html/vendor/laravel/framework/src/Illuminate/Routing/Router.php(797): Illuminate\\Pipeline\\Pipeline->then()
+#39 /var/www/html/vendor/laravel/framework/src/Illuminate/Routing/Router.php(776): Illuminate\\Routing\\Router->runRouteWithinStack()
+#40 /var/www/html/vendor/laravel/framework/src/Illuminate/Routing/Router.php(740): Illuminate\\Routing\\Router->runRoute()
+#41 /var/www/html/vendor/laravel/framework/src/Illuminate/Routing/Router.php(729): Illuminate\\Routing\\Router->dispatchToRoute()
+#42 /var/www/html/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(190): Illuminate\\Routing\\Router->dispatch()
+#43 /var/www/html/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(141): Illuminate\\Foundation\\Http\\Kernel->Illuminate\\Foundation\\Http\\{closure}()
+#44 /var/www/html/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/TransformsRequest.php(21): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#45 /var/www/html/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/ConvertEmptyStringsToNull.php(31): Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest->handle()
+#46 /var/www/html/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(180): Illuminate\\Foundation\\Http\\Middleware\\ConvertEmptyStringsToNull->handle()
+#47 /var/www/html/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/TransformsRequest.php(21): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#48 /var/www/html/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/TrimStrings.php(40): Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest->handle()
+#49 /var/www/html/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(180): Illuminate\\Foundation\\Http\\Middleware\\TrimStrings->handle()
+#50 /var/www/html/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/ValidatePostSize.php(27): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#51 /var/www/html/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(180): Illuminate\\Foundation\\Http\\Middleware\\ValidatePostSize->handle()
+#52 /var/www/html/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/PreventRequestsDuringMaintenance.php(86): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#53 /var/www/html/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(180): Illuminate\\Foundation\\Http\\Middleware\\PreventRequestsDuringMaintenance->handle()
+#54 /var/www/html/vendor/laravel/framework/src/Illuminate/Http/Middleware/HandleCors.php(49): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#55 /var/www/html/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(180): Illuminate\\Http\\Middleware\\HandleCors->handle()
+#56 /var/www/html/vendor/laravel/framework/src/Illuminate/Http/Middleware/TrustProxies.php(39): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#57 /var/www/html/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(180): Illuminate\\Http\\Middleware\\TrustProxies->handle()
+#58 /var/www/html/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(116): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#59 /var/www/html/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(165): Illuminate\\Pipeline\\Pipeline->then()
+#60 /var/www/html/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(134): Illuminate\\Foundation\\Http\\Kernel->sendRequestThroughRouter()
+#61 /var/www/html/public/index.php(51): Illuminate\\Foundation\\Http\\Kernel->handle()
+#62 {main}
+"} 
+[2025-10-05 17:01:23] live.INFO: About to call POS Controller {"authenticated_user_id":1,"business_id":1,"request_method":"POST","request_data_keys":["location_id","contact_id","products","payment","discount_amount","discount_type","shipping_charges","sale_note","status","is_direct_sale","transaction_date","invoice_no","is_quotation","final_total","tax_rate_id","shipping_details","additional_notes","staff_note","commission_agent"],"products_count":1,"location_id":503,"contact_id":13} 
+[2025-10-05 17:16:17] live.INFO: About to call POS Controller {"authenticated_user_id":1,"business_id":1,"request_method":"POST","request_data_keys":["location_id","contact_id","products","payment","discount_amount","discount_type","shipping_charges","sale_note","status","is_direct_sale","transaction_date","invoice_no","is_quotation","final_total","tax_rate_id","shipping_details","additional_notes","staff_note","commission_agent"],"products_count":1,"location_id":503,"contact_id":13} 
+[2025-10-05 17:34:54] live.INFO: About to call POS Controller {"authenticated_user_id":1,"business_id":1,"request_method":"POST","request_data_keys":["location_id","contact_id","products","payment","discount_amount","discount_type","shipping_charges","sale_note","status","is_direct_sale","transaction_date","invoice_no","is_quotation","final_total","tax_rate_id","shipping_details","additional_notes","staff_note","commission_agent"],"products_count":1,"location_id":503,"contact_id":13} 
+[2025-10-05 17:44:47] live.INFO: About to call POS Controller {"authenticated_user_id":1,"business_id":1,"request_method":"POST","request_data_keys":["location_id","contact_id","products","payment","discount_amount","discount_type","shipping_charges","sale_note","status","is_direct_sale","transaction_date","invoice_no","is_quotation","final_total","tax_rate_id","shipping_details","additional_notes","staff_note","commission_agent"],"products_count":1,"location_id":503,"contact_id":13} 
+[2025-10-05 17:49:23] live.INFO: About to call POS Controller {"authenticated_user_id":1,"business_id":1,"request_method":"POST","request_data_keys":["location_id","contact_id","products","payment","discount_amount","discount_type","shipping_charges","sale_note","status","is_direct_sale","transaction_date","invoice_no","is_quotation","final_total","tax_rate_id","shipping_details","additional_notes","staff_note","commission_agent"],"products_count":1,"location_id":503,"contact_id":13} 
+[2025-10-05 17:55:53] live.INFO: About to call POS Controller {"authenticated_user_id":1,"business_id":1,"request_method":"POST","request_data_keys":["location_id","contact_id","products","payment","discount_amount","discount_type","shipping_charges","sale_note","status","is_direct_sale","transaction_date","invoice_no","is_quotation","final_total","tax_rate_id","shipping_details","additional_notes","staff_note","commission_agent"],"products_count":1,"location_id":503,"contact_id":13} 
+[2025-10-05 18:18:37] live.INFO: About to call POS Controller {"authenticated_user_id":1,"business_id":1,"request_method":"POST","request_data_keys":["location_id","contact_id","products","payment","discount_amount","discount_type","shipping_charges","sale_note","status","is_direct_sale","transaction_date","invoice_no","is_quotation","final_total","tax_rate_id","shipping_details","additional_notes","staff_note","commission_agent"],"products_count":1,"location_id":503,"contact_id":13} 
+[2025-10-05 18:25:18] live.INFO: About to call POS Controller {"authenticated_user_id":1,"business_id":1,"request_method":"POST","request_data_keys":["location_id","contact_id","products","payment","discount_amount","discount_type","shipping_charges","sale_note","status","is_direct_sale","transaction_date","invoice_no","is_quotation","final_total","tax_rate_id","shipping_details","additional_notes","staff_note","commission_agent"],"products_count":1,"location_id":503,"contact_id":13} 
+[2025-10-05 18:28:11] live.INFO: getCloseRegister - Register ID parameter: null  
+[2025-10-05 18:28:11] live.INFO: getCloseRegister - Register details found: YES (ID: )  
+[2025-10-05 18:28:11] live.INFO: getCloseRegister - No register ID found in register_details  
+[2025-10-05 18:36:18] live.INFO: getCloseRegister - Register ID parameter: null  
+[2025-10-05 18:36:18] live.INFO: getCloseRegister - Register details found: YES (ID: )  
+[2025-10-05 18:36:18] live.INFO: getCloseRegister - No register ID found in register_details  
+[2025-10-05 18:38:18] live.INFO: About to call POS Controller {"authenticated_user_id":1,"business_id":1,"request_method":"POST","request_data_keys":["location_id","contact_id","products","payment","discount_amount","discount_type","shipping_charges","sale_note","status","is_direct_sale","transaction_date","invoice_no","is_quotation","final_total","tax_rate_id","shipping_details","additional_notes","staff_note","commission_agent"],"products_count":1,"location_id":503,"contact_id":13} 
+[2025-10-05 18:40:07] live.INFO: About to call POS Controller {"authenticated_user_id":1,"business_id":1,"request_method":"POST","request_data_keys":["location_id","contact_id","products","payment","discount_amount","discount_type","shipping_charges","sale_note","status","is_direct_sale","transaction_date","invoice_no","is_quotation","final_total","tax_rate_id","shipping_details","additional_notes","staff_note","commission_agent"],"products_count":1,"location_id":503,"contact_id":13} 
+[2025-10-05 18:40:45] live.ERROR: Failed to authenticate on SMTP server with username "46dd2b001@smtp-brevo.com" using the following authenticators: "CRAM-MD5", "LOGIN", "PLAIN". Authenticator "CRAM-MD5" returned "Expected response code "235" but got code "535", with message "535 5.7.8 Authentication failed".". Authenticator "LOGIN" returned "Expected response code "235" but got code "535", with message "535 5.7.8 Authentication failed".". Authenticator "PLAIN" returned "Expected response code "235" but got code "535", with message "535 5.7.8 Authentication failed".". {"exception":"[object] (Symfony\\Component\\Mailer\\Exception\\TransportException(code: 535): Failed to authenticate on SMTP server with username \"46dd2b001@smtp-brevo.com\" using the following authenticators: \"CRAM-MD5\", \"LOGIN\", \"PLAIN\". Authenticator \"CRAM-MD5\" returned \"Expected response code \"235\" but got code \"535\", with message \"535 5.7.8 Authentication failed\".\". Authenticator \"LOGIN\" returned \"Expected response code \"235\" but got code \"535\", with message \"535 5.7.8 Authentication failed\".\". Authenticator \"PLAIN\" returned \"Expected response code \"235\" but got code \"535\", with message \"535 5.7.8 Authentication failed\".\". at /var/www/html/vendor/symfony/mailer/Transport/Smtp/EsmtpTransport.php:226)
+[stacktrace]
+#0 /var/www/html/vendor/symfony/mailer/Transport/Smtp/EsmtpTransport.php(161): Symfony\\Component\\Mailer\\Transport\\Smtp\\EsmtpTransport->handleAuth()
+#1 /var/www/html/vendor/symfony/mailer/Transport/Smtp/EsmtpTransport.php(118): Symfony\\Component\\Mailer\\Transport\\Smtp\\EsmtpTransport->doEhloCommand()
+#2 /var/www/html/vendor/symfony/mailer/Transport/Smtp/SmtpTransport.php(254): Symfony\\Component\\Mailer\\Transport\\Smtp\\EsmtpTransport->executeCommand()
+#3 /var/www/html/vendor/symfony/mailer/Transport/Smtp/SmtpTransport.php(277): Symfony\\Component\\Mailer\\Transport\\Smtp\\SmtpTransport->doHeloCommand()
+#4 /var/www/html/vendor/symfony/mailer/Transport/Smtp/SmtpTransport.php(210): Symfony\\Component\\Mailer\\Transport\\Smtp\\SmtpTransport->start()
+#5 /var/www/html/vendor/symfony/mailer/Transport/AbstractTransport.php(69): Symfony\\Component\\Mailer\\Transport\\Smtp\\SmtpTransport->doSend()
+#6 /var/www/html/vendor/symfony/mailer/Transport/Smtp/SmtpTransport.php(137): Symfony\\Component\\Mailer\\Transport\\AbstractTransport->send()
+#7 /var/www/html/vendor/laravel/framework/src/Illuminate/Mail/Mailer.php(523): Symfony\\Component\\Mailer\\Transport\\Smtp\\SmtpTransport->send()
+#8 /var/www/html/vendor/laravel/framework/src/Illuminate/Mail/Mailer.php(287): Illuminate\\Mail\\Mailer->sendSymfonyMessage()
+#9 /var/www/html/vendor/laravel/framework/src/Illuminate/Mail/Mailable.php(204): Illuminate\\Mail\\Mailer->send()
+#10 /var/www/html/vendor/laravel/framework/src/Illuminate/Support/Traits/Localizable.php(19): Illuminate\\Mail\\Mailable->Illuminate\\Mail\\{closure}()
+#11 /var/www/html/vendor/laravel/framework/src/Illuminate/Mail/Mailable.php(197): Illuminate\\Mail\\Mailable->withLocale()
+#12 /var/www/html/vendor/laravel/framework/src/Illuminate/Mail/Mailer.php(309): Illuminate\\Mail\\Mailable->send()
+#13 /var/www/html/vendor/laravel/framework/src/Illuminate/Mail/Mailer.php(253): Illuminate\\Mail\\Mailer->sendMailable()
+#14 /var/www/html/vendor/laravel/framework/src/Illuminate/Mail/PendingMail.php(124): Illuminate\\Mail\\Mailer->send()
+#15 /var/www/html/app/Http/Controllers/Auth/LoginController.php(157): Illuminate\\Mail\\PendingMail->send()
+#16 /var/www/html/app/Http/Controllers/Auth/LoginController.php(131): App\\Http\\Controllers\\Auth\\LoginController->generateOtp()
+#17 /var/www/html/vendor/laravel/ui/auth-backend/AuthenticatesUsers.php(114): App\\Http\\Controllers\\Auth\\LoginController->authenticated()
+#18 /var/www/html/vendor/laravel/ui/auth-backend/AuthenticatesUsers.php(51): App\\Http\\Controllers\\Auth\\LoginController->sendLoginResponse()
+#19 /var/www/html/vendor/laravel/framework/src/Illuminate/Routing/Controller.php(54): App\\Http\\Controllers\\Auth\\LoginController->login()
+#20 /var/www/html/vendor/laravel/framework/src/Illuminate/Routing/ControllerDispatcher.php(43): Illuminate\\Routing\\Controller->callAction()
+#21 /var/www/html/vendor/laravel/framework/src/Illuminate/Routing/Route.php(259): Illuminate\\Routing\\ControllerDispatcher->dispatch()
+#22 /var/www/html/vendor/laravel/framework/src/Illuminate/Routing/Route.php(205): Illuminate\\Routing\\Route->runController()
+#23 /var/www/html/vendor/laravel/framework/src/Illuminate/Routing/Router.php(798): Illuminate\\Routing\\Route->run()
+#24 /var/www/html/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(141): Illuminate\\Routing\\Router->Illuminate\\Routing\\{closure}()
+#25 /var/www/html/app/Http/Middleware/RedirectIfAuthenticated.php(30): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#26 /var/www/html/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(180): App\\Http\\Middleware\\RedirectIfAuthenticated->handle()
+#27 /var/www/html/app/Http/Middleware/IsInstalled.php(50): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#28 /var/www/html/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(180): App\\Http\\Middleware\\IsInstalled->handle()
+#29 /var/www/html/vendor/laravel/framework/src/Illuminate/Routing/Middleware/SubstituteBindings.php(50): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#30 /var/www/html/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(180): Illuminate\\Routing\\Middleware\\SubstituteBindings->handle()
+#31 /var/www/html/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/VerifyCsrfToken.php(78): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#32 /var/www/html/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(180): Illuminate\\Foundation\\Http\\Middleware\\VerifyCsrfToken->handle()
+#33 /var/www/html/vendor/laravel/framework/src/Illuminate/View/Middleware/ShareErrorsFromSession.php(49): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#34 /var/www/html/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(180): Illuminate\\View\\Middleware\\ShareErrorsFromSession->handle()
+#35 /var/www/html/vendor/laravel/framework/src/Illuminate/Session/Middleware/StartSession.php(121): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#36 /var/www/html/vendor/laravel/framework/src/Illuminate/Session/Middleware/StartSession.php(64): Illuminate\\Session\\Middleware\\StartSession->handleStatefulRequest()
+#37 /var/www/html/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(180): Illuminate\\Session\\Middleware\\StartSession->handle()
+#38 /var/www/html/vendor/laravel/framework/src/Illuminate/Cookie/Middleware/AddQueuedCookiesToResponse.php(37): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#39 /var/www/html/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(180): Illuminate\\Cookie\\Middleware\\AddQueuedCookiesToResponse->handle()
+#40 /var/www/html/vendor/laravel/framework/src/Illuminate/Cookie/Middleware/EncryptCookies.php(67): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#41 /var/www/html/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(180): Illuminate\\Cookie\\Middleware\\EncryptCookies->handle()
+#42 /var/www/html/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(116): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#43 /var/www/html/vendor/laravel/framework/src/Illuminate/Routing/Router.php(797): Illuminate\\Pipeline\\Pipeline->then()
+#44 /var/www/html/vendor/laravel/framework/src/Illuminate/Routing/Router.php(776): Illuminate\\Routing\\Router->runRouteWithinStack()
+#45 /var/www/html/vendor/laravel/framework/src/Illuminate/Routing/Router.php(740): Illuminate\\Routing\\Router->runRoute()
+#46 /var/www/html/vendor/laravel/framework/src/Illuminate/Routing/Router.php(729): Illuminate\\Routing\\Router->dispatchToRoute()
+#47 /var/www/html/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(190): Illuminate\\Routing\\Router->dispatch()
+#48 /var/www/html/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(141): Illuminate\\Foundation\\Http\\Kernel->Illuminate\\Foundation\\Http\\{closure}()
+#49 /var/www/html/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/TransformsRequest.php(21): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#50 /var/www/html/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/ConvertEmptyStringsToNull.php(31): Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest->handle()
+#51 /var/www/html/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(180): Illuminate\\Foundation\\Http\\Middleware\\ConvertEmptyStringsToNull->handle()
+#52 /var/www/html/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/TransformsRequest.php(21): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#53 /var/www/html/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/TrimStrings.php(40): Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest->handle()
+#54 /var/www/html/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(180): Illuminate\\Foundation\\Http\\Middleware\\TrimStrings->handle()
+#55 /var/www/html/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/ValidatePostSize.php(27): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#56 /var/www/html/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(180): Illuminate\\Foundation\\Http\\Middleware\\ValidatePostSize->handle()
+#57 /var/www/html/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/PreventRequestsDuringMaintenance.php(86): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#58 /var/www/html/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(180): Illuminate\\Foundation\\Http\\Middleware\\PreventRequestsDuringMaintenance->handle()
+#59 /var/www/html/vendor/laravel/framework/src/Illuminate/Http/Middleware/HandleCors.php(49): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#60 /var/www/html/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(180): Illuminate\\Http\\Middleware\\HandleCors->handle()
+#61 /var/www/html/vendor/laravel/framework/src/Illuminate/Http/Middleware/TrustProxies.php(39): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#62 /var/www/html/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(180): Illuminate\\Http\\Middleware\\TrustProxies->handle()
+#63 /var/www/html/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(116): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#64 /var/www/html/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(165): Illuminate\\Pipeline\\Pipeline->then()
+#65 /var/www/html/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(134): Illuminate\\Foundation\\Http\\Kernel->sendRequestThroughRouter()
+#66 /var/www/html/public/index.php(51): Illuminate\\Foundation\\Http\\Kernel->handle()
+#67 {main}
+"} 
+[2025-10-05 18:41:16] live.ERROR: Failed to authenticate on SMTP server with username "46dd2b001@smtp-brevo.com" using the following authenticators: "CRAM-MD5", "LOGIN", "PLAIN". Authenticator "CRAM-MD5" returned "Expected response code "235" but got code "535", with message "535 5.7.8 Authentication failed".". Authenticator "LOGIN" returned "Expected response code "235" but got code "535", with message "535 5.7.8 Authentication failed".". Authenticator "PLAIN" returned "Expected response code "235" but got code "535", with message "535 5.7.8 Authentication failed".". {"exception":"[object] (Symfony\\Component\\Mailer\\Exception\\TransportException(code: 535): Failed to authenticate on SMTP server with username \"46dd2b001@smtp-brevo.com\" using the following authenticators: \"CRAM-MD5\", \"LOGIN\", \"PLAIN\". Authenticator \"CRAM-MD5\" returned \"Expected response code \"235\" but got code \"535\", with message \"535 5.7.8 Authentication failed\".\". Authenticator \"LOGIN\" returned \"Expected response code \"235\" but got code \"535\", with message \"535 5.7.8 Authentication failed\".\". Authenticator \"PLAIN\" returned \"Expected response code \"235\" but got code \"535\", with message \"535 5.7.8 Authentication failed\".\". at /var/www/html/vendor/symfony/mailer/Transport/Smtp/EsmtpTransport.php:226)
+[stacktrace]
+#0 /var/www/html/vendor/symfony/mailer/Transport/Smtp/EsmtpTransport.php(161): Symfony\\Component\\Mailer\\Transport\\Smtp\\EsmtpTransport->handleAuth()
+#1 /var/www/html/vendor/symfony/mailer/Transport/Smtp/EsmtpTransport.php(118): Symfony\\Component\\Mailer\\Transport\\Smtp\\EsmtpTransport->doEhloCommand()
+#2 /var/www/html/vendor/symfony/mailer/Transport/Smtp/SmtpTransport.php(254): Symfony\\Component\\Mailer\\Transport\\Smtp\\EsmtpTransport->executeCommand()
+#3 /var/www/html/vendor/symfony/mailer/Transport/Smtp/SmtpTransport.php(277): Symfony\\Component\\Mailer\\Transport\\Smtp\\SmtpTransport->doHeloCommand()
+#4 /var/www/html/vendor/symfony/mailer/Transport/Smtp/SmtpTransport.php(210): Symfony\\Component\\Mailer\\Transport\\Smtp\\SmtpTransport->start()
+#5 /var/www/html/vendor/symfony/mailer/Transport/AbstractTransport.php(69): Symfony\\Component\\Mailer\\Transport\\Smtp\\SmtpTransport->doSend()
+#6 /var/www/html/vendor/symfony/mailer/Transport/Smtp/SmtpTransport.php(137): Symfony\\Component\\Mailer\\Transport\\AbstractTransport->send()
+#7 /var/www/html/vendor/laravel/framework/src/Illuminate/Mail/Mailer.php(523): Symfony\\Component\\Mailer\\Transport\\Smtp\\SmtpTransport->send()
+#8 /var/www/html/vendor/laravel/framework/src/Illuminate/Mail/Mailer.php(287): Illuminate\\Mail\\Mailer->sendSymfonyMessage()
+#9 /var/www/html/vendor/laravel/framework/src/Illuminate/Mail/Mailable.php(204): Illuminate\\Mail\\Mailer->send()
+#10 /var/www/html/vendor/laravel/framework/src/Illuminate/Support/Traits/Localizable.php(19): Illuminate\\Mail\\Mailable->Illuminate\\Mail\\{closure}()
+#11 /var/www/html/vendor/laravel/framework/src/Illuminate/Mail/Mailable.php(197): Illuminate\\Mail\\Mailable->withLocale()
+#12 /var/www/html/vendor/laravel/framework/src/Illuminate/Mail/Mailer.php(309): Illuminate\\Mail\\Mailable->send()
+#13 /var/www/html/vendor/laravel/framework/src/Illuminate/Mail/Mailer.php(253): Illuminate\\Mail\\Mailer->sendMailable()
+#14 /var/www/html/vendor/laravel/framework/src/Illuminate/Mail/PendingMail.php(124): Illuminate\\Mail\\Mailer->send()
+#15 /var/www/html/app/Http/Controllers/Auth/LoginController.php(157): Illuminate\\Mail\\PendingMail->send()
+#16 /var/www/html/app/Http/Controllers/Auth/LoginController.php(131): App\\Http\\Controllers\\Auth\\LoginController->generateOtp()
+#17 /var/www/html/vendor/laravel/ui/auth-backend/AuthenticatesUsers.php(114): App\\Http\\Controllers\\Auth\\LoginController->authenticated()
+#18 /var/www/html/vendor/laravel/ui/auth-backend/AuthenticatesUsers.php(51): App\\Http\\Controllers\\Auth\\LoginController->sendLoginResponse()
+#19 /var/www/html/vendor/laravel/framework/src/Illuminate/Routing/Controller.php(54): App\\Http\\Controllers\\Auth\\LoginController->login()
+#20 /var/www/html/vendor/laravel/framework/src/Illuminate/Routing/ControllerDispatcher.php(43): Illuminate\\Routing\\Controller->callAction()
+#21 /var/www/html/vendor/laravel/framework/src/Illuminate/Routing/Route.php(259): Illuminate\\Routing\\ControllerDispatcher->dispatch()
+#22 /var/www/html/vendor/laravel/framework/src/Illuminate/Routing/Route.php(205): Illuminate\\Routing\\Route->runController()
+#23 /var/www/html/vendor/laravel/framework/src/Illuminate/Routing/Router.php(798): Illuminate\\Routing\\Route->run()
+#24 /var/www/html/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(141): Illuminate\\Routing\\Router->Illuminate\\Routing\\{closure}()
+#25 /var/www/html/app/Http/Middleware/RedirectIfAuthenticated.php(30): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#26 /var/www/html/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(180): App\\Http\\Middleware\\RedirectIfAuthenticated->handle()
+#27 /var/www/html/app/Http/Middleware/IsInstalled.php(50): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#28 /var/www/html/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(180): App\\Http\\Middleware\\IsInstalled->handle()
+#29 /var/www/html/vendor/laravel/framework/src/Illuminate/Routing/Middleware/SubstituteBindings.php(50): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#30 /var/www/html/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(180): Illuminate\\Routing\\Middleware\\SubstituteBindings->handle()
+#31 /var/www/html/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/VerifyCsrfToken.php(78): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#32 /var/www/html/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(180): Illuminate\\Foundation\\Http\\Middleware\\VerifyCsrfToken->handle()
+#33 /var/www/html/vendor/laravel/framework/src/Illuminate/View/Middleware/ShareErrorsFromSession.php(49): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#34 /var/www/html/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(180): Illuminate\\View\\Middleware\\ShareErrorsFromSession->handle()
+#35 /var/www/html/vendor/laravel/framework/src/Illuminate/Session/Middleware/StartSession.php(121): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#36 /var/www/html/vendor/laravel/framework/src/Illuminate/Session/Middleware/StartSession.php(64): Illuminate\\Session\\Middleware\\StartSession->handleStatefulRequest()
+#37 /var/www/html/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(180): Illuminate\\Session\\Middleware\\StartSession->handle()
+#38 /var/www/html/vendor/laravel/framework/src/Illuminate/Cookie/Middleware/AddQueuedCookiesToResponse.php(37): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#39 /var/www/html/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(180): Illuminate\\Cookie\\Middleware\\AddQueuedCookiesToResponse->handle()
+#40 /var/www/html/vendor/laravel/framework/src/Illuminate/Cookie/Middleware/EncryptCookies.php(67): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#41 /var/www/html/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(180): Illuminate\\Cookie\\Middleware\\EncryptCookies->handle()
+#42 /var/www/html/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(116): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#43 /var/www/html/vendor/laravel/framework/src/Illuminate/Routing/Router.php(797): Illuminate\\Pipeline\\Pipeline->then()
+#44 /var/www/html/vendor/laravel/framework/src/Illuminate/Routing/Router.php(776): Illuminate\\Routing\\Router->runRouteWithinStack()
+#45 /var/www/html/vendor/laravel/framework/src/Illuminate/Routing/Router.php(740): Illuminate\\Routing\\Router->runRoute()
+#46 /var/www/html/vendor/laravel/framework/src/Illuminate/Routing/Router.php(729): Illuminate\\Routing\\Router->dispatchToRoute()
+#47 /var/www/html/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(190): Illuminate\\Routing\\Router->dispatch()
+#48 /var/www/html/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(141): Illuminate\\Foundation\\Http\\Kernel->Illuminate\\Foundation\\Http\\{closure}()
+#49 /var/www/html/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/TransformsRequest.php(21): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#50 /var/www/html/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/ConvertEmptyStringsToNull.php(31): Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest->handle()
+#51 /var/www/html/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(180): Illuminate\\Foundation\\Http\\Middleware\\ConvertEmptyStringsToNull->handle()
+#52 /var/www/html/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/TransformsRequest.php(21): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#53 /var/www/html/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/TrimStrings.php(40): Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest->handle()
+#54 /var/www/html/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(180): Illuminate\\Foundation\\Http\\Middleware\\TrimStrings->handle()
+#55 /var/www/html/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/ValidatePostSize.php(27): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#56 /var/www/html/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(180): Illuminate\\Foundation\\Http\\Middleware\\ValidatePostSize->handle()
+#57 /var/www/html/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/PreventRequestsDuringMaintenance.php(86): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#58 /var/www/html/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(180): Illuminate\\Foundation\\Http\\Middleware\\PreventRequestsDuringMaintenance->handle()
+#59 /var/www/html/vendor/laravel/framework/src/Illuminate/Http/Middleware/HandleCors.php(49): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#60 /var/www/html/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(180): Illuminate\\Http\\Middleware\\HandleCors->handle()
+#61 /var/www/html/vendor/laravel/framework/src/Illuminate/Http/Middleware/TrustProxies.php(39): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#62 /var/www/html/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(180): Illuminate\\Http\\Middleware\\TrustProxies->handle()
+#63 /var/www/html/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(116): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#64 /var/www/html/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(165): Illuminate\\Pipeline\\Pipeline->then()
+#65 /var/www/html/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(134): Illuminate\\Foundation\\Http\\Kernel->sendRequestThroughRouter()
+#66 /var/www/html/public/index.php(51): Illuminate\\Foundation\\Http\\Kernel->handle()
+#67 {main}
+"} 
+[2025-10-05 18:41:39] live.ERROR: Failed to authenticate on SMTP server with username "46dd2b001@smtp-brevo.com" using the following authenticators: "CRAM-MD5", "LOGIN", "PLAIN". Authenticator "CRAM-MD5" returned "Expected response code "235" but got code "535", with message "535 5.7.8 Authentication failed".". Authenticator "LOGIN" returned "Expected response code "235" but got code "535", with message "535 5.7.8 Authentication failed".". Authenticator "PLAIN" returned "Expected response code "235" but got code "535", with message "535 5.7.8 Authentication failed".". {"exception":"[object] (Symfony\\Component\\Mailer\\Exception\\TransportException(code: 535): Failed to authenticate on SMTP server with username \"46dd2b001@smtp-brevo.com\" using the following authenticators: \"CRAM-MD5\", \"LOGIN\", \"PLAIN\". Authenticator \"CRAM-MD5\" returned \"Expected response code \"235\" but got code \"535\", with message \"535 5.7.8 Authentication failed\".\". Authenticator \"LOGIN\" returned \"Expected response code \"235\" but got code \"535\", with message \"535 5.7.8 Authentication failed\".\". Authenticator \"PLAIN\" returned \"Expected response code \"235\" but got code \"535\", with message \"535 5.7.8 Authentication failed\".\". at /var/www/html/vendor/symfony/mailer/Transport/Smtp/EsmtpTransport.php:226)
+[stacktrace]
+#0 /var/www/html/vendor/symfony/mailer/Transport/Smtp/EsmtpTransport.php(161): Symfony\\Component\\Mailer\\Transport\\Smtp\\EsmtpTransport->handleAuth()
+#1 /var/www/html/vendor/symfony/mailer/Transport/Smtp/EsmtpTransport.php(118): Symfony\\Component\\Mailer\\Transport\\Smtp\\EsmtpTransport->doEhloCommand()
+#2 /var/www/html/vendor/symfony/mailer/Transport/Smtp/SmtpTransport.php(254): Symfony\\Component\\Mailer\\Transport\\Smtp\\EsmtpTransport->executeCommand()
+#3 /var/www/html/vendor/symfony/mailer/Transport/Smtp/SmtpTransport.php(277): Symfony\\Component\\Mailer\\Transport\\Smtp\\SmtpTransport->doHeloCommand()
+#4 /var/www/html/vendor/symfony/mailer/Transport/Smtp/SmtpTransport.php(210): Symfony\\Component\\Mailer\\Transport\\Smtp\\SmtpTransport->start()
+#5 /var/www/html/vendor/symfony/mailer/Transport/AbstractTransport.php(69): Symfony\\Component\\Mailer\\Transport\\Smtp\\SmtpTransport->doSend()
+#6 /var/www/html/vendor/symfony/mailer/Transport/Smtp/SmtpTransport.php(137): Symfony\\Component\\Mailer\\Transport\\AbstractTransport->send()
+#7 /var/www/html/vendor/laravel/framework/src/Illuminate/Mail/Mailer.php(523): Symfony\\Component\\Mailer\\Transport\\Smtp\\SmtpTransport->send()
+#8 /var/www/html/vendor/laravel/framework/src/Illuminate/Mail/Mailer.php(287): Illuminate\\Mail\\Mailer->sendSymfonyMessage()
+#9 /var/www/html/vendor/laravel/framework/src/Illuminate/Mail/Mailable.php(204): Illuminate\\Mail\\Mailer->send()
+#10 /var/www/html/vendor/laravel/framework/src/Illuminate/Support/Traits/Localizable.php(19): Illuminate\\Mail\\Mailable->Illuminate\\Mail\\{closure}()
+#11 /var/www/html/vendor/laravel/framework/src/Illuminate/Mail/Mailable.php(197): Illuminate\\Mail\\Mailable->withLocale()
+#12 /var/www/html/vendor/laravel/framework/src/Illuminate/Mail/Mailer.php(309): Illuminate\\Mail\\Mailable->send()
+#13 /var/www/html/vendor/laravel/framework/src/Illuminate/Mail/Mailer.php(253): Illuminate\\Mail\\Mailer->sendMailable()
+#14 /var/www/html/vendor/laravel/framework/src/Illuminate/Mail/PendingMail.php(124): Illuminate\\Mail\\Mailer->send()
+#15 /var/www/html/app/Http/Controllers/Auth/LoginController.php(157): Illuminate\\Mail\\PendingMail->send()
+#16 /var/www/html/app/Http/Controllers/Auth/LoginController.php(131): App\\Http\\Controllers\\Auth\\LoginController->generateOtp()
+#17 /var/www/html/vendor/laravel/ui/auth-backend/AuthenticatesUsers.php(114): App\\Http\\Controllers\\Auth\\LoginController->authenticated()
+#18 /var/www/html/vendor/laravel/ui/auth-backend/AuthenticatesUsers.php(51): App\\Http\\Controllers\\Auth\\LoginController->sendLoginResponse()
+#19 /var/www/html/vendor/laravel/framework/src/Illuminate/Routing/Controller.php(54): App\\Http\\Controllers\\Auth\\LoginController->login()
+#20 /var/www/html/vendor/laravel/framework/src/Illuminate/Routing/ControllerDispatcher.php(43): Illuminate\\Routing\\Controller->callAction()
+#21 /var/www/html/vendor/laravel/framework/src/Illuminate/Routing/Route.php(259): Illuminate\\Routing\\ControllerDispatcher->dispatch()
+#22 /var/www/html/vendor/laravel/framework/src/Illuminate/Routing/Route.php(205): Illuminate\\Routing\\Route->runController()
+#23 /var/www/html/vendor/laravel/framework/src/Illuminate/Routing/Router.php(798): Illuminate\\Routing\\Route->run()
+#24 /var/www/html/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(141): Illuminate\\Routing\\Router->Illuminate\\Routing\\{closure}()
+#25 /var/www/html/app/Http/Middleware/RedirectIfAuthenticated.php(30): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#26 /var/www/html/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(180): App\\Http\\Middleware\\RedirectIfAuthenticated->handle()
+#27 /var/www/html/app/Http/Middleware/IsInstalled.php(50): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#28 /var/www/html/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(180): App\\Http\\Middleware\\IsInstalled->handle()
+#29 /var/www/html/vendor/laravel/framework/src/Illuminate/Routing/Middleware/SubstituteBindings.php(50): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#30 /var/www/html/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(180): Illuminate\\Routing\\Middleware\\SubstituteBindings->handle()
+#31 /var/www/html/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/VerifyCsrfToken.php(78): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#32 /var/www/html/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(180): Illuminate\\Foundation\\Http\\Middleware\\VerifyCsrfToken->handle()
+#33 /var/www/html/vendor/laravel/framework/src/Illuminate/View/Middleware/ShareErrorsFromSession.php(49): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#34 /var/www/html/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(180): Illuminate\\View\\Middleware\\ShareErrorsFromSession->handle()
+#35 /var/www/html/vendor/laravel/framework/src/Illuminate/Session/Middleware/StartSession.php(121): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#36 /var/www/html/vendor/laravel/framework/src/Illuminate/Session/Middleware/StartSession.php(64): Illuminate\\Session\\Middleware\\StartSession->handleStatefulRequest()
+#37 /var/www/html/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(180): Illuminate\\Session\\Middleware\\StartSession->handle()
+#38 /var/www/html/vendor/laravel/framework/src/Illuminate/Cookie/Middleware/AddQueuedCookiesToResponse.php(37): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#39 /var/www/html/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(180): Illuminate\\Cookie\\Middleware\\AddQueuedCookiesToResponse->handle()
+#40 /var/www/html/vendor/laravel/framework/src/Illuminate/Cookie/Middleware/EncryptCookies.php(67): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#41 /var/www/html/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(180): Illuminate\\Cookie\\Middleware\\EncryptCookies->handle()
+#42 /var/www/html/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(116): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#43 /var/www/html/vendor/laravel/framework/src/Illuminate/Routing/Router.php(797): Illuminate\\Pipeline\\Pipeline->then()
+#44 /var/www/html/vendor/laravel/framework/src/Illuminate/Routing/Router.php(776): Illuminate\\Routing\\Router->runRouteWithinStack()
+#45 /var/www/html/vendor/laravel/framework/src/Illuminate/Routing/Router.php(740): Illuminate\\Routing\\Router->runRoute()
+#46 /var/www/html/vendor/laravel/framework/src/Illuminate/Routing/Router.php(729): Illuminate\\Routing\\Router->dispatchToRoute()
+#47 /var/www/html/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(190): Illuminate\\Routing\\Router->dispatch()
+#48 /var/www/html/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(141): Illuminate\\Foundation\\Http\\Kernel->Illuminate\\Foundation\\Http\\{closure}()
+#49 /var/www/html/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/TransformsRequest.php(21): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#50 /var/www/html/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/ConvertEmptyStringsToNull.php(31): Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest->handle()
+#51 /var/www/html/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(180): Illuminate\\Foundation\\Http\\Middleware\\ConvertEmptyStringsToNull->handle()
+#52 /var/www/html/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/TransformsRequest.php(21): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#53 /var/www/html/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/TrimStrings.php(40): Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest->handle()
+#54 /var/www/html/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(180): Illuminate\\Foundation\\Http\\Middleware\\TrimStrings->handle()
+#55 /var/www/html/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/ValidatePostSize.php(27): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#56 /var/www/html/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(180): Illuminate\\Foundation\\Http\\Middleware\\ValidatePostSize->handle()
+#57 /var/www/html/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/PreventRequestsDuringMaintenance.php(86): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#58 /var/www/html/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(180): Illuminate\\Foundation\\Http\\Middleware\\PreventRequestsDuringMaintenance->handle()
+#59 /var/www/html/vendor/laravel/framework/src/Illuminate/Http/Middleware/HandleCors.php(49): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#60 /var/www/html/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(180): Illuminate\\Http\\Middleware\\HandleCors->handle()
+#61 /var/www/html/vendor/laravel/framework/src/Illuminate/Http/Middleware/TrustProxies.php(39): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#62 /var/www/html/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(180): Illuminate\\Http\\Middleware\\TrustProxies->handle()
+#63 /var/www/html/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(116): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#64 /var/www/html/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(165): Illuminate\\Pipeline\\Pipeline->then()
+#65 /var/www/html/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(134): Illuminate\\Foundation\\Http\\Kernel->sendRequestThroughRouter()
+#66 /var/www/html/public/index.php(51): Illuminate\\Foundation\\Http\\Kernel->handle()
+#67 {main}
+"} 
+[2025-10-05 18:44:18] live.INFO: About to call POS Controller {"authenticated_user_id":1,"business_id":1,"request_method":"POST","request_data_keys":["location_id","contact_id","products","payment","discount_amount","discount_type","shipping_charges","sale_note","status","is_direct_sale","transaction_date","invoice_no","is_quotation","final_total","tax_rate_id","shipping_details","additional_notes","staff_note","commission_agent"],"products_count":1,"location_id":503,"contact_id":13} 
+[2025-10-05 18:45:07] live.INFO: About to call POS Controller {"authenticated_user_id":1,"business_id":1,"request_method":"POST","request_data_keys":["location_id","contact_id","products","payment","discount_amount","discount_type","shipping_charges","sale_note","status","is_direct_sale","transaction_date","invoice_no","is_quotation","final_total","tax_rate_id","shipping_details","additional_notes","staff_note","commission_agent"],"products_count":1,"location_id":503,"contact_id":13} 
+[2025-10-05 18:49:50] live.WARNING: VariationGroupPrice not found {"variation_id":"175","price_group_id":"NaN"} 
+[2025-10-05 18:49:58] live.WARNING: VariationGroupPrice not found {"variation_id":"123","price_group_id":"NaN"} 
+[2025-10-05 18:50:02] live.WARNING: VariationGroupPrice not found {"variation_id":"34","price_group_id":"NaN"} 
+[2025-10-05 18:50:08] live.WARNING: VariationGroupPrice not found {"variation_id":"142","price_group_id":"NaN"} 
+[2025-10-05 18:50:28] live.WARNING: VariationGroupPrice not found {"variation_id":"306","price_group_id":"NaN"} 
+[2025-10-05 18:53:25] live.WARNING: VariationGroupPrice not found {"variation_id":"410","price_group_id":"NaN"} 
+[2025-10-05 18:56:19] live.INFO: About to call POS Controller {"authenticated_user_id":1,"business_id":1,"request_method":"POST","request_data_keys":["location_id","contact_id","products","payment","discount_amount","discount_type","shipping_charges","sale_note","status","is_direct_sale","transaction_date","invoice_no","is_quotation","final_total","tax_rate_id","shipping_details","additional_notes","staff_note","commission_agent"],"products_count":1,"location_id":503,"contact_id":13} 
+[2025-10-05 18:59:22] live.INFO: About to call POS Controller {"authenticated_user_id":1,"business_id":1,"request_method":"POST","request_data_keys":["location_id","contact_id","products","payment","discount_amount","discount_type","shipping_charges","sale_note","status","is_direct_sale","transaction_date","invoice_no","is_quotation","final_total","tax_rate_id","shipping_details","additional_notes","staff_note","commission_agent"],"products_count":1,"location_id":503,"contact_id":13} 
+[2025-10-05 19:03:21] live.WARNING: VariationGroupPrice not found {"variation_id":"179","price_group_id":"NaN"} 
+[2025-10-05 19:04:35] live.WARNING: VariationGroupPrice not found {"variation_id":"179","price_group_id":"NaN"} 
+[2025-10-05 19:07:15] live.WARNING: VariationGroupPrice not found {"variation_id":"56","price_group_id":"NaN"} 
+[2025-10-05 19:08:26] live.WARNING: VariationGroupPrice not found {"variation_id":"516","price_group_id":"NaN"} 
+[2025-10-05 19:08:48] live.WARNING: VariationGroupPrice not found {"variation_id":"516","price_group_id":"NaN"} 
+[2025-10-05 19:09:30] live.WARNING: VariationGroupPrice not found {"variation_id":"670","price_group_id":"NaN"} 
+[2025-10-05 19:10:07] live.INFO: About to call POS Controller {"authenticated_user_id":1,"business_id":1,"request_method":"POST","request_data_keys":["location_id","contact_id","products","payment","discount_amount","discount_type","shipping_charges","sale_note","status","is_direct_sale","transaction_date","invoice_no","is_quotation","final_total","tax_rate_id","shipping_details","additional_notes","staff_note","commission_agent"],"products_count":1,"location_id":503,"contact_id":13} 
+[2025-10-05 19:11:18] live.WARNING: VariationGroupPrice not found {"variation_id":"109","price_group_id":"NaN"} 
+[2025-10-05 19:11:23] live.WARNING: VariationGroupPrice not found {"variation_id":"657","price_group_id":"NaN"} 
+[2025-10-05 19:11:32] live.WARNING: VariationGroupPrice not found {"variation_id":"623","price_group_id":"NaN"} 
+[2025-10-05 19:11:33] live.WARNING: VariationGroupPrice not found {"variation_id":"109","price_group_id":"NaN"} 
+[2025-10-05 19:11:33] live.WARNING: VariationGroupPrice not found {"variation_id":"654","price_group_id":"NaN"} 
+[2025-10-05 19:17:23] live.WARNING: VariationGroupPrice not found {"variation_id":"179","price_group_id":"NaN"} 
+[2025-10-05 19:17:56] live.WARNING: VariationGroupPrice not found {"variation_id":"516","price_group_id":"NaN"} 
+[2025-10-05 19:18:25] live.WARNING: VariationGroupPrice not found {"variation_id":"179","price_group_id":"NaN"} 
+[2025-10-05 19:19:30] live.WARNING: VariationGroupPrice not found {"variation_id":"623","price_group_id":"NaN"} 
+[2025-10-05 19:19:30] live.WARNING: VariationGroupPrice not found {"variation_id":"690","price_group_id":"NaN"} 
+[2025-10-05 19:19:32] live.WARNING: VariationGroupPrice not found {"variation_id":"657","price_group_id":"NaN"} 
+[2025-10-05 19:19:34] live.WARNING: VariationGroupPrice not found {"variation_id":"689","price_group_id":"NaN"} 
+[2025-10-05 19:21:38] live.WARNING: VariationGroupPrice not found {"variation_id":"623","price_group_id":"NaN"} 
+[2025-10-05 19:21:40] live.WARNING: VariationGroupPrice not found {"variation_id":"690","price_group_id":"NaN"} 
+[2025-10-05 19:24:30] live.WARNING: VariationGroupPrice not found {"variation_id":"823","price_group_id":"NaN"} 
+[2025-10-05 19:24:44] live.WARNING: VariationGroupPrice not found {"variation_id":"410","price_group_id":"NaN"} 
+[2025-10-05 19:25:01] live.WARNING: VariationGroupPrice not found {"variation_id":"59","price_group_id":"NaN"} 
+[2025-10-05 19:25:08] live.INFO: About to call POS Controller {"authenticated_user_id":1,"business_id":1,"request_method":"POST","request_data_keys":["location_id","contact_id","products","payment","discount_amount","discount_type","shipping_charges","sale_note","status","is_direct_sale","transaction_date","invoice_no","is_quotation","final_total","tax_rate_id","shipping_details","additional_notes","staff_note","commission_agent"],"products_count":1,"location_id":503,"contact_id":13} 
+[2025-10-05 19:26:22] live.INFO: About to call POS Controller {"authenticated_user_id":1,"business_id":1,"request_method":"POST","request_data_keys":["location_id","contact_id","products","payment","discount_amount","discount_type","shipping_charges","sale_note","status","is_direct_sale","transaction_date","invoice_no","is_quotation","final_total","tax_rate_id","shipping_details","additional_notes","staff_note","commission_agent"],"products_count":1,"location_id":503,"contact_id":13} 
+[2025-10-05 19:33:36] live.INFO: About to call POS Controller {"authenticated_user_id":1,"business_id":1,"request_method":"POST","request_data_keys":["location_id","contact_id","products","payment","discount_amount","discount_type","shipping_charges","sale_note","status","is_direct_sale","transaction_date","invoice_no","is_quotation","final_total","tax_rate_id","shipping_details","additional_notes","staff_note","commission_agent"],"products_count":1,"location_id":503,"contact_id":13} 
+[2025-10-05 19:44:37] live.INFO: About to call POS Controller {"authenticated_user_id":1,"business_id":1,"request_method":"POST","request_data_keys":["location_id","contact_id","products","payment","discount_amount","discount_type","shipping_charges","sale_note","status","is_direct_sale","transaction_date","invoice_no","is_quotation","final_total","tax_rate_id","shipping_details","additional_notes","staff_note","commission_agent"],"products_count":1,"location_id":503,"contact_id":13} 
+[2025-10-05 19:54:10] live.WARNING: VariationGroupPrice not found {"variation_id":"689","price_group_id":"NaN"} 
+[2025-10-05 19:54:55] live.WARNING: VariationGroupPrice not found {"variation_id":"401","price_group_id":"NaN"} 
+[2025-10-05 19:55:01] live.WARNING: VariationGroupPrice not found {"variation_id":"659","price_group_id":"NaN"} 
+[2025-10-05 19:55:02] live.WARNING: VariationGroupPrice not found {"variation_id":"654","price_group_id":"NaN"} 
+[2025-10-05 19:55:03] live.WARNING: VariationGroupPrice not found {"variation_id":"109","price_group_id":"NaN"} 
+[2025-10-05 19:55:03] live.WARNING: VariationGroupPrice not found {"variation_id":"232","price_group_id":"NaN"} 
+[2025-10-05 19:55:06] live.WARNING: VariationGroupPrice not found {"variation_id":"697","price_group_id":"NaN"} 
+[2025-10-05 19:55:06] live.WARNING: VariationGroupPrice not found {"variation_id":"663","price_group_id":"NaN"} 
+[2025-10-05 19:55:06] live.WARNING: VariationGroupPrice not found {"variation_id":"418","price_group_id":"NaN"} 
+[2025-10-05 19:58:25] live.WARNING: VariationGroupPrice not found {"variation_id":"761","price_group_id":"NaN"} 
+[2025-10-05 20:02:13] live.WARNING: VariationGroupPrice not found {"variation_id":"624","price_group_id":"NaN"} 
+[2025-10-05 20:02:14] live.WARNING: VariationGroupPrice not found {"variation_id":"239","price_group_id":"NaN"} 
+[2025-10-05 20:03:01] live.INFO: About to call POS Controller {"authenticated_user_id":1,"business_id":1,"request_method":"POST","request_data_keys":["location_id","contact_id","products","payment","discount_amount","discount_type","shipping_charges","sale_note","status","is_direct_sale","transaction_date","invoice_no","is_quotation","final_total","tax_rate_id","shipping_details","additional_notes","staff_note","commission_agent"],"products_count":1,"location_id":503,"contact_id":13} 
+[2025-10-05 20:05:26] live.WARNING: VariationGroupPrice not found {"variation_id":"229","price_group_id":"NaN"} 
+[2025-10-05 20:08:43] live.WARNING: VariationGroupPrice not found {"variation_id":"818","price_group_id":"NaN"} 
+[2025-10-05 20:09:36] live.EMERGENCY: ERROR: NOT ALLOWED: Mismatch between sold and purchase quantity. Product: FRESH WATER MELON SKU: 0818 Quantity: 2195 Business: Agro Mart Location: Agro Mart  
+[2025-10-05 20:09:36] live.EMERGENCY: File:/var/www/html/app/Utils/TransactionUtil.phpLine:3444Message:ERROR: NOT ALLOWED: Mismatch between sold and purchase quantity. Product: FRESH WATER MELON SKU: 0818 Quantity: 2195  
+[2025-10-05 20:10:11] live.EMERGENCY: ERROR: NOT ALLOWED: Mismatch between sold and purchase quantity. Product: FRESH WATER MELON SKU: 0818 Quantity: 2195 Business: Agro Mart Location: Agro Mart  
+[2025-10-05 20:10:11] live.EMERGENCY: File:/var/www/html/app/Utils/TransactionUtil.phpLine:3444Message:ERROR: NOT ALLOWED: Mismatch between sold and purchase quantity. Product: FRESH WATER MELON SKU: 0818 Quantity: 2195  
+[2025-10-05 20:10:40] live.INFO: About to call POS Controller {"authenticated_user_id":1,"business_id":1,"request_method":"POST","request_data_keys":["location_id","contact_id","products","payment","discount_amount","discount_type","shipping_charges","sale_note","status","is_direct_sale","transaction_date","invoice_no","is_quotation","final_total","tax_rate_id","shipping_details","additional_notes","staff_note","commission_agent"],"products_count":1,"location_id":503,"contact_id":13} 
+[2025-10-05 20:12:13] live.WARNING: VariationGroupPrice not found {"variation_id":"818","price_group_id":"NaN"} 
+[2025-10-05 20:13:45] live.WARNING: VariationGroupPrice not found {"variation_id":"818","price_group_id":"NaN"} 
+[2025-10-05 20:14:46] live.WARNING: VariationGroupPrice not found {"variation_id":"818","price_group_id":"NaN"} 
+[2025-10-05 20:15:02] live.WARNING: VariationGroupPrice not found {"variation_id":"504","price_group_id":"NaN"} 
+[2025-10-05 20:16:22] live.WARNING: VariationGroupPrice not found {"variation_id":"410","price_group_id":"NaN"} 
+[2025-10-05 20:16:44] live.EMERGENCY: ERROR: NOT ALLOWED: Mismatch between sold and purchase quantity. Product: VALHOMAS SMOKED TUNA SKU: 101 418252424 Quantity: 285 Business: Agro Mart Location: Agro Mart  
+[2025-10-05 20:16:44] live.EMERGENCY: File:/var/www/html/app/Utils/TransactionUtil.phpLine:3444Message:ERROR: NOT ALLOWED: Mismatch between sold and purchase quantity. Product: VALHOMAS SMOKED TUNA SKU: 101 418252424 Quantity: 285  
+[2025-10-05 20:16:49] live.EMERGENCY: ERROR: NOT ALLOWED: Mismatch between sold and purchase quantity. Product: VALHOMAS SMOKED TUNA SKU: 101 418252424 Quantity: 285 Business: Agro Mart Location: Agro Mart  
+[2025-10-05 20:16:49] live.EMERGENCY: File:/var/www/html/app/Utils/TransactionUtil.phpLine:3444Message:ERROR: NOT ALLOWED: Mismatch between sold and purchase quantity. Product: VALHOMAS SMOKED TUNA SKU: 101 418252424 Quantity: 285  
+[2025-10-05 20:16:55] live.EMERGENCY: ERROR: NOT ALLOWED: Mismatch between sold and purchase quantity. Product: VALHOMAS SMOKED TUNA SKU: 101 418252424 Quantity: 285 Business: Agro Mart Location: Agro Mart  
+[2025-10-05 20:16:55] live.EMERGENCY: File:/var/www/html/app/Utils/TransactionUtil.phpLine:3444Message:ERROR: NOT ALLOWED: Mismatch between sold and purchase quantity. Product: VALHOMAS SMOKED TUNA SKU: 101 418252424 Quantity: 285  
+[2025-10-05 20:19:07] live.INFO: About to call POS Controller {"authenticated_user_id":1,"business_id":1,"request_method":"POST","request_data_keys":["location_id","contact_id","products","payment","discount_amount","discount_type","shipping_charges","sale_note","status","is_direct_sale","transaction_date","invoice_no","is_quotation","final_total","tax_rate_id","shipping_details","additional_notes","staff_note","commission_agent"],"products_count":1,"location_id":503,"contact_id":13} 
+[2025-10-05 20:22:16] live.INFO: About to call POS Controller {"authenticated_user_id":1,"business_id":1,"request_method":"POST","request_data_keys":["location_id","contact_id","products","payment","discount_amount","discount_type","shipping_charges","sale_note","status","is_direct_sale","transaction_date","invoice_no","is_quotation","final_total","tax_rate_id","shipping_details","additional_notes","staff_note","commission_agent"],"products_count":1,"location_id":503,"contact_id":13} 
+[2025-10-05 20:27:06] live.INFO: About to call POS Controller {"authenticated_user_id":1,"business_id":1,"request_method":"POST","request_data_keys":["location_id","contact_id","products","payment","discount_amount","discount_type","shipping_charges","sale_note","status","is_direct_sale","transaction_date","invoice_no","is_quotation","final_total","tax_rate_id","shipping_details","additional_notes","staff_note","commission_agent"],"products_count":1,"location_id":503,"contact_id":13} 
+[2025-10-05 20:29:41] live.WARNING: VariationGroupPrice not found {"variation_id":"333","price_group_id":"NaN"} 
+[2025-10-05 20:30:59] live.WARNING: VariationGroupPrice not found {"variation_id":"328","price_group_id":"NaN"} 
+[2025-10-05 20:31:39] live.WARNING: VariationGroupPrice not found {"variation_id":"327","price_group_id":"NaN"} 
+[2025-10-05 20:32:15] live.WARNING: VariationGroupPrice not found {"variation_id":"807","price_group_id":"NaN"} 
+[2025-10-05 20:32:56] live.WARNING: VariationGroupPrice not found {"variation_id":"703","price_group_id":"NaN"} 
+[2025-10-05 20:33:43] live.WARNING: VariationGroupPrice not found {"variation_id":"699","price_group_id":"NaN"} 
+[2025-10-05 20:34:21] live.WARNING: VariationGroupPrice not found {"variation_id":"692","price_group_id":"NaN"} 
+[2025-10-05 20:34:29] live.WARNING: VariationGroupPrice not found {"variation_id":"818","price_group_id":"NaN"} 
+[2025-10-05 20:35:10] live.WARNING: VariationGroupPrice not found {"variation_id":"662","price_group_id":"NaN"} 
+[2025-10-05 20:36:24] live.WARNING: VariationGroupPrice not found {"variation_id":"48","price_group_id":"NaN"} 
+[2025-10-05 20:37:19] live.WARNING: VariationGroupPrice not found {"variation_id":"654","price_group_id":"NaN"} 
+[2025-10-05 20:38:01] live.WARNING: VariationGroupPrice not found {"variation_id":"657","price_group_id":"NaN"} 
+[2025-10-05 20:38:34] live.WARNING: VariationGroupPrice not found {"variation_id":"499","price_group_id":"NaN"} 
+[2025-10-05 20:38:39] live.WARNING: VariationGroupPrice not found {"variation_id":"515","price_group_id":"NaN"} 
+[2025-10-05 20:38:43] live.WARNING: VariationGroupPrice not found {"variation_id":"16","price_group_id":"NaN"} 
+[2025-10-05 20:39:07] live.INFO: About to call POS Controller {"authenticated_user_id":1,"business_id":1,"request_method":"POST","request_data_keys":["location_id","contact_id","products","payment","discount_amount","discount_type","shipping_charges","sale_note","status","is_direct_sale","transaction_date","invoice_no","is_quotation","final_total","tax_rate_id","shipping_details","additional_notes","staff_note","commission_agent"],"products_count":1,"location_id":503,"contact_id":13} 
+[2025-10-05 20:39:12] live.WARNING: VariationGroupPrice not found {"variation_id":"659","price_group_id":"NaN"} 
+[2025-10-05 20:39:24] live.WARNING: VariationGroupPrice not found {"variation_id":"573","price_group_id":"NaN"} 
+[2025-10-05 20:40:36] live.WARNING: VariationGroupPrice not found {"variation_id":"672","price_group_id":"NaN"} 
+[2025-10-05 20:41:33] live.WARNING: VariationGroupPrice not found {"variation_id":"484","price_group_id":"NaN"} 
+[2025-10-05 20:41:42] live.WARNING: VariationGroupPrice not found {"variation_id":"359","price_group_id":"NaN"} 
+[2025-10-05 20:42:12] live.WARNING: VariationGroupPrice not found {"variation_id":"485","price_group_id":"NaN"} 
+[2025-10-05 20:43:10] live.WARNING: VariationGroupPrice not found {"variation_id":"336","price_group_id":"NaN"} 
+[2025-10-05 20:43:48] live.WARNING: VariationGroupPrice not found {"variation_id":"596","price_group_id":"NaN"} 
+[2025-10-05 20:44:19] live.WARNING: VariationGroupPrice not found {"variation_id":"488","price_group_id":"NaN"} 
+[2025-10-05 20:45:01] live.WARNING: VariationGroupPrice not found {"variation_id":"461","price_group_id":"NaN"} 
+[2025-10-05 20:45:09] live.WARNING: VariationGroupPrice not found {"variation_id":"461","price_group_id":"NaN"} 
+[2025-10-05 20:45:19] live.WARNING: VariationGroupPrice not found {"variation_id":"606","price_group_id":"NaN"} 
+[2025-10-05 20:45:45] live.WARNING: VariationGroupPrice not found {"variation_id":"473","price_group_id":"NaN"} 
+[2025-10-05 20:46:21] live.WARNING: VariationGroupPrice not found {"variation_id":"466","price_group_id":"NaN"} 
+[2025-10-05 20:46:54] live.WARNING: VariationGroupPrice not found {"variation_id":"476","price_group_id":"NaN"} 
+[2025-10-05 20:47:38] live.WARNING: VariationGroupPrice not found {"variation_id":"474","price_group_id":"NaN"} 
+[2025-10-05 20:47:57] live.WARNING: VariationGroupPrice not found {"variation_id":"468","price_group_id":"NaN"} 
+[2025-10-05 20:48:55] live.WARNING: VariationGroupPrice not found {"variation_id":"164","price_group_id":"NaN"} 
+[2025-10-05 20:50:07] live.WARNING: VariationGroupPrice not found {"variation_id":"464","price_group_id":"NaN"} 
+[2025-10-05 20:50:28] live.WARNING: VariationGroupPrice not found {"variation_id":"462","price_group_id":"NaN"} 
+[2025-10-05 20:51:32] live.WARNING: VariationGroupPrice not found {"variation_id":"361","price_group_id":"NaN"} 
+[2025-10-05 20:52:50] live.WARNING: VariationGroupPrice not found {"variation_id":"479","price_group_id":"NaN"} 
+[2025-10-05 20:54:11] live.WARNING: VariationGroupPrice not found {"variation_id":"800","price_group_id":"NaN"} 
+[2025-10-05 20:55:57] live.WARNING: VariationGroupPrice not found {"variation_id":"357","price_group_id":"NaN"} 
+[2025-10-05 20:57:41] live.WARNING: VariationGroupPrice not found {"variation_id":"391","price_group_id":"NaN"} 
+[2025-10-05 20:58:07] live.WARNING: VariationGroupPrice not found {"variation_id":"387","price_group_id":"NaN"} 
+[2025-10-05 20:59:08] live.WARNING: VariationGroupPrice not found {"variation_id":"388","price_group_id":"NaN"} 
+[2025-10-05 20:59:16] live.WARNING: VariationGroupPrice not found {"variation_id":"390","price_group_id":"NaN"} 
+[2025-10-05 20:59:59] live.WARNING: VariationGroupPrice not found {"variation_id":"396","price_group_id":"NaN"} 
+[2025-10-05 21:00:37] live.INFO: About to call POS Controller {"authenticated_user_id":1,"business_id":1,"request_method":"POST","request_data_keys":["location_id","contact_id","products","payment","discount_amount","discount_type","shipping_charges","sale_note","status","is_direct_sale","transaction_date","invoice_no","is_quotation","final_total","tax_rate_id","shipping_details","additional_notes","staff_note","commission_agent"],"products_count":1,"location_id":503,"contact_id":13} 
+[2025-10-05 21:01:57] live.WARNING: VariationGroupPrice not found {"variation_id":"807","price_group_id":"NaN"} 
+[2025-10-05 21:02:20] live.WARNING: VariationGroupPrice not found {"variation_id":"809","price_group_id":"NaN"} 
+[2025-10-05 21:02:54] live.WARNING: VariationGroupPrice not found {"variation_id":"824","price_group_id":"NaN"} 
+[2025-10-05 21:03:17] live.WARNING: VariationGroupPrice not found {"variation_id":"811","price_group_id":"NaN"} 
+[2025-10-05 21:03:32] live.WARNING: VariationGroupPrice not found {"variation_id":"812","price_group_id":"NaN"} 
+[2025-10-05 21:03:41] live.WARNING: VariationGroupPrice not found {"variation_id":"818","price_group_id":"NaN"} 
+[2025-10-05 21:03:56] live.WARNING: VariationGroupPrice not found {"variation_id":"825","price_group_id":"NaN"} 
+[2025-10-05 21:04:09] live.WARNING: VariationGroupPrice not found {"variation_id":"410","price_group_id":"NaN"} 
+[2025-10-05 21:04:22] live.INFO: About to call POS Controller {"authenticated_user_id":1,"business_id":1,"request_method":"POST","request_data_keys":["location_id","contact_id","products","payment","discount_amount","discount_type","shipping_charges","sale_note","status","is_direct_sale","transaction_date","invoice_no","is_quotation","final_total","tax_rate_id","shipping_details","additional_notes","staff_note","commission_agent"],"products_count":1,"location_id":503,"contact_id":13} 
+[2025-10-05 21:04:24] live.WARNING: VariationGroupPrice not found {"variation_id":"814","price_group_id":"NaN"} 
+[2025-10-05 21:04:43] live.WARNING: VariationGroupPrice not found {"variation_id":"822","price_group_id":"NaN"} 
+[2025-10-05 21:04:55] live.WARNING: VariationGroupPrice not found {"variation_id":"410","price_group_id":"NaN"} 
+[2025-10-05 21:05:08] live.WARNING: VariationGroupPrice not found {"variation_id":"410","price_group_id":"NaN"} 
+[2025-10-05 21:06:07] live.WARNING: VariationGroupPrice not found {"variation_id":"818","price_group_id":"NaN"} 
+[2025-10-05 21:06:42] live.WARNING: VariationGroupPrice not found {"variation_id":"817","price_group_id":"NaN"} 
+[2025-10-05 21:07:10] live.WARNING: VariationGroupPrice not found {"variation_id":"810","price_group_id":"NaN"} 
+[2025-10-05 21:09:35] live.WARNING: VariationGroupPrice not found {"variation_id":"818","price_group_id":"NaN"} 
+[2025-10-05 21:09:47] live.WARNING: VariationGroupPrice not found {"variation_id":"522","price_group_id":"NaN"} 
+[2025-10-05 21:10:10] live.WARNING: VariationGroupPrice not found {"variation_id":"809","price_group_id":"NaN"} 
+[2025-10-05 21:10:17] live.EMERGENCY: ERROR: NOT ALLOWED: Mismatch between sold and purchase quantity. Product: FRESH BANANA SKU: 104 Quantity: 312 Business: Agro Mart Location: Agro Mart  
+[2025-10-05 21:10:17] live.EMERGENCY: File:/var/www/html/app/Utils/TransactionUtil.phpLine:3444Message:ERROR: NOT ALLOWED: Mismatch between sold and purchase quantity. Product: FRESH BANANA SKU: 104 Quantity: 312  
+[2025-10-05 21:10:24] live.EMERGENCY: ERROR: NOT ALLOWED: Mismatch between sold and purchase quantity. Product: FRESH BANANA SKU: 104 Quantity: 312 Business: Agro Mart Location: Agro Mart  
+[2025-10-05 21:10:24] live.EMERGENCY: File:/var/www/html/app/Utils/TransactionUtil.phpLine:3444Message:ERROR: NOT ALLOWED: Mismatch between sold and purchase quantity. Product: FRESH BANANA SKU: 104 Quantity: 312  
+[2025-10-05 21:11:27] live.WARNING: VariationGroupPrice not found {"variation_id":"505","price_group_id":"NaN"} 
+[2025-10-05 21:12:02] live.WARNING: VariationGroupPrice not found {"variation_id":"512","price_group_id":"NaN"} 
+[2025-10-05 21:12:20] live.WARNING: VariationGroupPrice not found {"variation_id":"511","price_group_id":"NaN"} 
+[2025-10-05 21:12:42] live.WARNING: VariationGroupPrice not found {"variation_id":"514","price_group_id":"NaN"} 
+[2025-10-05 21:13:19] live.WARNING: VariationGroupPrice not found {"variation_id":"537","price_group_id":"NaN"} 
+[2025-10-05 21:13:37] live.WARNING: VariationGroupPrice not found {"variation_id":"536","price_group_id":"NaN"} 
+[2025-10-05 21:14:01] live.WARNING: VariationGroupPrice not found {"variation_id":"535","price_group_id":"NaN"} 
+[2025-10-05 21:14:16] live.WARNING: VariationGroupPrice not found {"variation_id":"538","price_group_id":"NaN"} 
+[2025-10-05 21:14:23] live.INFO: About to call POS Controller {"authenticated_user_id":1,"business_id":1,"request_method":"POST","request_data_keys":["location_id","contact_id","products","payment","discount_amount","discount_type","shipping_charges","sale_note","status","is_direct_sale","transaction_date","invoice_no","is_quotation","final_total","tax_rate_id","shipping_details","additional_notes","staff_note","commission_agent"],"products_count":1,"location_id":503,"contact_id":13} 
+[2025-10-05 21:14:43] live.WARNING: VariationGroupPrice not found {"variation_id":"530","price_group_id":"NaN"} 
+[2025-10-05 21:15:06] live.WARNING: VariationGroupPrice not found {"variation_id":"528","price_group_id":"NaN"} 
+[2025-10-05 21:15:26] live.WARNING: VariationGroupPrice not found {"variation_id":"533","price_group_id":"NaN"} 
+[2025-10-05 21:16:02] live.WARNING: VariationGroupPrice not found {"variation_id":"818","price_group_id":"NaN"} 
+[2025-10-05 21:16:06] live.WARNING: VariationGroupPrice not found {"variation_id":"521","price_group_id":"NaN"} 
+[2025-10-05 21:16:35] live.WARNING: VariationGroupPrice not found {"variation_id":"531","price_group_id":"NaN"} 
+[2025-10-05 21:17:07] live.WARNING: VariationGroupPrice not found {"variation_id":"517","price_group_id":"NaN"} 
+[2025-10-05 21:17:11] live.WARNING: VariationGroupPrice not found {"variation_id":"818","price_group_id":"NaN"} 
+[2025-10-05 21:17:58] live.WARNING: VariationGroupPrice not found {"variation_id":"273","price_group_id":"NaN"} 
+[2025-10-05 21:18:44] live.WARNING: VariationGroupPrice not found {"variation_id":"272","price_group_id":"NaN"} 
+[2025-10-05 21:19:51] live.WARNING: VariationGroupPrice not found {"variation_id":"74","price_group_id":"NaN"} 
+[2025-10-05 21:20:10] live.WARNING: VariationGroupPrice not found {"variation_id":"74","price_group_id":"NaN"} 
+[2025-10-05 21:20:14] live.EMERGENCY: ERROR: NOT ALLOWED: Mismatch between sold and purchase quantity. Product: FRESH WATER MELON SKU: 0818 Quantity: 210 Business: Agro Mart Location: Agro Mart  
+[2025-10-05 21:20:14] live.EMERGENCY: File:/var/www/html/app/Utils/TransactionUtil.phpLine:3444Message:ERROR: NOT ALLOWED: Mismatch between sold and purchase quantity. Product: FRESH WATER MELON SKU: 0818 Quantity: 210  
+[2025-10-05 21:28:07] live.INFO: About to call POS Controller {"authenticated_user_id":1,"business_id":1,"request_method":"POST","request_data_keys":["location_id","contact_id","products","payment","discount_amount","discount_type","shipping_charges","sale_note","status","is_direct_sale","transaction_date","invoice_no","is_quotation","final_total","tax_rate_id","shipping_details","additional_notes","staff_note","commission_agent"],"products_count":1,"location_id":503,"contact_id":13} 
+[2025-10-05 21:30:35] live.WARNING: VariationGroupPrice not found {"variation_id":"818","price_group_id":"NaN"} 
+[2025-10-05 21:31:03] live.WARNING: VariationGroupPrice not found {"variation_id":"235","price_group_id":"NaN"} 
+[2025-10-05 21:31:29] live.WARNING: VariationGroupPrice not found {"variation_id":"31","price_group_id":"NaN"} 
+[2025-10-05 21:35:56] live.WARNING: VariationGroupPrice not found {"variation_id":"423","price_group_id":"NaN"} 
+[2025-10-05 21:36:29] live.WARNING: VariationGroupPrice not found {"variation_id":"176","price_group_id":"NaN"} 
+[2025-10-05 21:37:23] live.INFO: About to call POS Controller {"authenticated_user_id":1,"business_id":1,"request_method":"POST","request_data_keys":["location_id","contact_id","products","payment","discount_amount","discount_type","shipping_charges","sale_note","status","is_direct_sale","transaction_date","invoice_no","is_quotation","final_total","tax_rate_id","shipping_details","additional_notes","staff_note","commission_agent"],"products_count":1,"location_id":503,"contact_id":13} 
+[2025-10-05 21:42:22] live.WARNING: VariationGroupPrice not found {"variation_id":"815","price_group_id":"NaN"} 
+[2025-10-05 21:43:37] live.WARNING: VariationGroupPrice not found {"variation_id":"156","price_group_id":"NaN"} 
+[2025-10-05 21:43:41] live.WARNING: VariationGroupPrice not found {"variation_id":"157","price_group_id":"NaN"} 
+[2025-10-05 21:44:23] live.INFO: About to call POS Controller {"authenticated_user_id":1,"business_id":1,"request_method":"POST","request_data_keys":["location_id","contact_id","products","payment","discount_amount","discount_type","shipping_charges","sale_note","status","is_direct_sale","transaction_date","invoice_no","is_quotation","final_total","tax_rate_id","shipping_details","additional_notes","staff_note","commission_agent"],"products_count":1,"location_id":503,"contact_id":13} 
+[2025-10-05 21:47:17] live.WARNING: VariationGroupPrice not found {"variation_id":"505","price_group_id":"NaN"} 
+[2025-10-05 21:48:24] live.WARNING: VariationGroupPrice not found {"variation_id":"484","price_group_id":"NaN"} 
+[2025-10-05 21:48:28] live.WARNING: VariationGroupPrice not found {"variation_id":"455","price_group_id":"NaN"} 
+[2025-10-05 21:49:01] live.WARNING: VariationGroupPrice not found {"variation_id":"831","price_group_id":"NaN"} 
+[2025-10-05 21:50:46] live.WARNING: VariationGroupPrice not found {"variation_id":"831","price_group_id":"NaN"} 
+[2025-10-05 21:51:54] live.WARNING: VariationGroupPrice not found {"variation_id":"723","price_group_id":"NaN"} 
+[2025-10-05 21:52:01] live.WARNING: VariationGroupPrice not found {"variation_id":"620","price_group_id":"NaN"} 
+[2025-10-05 21:52:16] live.WARNING: VariationGroupPrice not found {"variation_id":"802","price_group_id":"NaN"} 
+[2025-10-05 21:53:44] live.WARNING: VariationGroupPrice not found {"variation_id":"484","price_group_id":"NaN"} 
+[2025-10-05 21:59:21] live.WARNING: VariationGroupPrice not found {"variation_id":"677","price_group_id":"NaN"} 
+[2025-10-05 22:00:07] live.INFO: About to call POS Controller {"authenticated_user_id":1,"business_id":1,"request_method":"POST","request_data_keys":["location_id","contact_id","products","payment","discount_amount","discount_type","shipping_charges","sale_note","status","is_direct_sale","transaction_date","invoice_no","is_quotation","final_total","tax_rate_id","shipping_details","additional_notes","staff_note","commission_agent"],"products_count":1,"location_id":503,"contact_id":13} 
+[2025-10-05 22:06:31] live.WARNING: VariationGroupPrice not found {"variation_id":"809","price_group_id":"NaN"} 
+[2025-10-05 22:09:55] live.WARNING: VariationGroupPrice not found {"variation_id":"832","price_group_id":"NaN"} 
+[2025-10-05 22:15:15] live.WARNING: VariationGroupPrice not found {"variation_id":"342","price_group_id":"NaN"} 
+[2025-10-05 22:15:19] live.WARNING: VariationGroupPrice not found {"variation_id":"705","price_group_id":"NaN"} 
+[2025-10-05 22:15:24] live.WARNING: VariationGroupPrice not found {"variation_id":"417","price_group_id":"NaN"} 
+[2025-10-05 22:17:17] live.INFO: About to call POS Controller {"authenticated_user_id":1,"business_id":1,"request_method":"POST","request_data_keys":["location_id","contact_id","products","payment","discount_amount","discount_type","shipping_charges","sale_note","status","is_direct_sale","transaction_date","invoice_no","is_quotation","final_total","tax_rate_id","shipping_details","additional_notes","staff_note","commission_agent"],"products_count":1,"location_id":503,"contact_id":13} 
+[2025-10-05 22:20:22] live.WARNING: VariationGroupPrice not found {"variation_id":"832","price_group_id":"NaN"} 
+[2025-10-05 22:22:17] live.WARNING: VariationGroupPrice not found {"variation_id":"832","price_group_id":"NaN"} 
+[2025-10-05 22:23:50] live.WARNING: VariationGroupPrice not found {"variation_id":"213","price_group_id":"NaN"} 
+[2025-10-05 22:24:02] live.WARNING: VariationGroupPrice not found {"variation_id":"809","price_group_id":"NaN"} 
+[2025-10-05 22:24:42] live.WARNING: VariationGroupPrice not found {"variation_id":"832","price_group_id":"NaN"} 
+[2025-10-05 22:25:54] live.WARNING: VariationGroupPrice not found {"variation_id":"227","price_group_id":"NaN"} 
+[2025-10-05 22:26:00] live.WARNING: VariationGroupPrice not found {"variation_id":"751","price_group_id":"NaN"} 
+[2025-10-05 22:38:55] live.WARNING: VariationGroupPrice not found {"variation_id":"746","price_group_id":"NaN"} 
+[2025-10-05 22:41:21] live.WARNING: VariationGroupPrice not found {"variation_id":"809","price_group_id":"NaN"} 
+[2025-10-05 22:43:17] live.WARNING: VariationGroupPrice not found {"variation_id":"511","price_group_id":"NaN"} 
+[2025-10-05 22:43:20] live.WARNING: VariationGroupPrice not found {"variation_id":"508","price_group_id":"NaN"} 
+[2025-10-05 22:55:07] live.WARNING: VariationGroupPrice not found {"variation_id":"800","price_group_id":"NaN"} 
+[2025-10-05 22:55:14] live.WARNING: VariationGroupPrice not found {"variation_id":"807","price_group_id":"NaN"} 
+[2025-10-05 23:01:08] live.WARNING: VariationGroupPrice not found {"variation_id":"809","price_group_id":"NaN"} 
+[2025-10-05 23:09:37] live.INFO: About to call POS Controller {"authenticated_user_id":1,"business_id":1,"request_method":"POST","request_data_keys":["location_id","contact_id","products","payment","discount_amount","discount_type","shipping_charges","sale_note","status","is_direct_sale","transaction_date","invoice_no","is_quotation","final_total","tax_rate_id","shipping_details","additional_notes","staff_note","commission_agent"],"products_count":1,"location_id":503,"contact_id":13} 
+[2025-10-05 23:12:52] live.INFO: About to call POS Controller {"authenticated_user_id":1,"business_id":1,"request_method":"POST","request_data_keys":["location_id","contact_id","products","payment","discount_amount","discount_type","shipping_charges","sale_note","status","is_direct_sale","transaction_date","invoice_no","is_quotation","final_total","tax_rate_id","shipping_details","additional_notes","staff_note","commission_agent"],"products_count":1,"location_id":503,"contact_id":13} 
+[2025-10-05 23:14:29] live.WARNING: VariationGroupPrice not found {"variation_id":"800","price_group_id":"NaN"} 
+[2025-10-05 23:16:36] live.WARNING: VariationGroupPrice not found {"variation_id":"93","price_group_id":"NaN"} 
+[2025-10-05 23:19:17] live.INFO: About to call POS Controller {"authenticated_user_id":1,"business_id":1,"request_method":"POST","request_data_keys":["location_id","contact_id","products","payment","discount_amount","discount_type","shipping_charges","sale_note","status","is_direct_sale","transaction_date","invoice_no","is_quotation","final_total","tax_rate_id","shipping_details","additional_notes","staff_note","commission_agent"],"products_count":1,"location_id":503,"contact_id":13} 
+[2025-10-05 23:20:46] live.INFO: About to call POS Controller {"authenticated_user_id":1,"business_id":1,"request_method":"POST","request_data_keys":["location_id","contact_id","products","payment","discount_amount","discount_type","shipping_charges","sale_note","status","is_direct_sale","transaction_date","invoice_no","is_quotation","final_total","tax_rate_id","shipping_details","additional_notes","staff_note","commission_agent"],"products_count":1,"location_id":503,"contact_id":13} 
+[2025-10-05 23:26:41] live.WARNING: VariationGroupPrice not found {"variation_id":"735","price_group_id":"NaN"} 
+[2025-10-05 23:26:54] live.WARNING: VariationGroupPrice not found {"variation_id":"671","price_group_id":"NaN"} 
+[2025-10-05 23:27:16] live.WARNING: VariationGroupPrice not found {"variation_id":"672","price_group_id":"NaN"} 
+[2025-10-05 23:31:18] live.INFO: About to call POS Controller {"authenticated_user_id":1,"business_id":1,"request_method":"POST","request_data_keys":["location_id","contact_id","products","payment","discount_amount","discount_type","shipping_charges","sale_note","status","is_direct_sale","transaction_date","invoice_no","is_quotation","final_total","tax_rate_id","shipping_details","additional_notes","staff_note","commission_agent"],"products_count":1,"location_id":503,"contact_id":13} 
+[2025-10-05 23:32:43] live.WARNING: VariationGroupPrice not found {"variation_id":"554","price_group_id":"NaN"} 
+[2025-10-05 23:33:40] live.INFO: About to call POS Controller {"authenticated_user_id":1,"business_id":1,"request_method":"POST","request_data_keys":["location_id","contact_id","products","payment","discount_amount","discount_type","shipping_charges","sale_note","status","is_direct_sale","transaction_date","invoice_no","is_quotation","final_total","tax_rate_id","shipping_details","additional_notes","staff_note","commission_agent"],"products_count":1,"location_id":503,"contact_id":13} 
+[2025-10-05 23:35:08] live.INFO: About to call POS Controller {"authenticated_user_id":1,"business_id":1,"request_method":"POST","request_data_keys":["location_id","contact_id","products","payment","discount_amount","discount_type","shipping_charges","sale_note","status","is_direct_sale","transaction_date","invoice_no","is_quotation","final_total","tax_rate_id","shipping_details","additional_notes","staff_note","commission_agent"],"products_count":1,"location_id":503,"contact_id":13} 
+[2025-10-05 23:35:19] live.WARNING: VariationGroupPrice not found {"variation_id":"806","price_group_id":"NaN"} 
+[2025-10-05 23:36:46] live.WARNING: VariationGroupPrice not found {"variation_id":"827","price_group_id":"NaN"} 
+[2025-10-05 23:37:34] live.WARNING: VariationGroupPrice not found {"variation_id":"814","price_group_id":"NaN"} 
+[2025-10-05 23:37:56] live.WARNING: VariationGroupPrice not found {"variation_id":"815","price_group_id":"NaN"} 
+[2025-10-05 23:39:54] live.WARNING: VariationGroupPrice not found {"variation_id":"808","price_group_id":"NaN"} 
+[2025-10-05 23:42:52] live.INFO: About to call POS Controller {"authenticated_user_id":1,"business_id":1,"request_method":"POST","request_data_keys":["location_id","contact_id","products","payment","discount_amount","discount_type","shipping_charges","sale_note","status","is_direct_sale","transaction_date","invoice_no","is_quotation","final_total","tax_rate_id","shipping_details","additional_notes","staff_note","commission_agent"],"products_count":1,"location_id":503,"contact_id":13} 
+[2025-10-05 23:43:51] live.WARNING: VariationGroupPrice not found {"variation_id":"596","price_group_id":"NaN"} 
+[2025-10-05 23:44:29] live.WARNING: VariationGroupPrice not found {"variation_id":"795","price_group_id":"NaN"} 
+[2025-10-05 23:44:46] live.WARNING: VariationGroupPrice not found {"variation_id":"503","price_group_id":"NaN"} 
+[2025-10-05 23:44:54] live.WARNING: VariationGroupPrice not found {"variation_id":"519","price_group_id":"NaN"} 
+[2025-10-05 23:45:05] live.WARNING: VariationGroupPrice not found {"variation_id":"520","price_group_id":"NaN"} 
+[2025-10-05 23:46:07] live.WARNING: VariationGroupPrice not found {"variation_id":"31","price_group_id":"NaN"} 
+[2025-10-05 23:46:21] live.WARNING: VariationGroupPrice not found {"variation_id":"793","price_group_id":"NaN"} 
+[2025-10-05 23:46:36] live.WARNING: VariationGroupPrice not found {"variation_id":"518","price_group_id":"NaN"} 
+[2025-10-05 23:46:42] live.WARNING: VariationGroupPrice not found {"variation_id":"516","price_group_id":"NaN"} 
+[2025-10-05 23:46:51] live.WARNING: VariationGroupPrice not found {"variation_id":"506","price_group_id":"NaN"} 
+[2025-10-05 23:50:05] live.INFO: getCloseRegister - Register ID parameter: null  
+[2025-10-05 23:50:05] live.INFO: getCloseRegister - Register details found: YES (ID: )  
+[2025-10-05 23:50:05] live.INFO: getCloseRegister - No register ID found in register_details  
+[2025-10-05 23:53:15] live.WARNING: VariationGroupPrice not found {"variation_id":"534","price_group_id":"NaN"} 
+[2025-10-05 23:56:21] live.INFO: About to call POS Controller {"authenticated_user_id":1,"business_id":1,"request_method":"POST","request_data_keys":["location_id","contact_id","products","payment","discount_amount","discount_type","shipping_charges","sale_note","status","is_direct_sale","transaction_date","invoice_no","is_quotation","final_total","tax_rate_id","shipping_details","additional_notes","staff_note","commission_agent"],"products_count":1,"location_id":503,"contact_id":13} 
+[2025-10-05 23:59:00] live.WARNING: VariationGroupPrice not found {"variation_id":"526","price_group_id":"NaN"} 

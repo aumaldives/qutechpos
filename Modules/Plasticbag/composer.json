@@ -1,0 +1,25 @@
+{
+    "name": "twf/plasticbag",
+    "description": "",
+    "authors": [
+        {
+            "name": "Ahmed",
+            "email": "demo@gmail.com"
+        }
+    ],
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Modules\\Plasticbag\\Providers\\PlasticbagServiceProvider"
+            ],
+            "aliases": {
+                
+            }
+        }
+    },
+    "autoload": {
+        "psr-4": {
+            "Modules\\Plasticbag\\": ""
+        }
+    }
+}

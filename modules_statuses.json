@@ -1,0 +1,21 @@
+{
+    "Essentials": true,
+    "Accounting": true,
+    "AssetManagement": true,
+    "Cms": true,
+    "Connector": true,
+    "Plasticbag": true,
+    "Crm": true,
+    "Ecommerce": true,
+    "FieldForce": true,
+    "Manufacturing": true,
+    "ProductCatalogue": true,
+    "Project": true,
+    "Repair": true,
+    "Spreadsheet": true,
+    "Superadmin": true,
+    "Woocommerce": true,
+    "AgeingReport": true,
+    "AiAssistance": true,
+    "Quickbooks": true
+}

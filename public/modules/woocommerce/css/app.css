@@ -1,0 +1,80 @@
+/**
+ * WooCommerce Module Styles
+ */
+.woocommerce-settings .nav-tabs {
+  border-bottom: 2px solid #e9ecef;
+  margin-bottom: 2rem;
+}
+.woocommerce-settings .nav-tabs .nav-link {
+  border: none;
+  border-bottom: 2px solid transparent;
+  color: #6c757d;
+  font-weight: 500;
+  padding: 12px 20px;
+  transition: all 0.2s ease;
+  border-radius: 0;
+}
+.woocommerce-settings .nav-tabs .nav-link:hover {
+  color: #007bff;
+  border-bottom-color: #007bff;
+  background: none;
+}
+.woocommerce-settings .nav-tabs .nav-link.active {
+  color: #007bff;
+  border-bottom-color: #007bff;
+  background: none;
+}
+.woocommerce-settings .card {
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0.125), 0 1px 3px rgba(0, 0, 0, 0.2);
+  border: none;
+  margin-bottom: 1.5rem;
+}
+.woocommerce-settings .toast-notification {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  padding: 12px 16px;
+  border-radius: 4px;
+  color: white;
+  font-weight: 500;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  z-index: 10000;
+  min-width: 300px;
+  animation: slideIn 0.3s ease-out;
+}
+.woocommerce-settings .toast-notification.success {
+  background-color: #28a745;
+}
+.woocommerce-settings .toast-notification.error {
+  background-color: #dc3545;
+}
+.woocommerce-settings .toast-notification.warning {
+  background-color: #ffc107;
+  color: #212529;
+}
+.woocommerce-settings .toast-notification.info {
+  background-color: #17a2b8;
+}
+.woocommerce-settings .loading-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(255, 255, 255, 0.8);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}

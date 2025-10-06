@@ -1,0 +1,1503 @@
+// Modern Border Styles
+// ====================
+
+// Modern CSS Variables similar to dashboard cards
+:root {
+  // Basic border radius system
+  --border-radius: 16px;
+  --border-radius-sm: 8px;
+  --border-radius-lg: 20px;
+}
+
+// Simple container styling - just rounded corners
+
+// Modern box styling similar to dashboard cards (no background blur)
+.box {
+  border-radius: var(--border-radius) !important;
+  padding: 24px !important;
+  margin-bottom: 20px !important;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1) !important;
+  border: 1px solid rgba(255, 255, 255, 0.1) !important;
+  overflow: hidden !important;
+  position: relative !important;
+  
+  .box-header {
+    border-radius: var(--border-radius) var(--border-radius) 0 0 !important;
+    
+    &:first-child {
+      border-radius: var(--border-radius) var(--border-radius) 0 0 !important;
+    }
+  }
+  
+  .box-body {
+    &:first-child {
+      border-radius: var(--border-radius) var(--border-radius) 0 0 !important;
+    }
+    
+    &:last-child {
+      border-radius: 0 0 var(--border-radius) var(--border-radius) !important;
+    }
+    
+    &:only-child {
+      border-radius: var(--border-radius) !important;
+    }
+  }
+  
+  .box-footer {
+    border-radius: 0 0 var(--border-radius) var(--border-radius) !important;
+  }
+}
+
+.box-solid {
+  border-radius: var(--border-radius) !important;
+  
+  .box-header {
+    border-radius: var(--border-radius) var(--border-radius) 0 0 !important;
+  }
+}
+
+// Simple form elements with rounded corners
+.form-control {
+  border-radius: var(--border-radius-sm) !important;
+}
+
+// Simple button styling
+.btn {
+  border-radius: var(--border-radius-sm) !important;
+}
+
+// Simple table styling within boxes
+.box .table-responsive {
+  border-radius: var(--border-radius-sm) !important;
+  overflow: hidden !important;
+}
+
+.box .table {
+  border-radius: var(--border-radius-sm) !important;
+  overflow: hidden !important;
+}
+
+// Simple nav tabs
+.nav-tabs-custom {
+  border-radius: var(--border-radius) !important;
+  
+  .nav-tabs > li > a {
+    border-radius: var(--border-radius-sm) var(--border-radius-sm) 0 0 !important;
+  }
+  
+  .tab-content {
+    border-radius: 0 0 var(--border-radius) var(--border-radius) !important;
+  }
+}
+
+// Simple modal styling with conflict prevention
+.modal-content {
+  border-radius: var(--border-radius) !important;
+  position: static !important;
+  transform: none !important;
+  transition: none !important;
+  
+  .modal-header {
+    border-radius: var(--border-radius) var(--border-radius) 0 0 !important;
+  }
+  
+  .modal-footer {
+    border-radius: 0 0 var(--border-radius) var(--border-radius) !important;
+  }
+}
+
+// Specific POS modal fixes to prevent flashing
+.modal.fade .modal-dialog {
+  transition: none !important;
+  transform: none !important;
+}
+
+.modal.fade.in .modal-dialog,
+.modal.show .modal-dialog {
+  transform: none !important;
+}
+
+// Force stable positioning for POS modals
+#product_edit_modal,
+#pos_product_modal,
+.pos-modal {
+  .modal-dialog {
+    position: relative !important;
+    margin: 30px auto !important;
+    transform: none !important;
+    transition: none !important;
+  }
+  
+  .modal-content {
+    position: static !important;
+    transform: none !important;
+    animation: none !important;
+    transition: none !important;
+  }
+}
+
+// Override any conflicting animation classes
+.modal-dialog.modal-dialog-centered {
+  transform: none !important;
+  display: flex !important;
+  align-items: center !important;
+  min-height: calc(100% - 60px) !important;
+}
+
+// Disable problematic transitions that cause flashing
+.modal,
+.modal-backdrop,
+.modal-dialog,
+.modal-content {
+  -webkit-transition: none !important;
+  -moz-transition: none !important;
+  -o-transition: none !important;
+  transition: none !important;
+}
+
+// CRITICAL FIX: Prevent modal positioning conflicts in POS system
+.modal {
+  position: fixed !important;
+  top: 0 !important;
+  left: 0 !important;
+  right: 0 !important;
+  bottom: 0 !important;
+  z-index: 1050 !important;
+  
+  // Force static positioning to prevent JavaScript repositioning
+  &.fade .modal-dialog,
+  &.show .modal-dialog,
+  &.in .modal-dialog {
+    position: relative !important;
+    width: auto !important;
+    margin: 30px auto !important;
+    pointer-events: none !important;
+    max-width: 600px !important;
+    transform: none !important;
+    transition: none !important;
+    animation: none !important;
+    
+    // Prevent any dynamic positioning
+    &:hover,
+    &:focus,
+    &:active {
+      transform: none !important;
+      position: relative !important;
+      margin: 30px auto !important;
+      left: auto !important;
+      right: auto !important;
+      top: auto !important;
+      bottom: auto !important;
+    }
+  }
+  
+  .modal-content {
+    position: relative !important;
+    pointer-events: auto !important;
+    background: #fff !important;
+    border: 1px solid rgba(0,0,0,0.2) !important;
+    box-shadow: 0 3px 9px rgba(0,0,0,0.5) !important;
+    transform: none !important;
+    transition: none !important;
+    animation: none !important;
+    
+    // Prevent any dynamic positioning
+    &:hover,
+    &:focus,
+    &:active {
+      transform: none !important;
+      position: relative !important;
+      left: auto !important;
+      right: auto !important;
+      top: auto !important;
+      bottom: auto !important;
+    }
+  }
+}
+
+// Fix duplicate price group dropdown in POS - hide input-group-addon
+#price_group.select2 + .input-group-addon,
+#price_group ~ .input-group-addon {
+  display: none !important;
+}
+
+// Alternative approach - hide all input-group-addon elements around price group
+.form-group:has(#price_group) .input-group-addon {
+  display: none !important;
+}
+
+
+// Ensure consistent Select2 styling for service staff dropdown
+.order_line_service_staff {
+  &.select2-hidden-accessible + .select2-container {
+    width: 100% !important;
+  }
+  
+  // Make sure service staff dropdown gets proper Select2 styling
+  &.select2 {
+    width: 100% !important;
+  }
+}
+
+// Increase modal width significantly for better content display
+.modal-dialog {
+  width: 80vw !important;
+  max-width: 80vw !important;
+}
+
+// For different modal sizes, make them even wider
+.modal-lg .modal-dialog,
+.modal-dialog.modal-lg {
+  width: 85vw !important;
+  max-width: 85vw !important;
+}
+
+.modal-sm .modal-dialog,
+.modal-dialog.modal-sm {
+  width: 60vw !important;
+  max-width: 60vw !important;
+}
+
+.modal-xl .modal-dialog,
+.modal-dialog.modal-xl {
+  width: 90vw !important;
+  max-width: 90vw !important;
+}
+
+// Cash register modal - make it wider for better table display
+form[action*="close-register"] .modal-dialog,
+.modal-dialog:has(form[action*="close-register"]),
+.modal:has(form[action*="close-register"]) .modal-dialog {
+  width: 75vw !important;
+  max-width: 75vw !important;
+}
+
+// Alternative targeting by modal content
+.modal-dialog:has(h3:contains("Current Register")),
+.modal:has(h3:contains("Current Register")) .modal-dialog {
+  width: 75vw !important;
+  max-width: 75vw !important;
+}
+
+// Ensure modals don't overflow on smaller screens
+@media (max-width: 768px) {
+  .modal-dialog {
+    width: 95vw !important;
+    max-width: 95vw !important;
+    margin: 10px auto !important;
+  }
+  
+  // Cash register modal on mobile - still wide but with margin
+  form[action*="close-register"] .modal-dialog,
+  .modal-dialog:has(form[action*="close-register"]),
+  .modal:has(form[action*="close-register"]) .modal-dialog {
+    width: 90vw !important;
+    max-width: 90vw !important;
+    margin: 5px auto !important;
+  }
+}
+
+// Simple rounded corners for product boxes
+.product_box {
+  border-radius: 8px !important;
+  overflow: hidden !important;
+  
+  .image-container {
+    border-radius: 8px 8px 0 0 !important;
+  }
+}
+
+// Modern total payable section - force width with maximum CSS specificity
+body div.pos-total.bg-navy.text-white[style*="margin-top"],
+body #pos_div div.pos-total.bg-navy.text-white,
+body .pos div.pos-total.bg-navy.text-white,
+body div.bg-navy.pos-total.text-white {
+  background: linear-gradient(135deg, #2c3e50 0%, #34495e 100%) !important;
+  border-radius: 12px !important;
+  padding: 16px 20px !important;
+  margin-top: 0px !important;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15) !important;
+  border: 1px solid rgba(255, 255, 255, 0.1) !important;
+  width: 320px !important;
+  max-width: 320px !important;
+  min-width: 250px !important;
+  display: inline-flex !important;
+  vertical-align: middle !important;
+  float: none !important;
+  box-sizing: border-box !important;
+  align-items: center !important;
+  justify-content: space-between !important;
+  border: 2px solid rgba(255, 255, 255, 0.2) !important;
+  
+  .text {
+    font-size: 14px !important;
+    font-weight: 600 !important;
+    color: rgba(255, 255, 255, 0.9) !important;
+    text-transform: uppercase !important;
+    letter-spacing: 0.5px !important;
+    margin: 0 !important;
+    display: inline-block !important;
+    flex: 1 !important;
+    border-right: 1px solid rgba(255, 255, 255, 0.2) !important;
+    padding-right: 15px !important;
+    text-align: left !important;
+  }
+  
+  #total_payable.number {
+    font-size: 20px !important;
+    font-weight: 700 !important;
+    color: #ffffff !important;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.2) !important;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif !important;
+    margin: 0 !important;
+    padding-left: 15px !important;
+    text-align: right !important;
+    min-width: 120px !important;
+  }
+  
+  // Add a subtle inner glow effect
+  &::before {
+    content: '';
+    position: absolute;
+    top: 1px;
+    left: 1px;
+    right: 1px;
+    height: 50%;
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.1) 0%, transparent 100%);
+    border-radius: 11px 11px 0 0;
+    pointer-events: none;
+  }
+  
+  position: relative;
+}
+
+// Ultra-specific override for total payable width - inline-flex for side-by-side layout
+body * div.pos-total.bg-navy.text-white,
+html body div.pos-total.bg-navy.text-white {
+  width: 320px !important;
+  max-width: 320px !important;
+  min-width: 250px !important;
+  display: inline-flex !important;
+  vertical-align: middle !important;
+  float: none !important;
+  margin-top: 0px !important;
+  align-items: center !important;
+  justify-content: space-between !important;
+}
+
+// Add spacing between checkout buttons
+.btn.btn-success.btn-flat.btn-lg:not(:last-child),
+button.btn.btn-success.btn-flat.btn-lg:not(:last-child) {
+  margin-right: 20px !important;
+}
+
+// Keep all buttons and total payable in same row
+.btn.btn-success.btn-flat.btn-lg,
+button.btn-success.btn-flat.btn-lg,
+.btn.btn-default.btn-flat.btn-lg,
+button.btn-default.btn-flat.btn-lg {
+  display: inline-block !important;
+  vertical-align: middle !important;
+  margin-bottom: 0px !important;
+}
+
+// Fix action button dropdowns in tables - prevent row expansion and position above
+table tbody tr td .btn-group,
+table tbody tr td .dropdown {
+  position: relative !important;
+}
+
+table tbody tr td .btn-group .dropdown-menu,
+table tbody tr td .dropdown .dropdown-menu {
+  position: absolute !important;
+  top: 100% !important;
+  bottom: auto !important;
+  left: 0 !important;
+  right: auto !important;
+  z-index: 1000 !important;
+  min-width: 160px !important;
+  margin-top: 2px !important;
+  white-space: nowrap !important;
+}
+
+// Modern dropdown styling for all dropdowns
+.dropdown-menu {
+  border-radius: 8px !important;
+  border: 1px solid rgba(0,0,0,0.15) !important;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.15) !important;
+  padding: 8px 0 !important;
+  background: white !important;
+  
+  .dropdown-item,
+  li > a {
+    padding: 8px 16px !important;
+    color: #333 !important;
+    transition: all 0.2s ease !important;
+    border-radius: 4px !important;
+    margin: 2px 8px !important;
+    
+    &:hover {
+      background: #f8f9fa !important;
+      color: #007bff !important;
+      transform: translateX(2px) !important;
+    }
+    
+    &:active {
+      background: #e9ecef !important;
+    }
+  }
+}
+
+// Fix action button dropdowns in tables - prevent row expansion and position above
+table tbody tr td .btn-group,
+table tbody tr td .dropdown {
+  position: relative !important;
+}
+
+table tbody tr td .btn-group .dropdown-menu,
+table tbody tr td .dropdown .dropdown-menu {
+  position: absolute !important;
+  top: 100% !important;
+  bottom: auto !important;
+  left: 0 !important;
+  right: auto !important;
+  z-index: 1000 !important;
+  min-width: 160px !important;
+  margin-top: 2px !important;
+  white-space: nowrap !important;
+}
+
+// Mobile-specific adjustments
+@media (max-width: 767px) {
+  table tbody tr td .btn-group .dropdown-menu,
+  table tbody tr td .dropdown .dropdown-menu,
+  .dataTables_wrapper .dropdown-menu {
+    max-width: 200px !important;
+  }
+  
+  // Ensure dropdown arrows are visible on mobile
+  table tbody tr td .btn-group .btn.dropdown-toggle,
+  table tbody tr td .dropdown .btn.dropdown-toggle {
+    &::after {
+      display: inline-block !important;
+    }
+  }
+}
+
+// Removed mobile action menu popup - reverted to traditional dropdowns
+
+// Fix modal width to accommodate tables properly
+.modal-content {
+  width: auto !important;
+  min-width: 600px !important;
+  max-width: 95vw !important;
+}
+
+.modal-dialog {
+  width: auto !important;
+  max-width: 95vw !important;
+  margin: 30px auto !important;
+}
+
+.modal-dialog.modal-lg {
+  max-width: 90vw !important;
+}
+
+.modal-dialog.modal-xl {
+  max-width: 95vw !important;
+}
+
+// Ensure tables inside modals are responsive
+.modal .table-responsive {
+  overflow-x: auto !important;
+  min-width: 100% !important;
+}
+
+/* Subscription Page Modernization */
+.subscription-modernization {
+  /* Background gradient */
+  .content {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%) !important;
+    min-height: 100vh !important;
+    padding: 20px !important;
+  }
+
+  /* Active subscription card modernization */
+  .pricing_table_container .plans .plan {
+    background: rgba(255, 255, 255, 0.95) !important;
+    border-radius: 16px !important;
+    border: none !important;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1) !important;
+    backdrop-filter: blur(10px) !important;
+    transition: all 0.3s ease !important;
+  }
+
+  .pricing_table_container .plans .plan:hover {
+    transform: translateY(-8px) !important;
+    box-shadow: 0 30px 60px rgba(0, 0, 0, 0.15) !important;
+  }
+
+  /* All subscriptions table modernization */
+  .box {
+    background: rgba(255, 255, 255, 0.95) !important;
+    border-radius: 16px !important;
+    border: none !important;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1) !important;
+    backdrop-filter: blur(10px) !important;
+    margin-bottom: 30px !important;
+  }
+
+  .box-header {
+    background: transparent !important;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.05) !important;
+    border-radius: 16px 16px 0 0 !important;
+    padding: 20px 25px !important;
+  }
+
+  .box-body {
+    padding: 25px !important;
+  }
+
+  /* Package pricing section modernization */
+  .pricing_table_container .heading h2 {
+    color: white !important;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3) !important;
+    margin-bottom: 30px !important;
+  }
+
+  /* Switch container modernization */
+  .switch-wrapper {
+    background: rgba(255, 255, 255, 0.95) !important;
+    border: none !important;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1) !important;
+    backdrop-filter: blur(10px) !important;
+    border-radius: 50px !important;
+    padding: 6px !important;
+  }
+
+  .switch-wrapper .highlighter {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%) !important;
+    box-shadow: 0 4px 15px rgba(102, 126, 234, 0.4) !important;
+  }
+
+  /* Package cards modernization */
+  .pricing_table_container .plans .plan.package-months,
+  .pricing_table_container .plans .plan.package-years {
+    background: rgba(255, 255, 255, 0.95) !important;
+    border-radius: 16px !important;
+    border: none !important;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1) !important;
+    backdrop-filter: blur(10px) !important;
+    position: relative !important;
+    overflow: hidden !important;
+  }
+
+  .pricing_table_container .plans .plan.package-months::before,
+  .pricing_table_container .plans .plan.package-years::before {
+    content: '' !important;
+    position: absolute !important;
+    top: 0 !important;
+    left: 0 !important;
+    right: 0 !important;
+    height: 4px !important;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%) !important;
+  }
+
+  /* Table modernization */
+  .table-responsive {
+    border-radius: 12px !important;
+    overflow: hidden !important;
+  }
+
+  .table {
+    background: white !important;
+    border-radius: 12px !important;
+  }
+
+  .table thead th {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%) !important;
+    color: white !important;
+    border: none !important;
+    font-weight: 600 !important;
+    padding: 15px !important;
+  }
+
+  .table tbody tr {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.05) !important;
+  }
+
+  .table tbody tr:hover {
+    background: rgba(102, 126, 234, 0.05) !important;
+  }
+
+  .table tbody td {
+    padding: 15px !important;
+    border: none !important;
+    vertical-align: middle !important;
+  }
+
+  /* Button modernization */
+  .btn-success {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%) !important;
+    border: none !important;
+    border-radius: 25px !important;
+    padding: 12px 30px !important;
+    font-weight: 600 !important;
+    box-shadow: 0 8px 25px rgba(102, 126, 234, 0.3) !important;
+    transition: all 0.3s ease !important;
+  }
+
+  .btn-success:hover {
+    transform: translateY(-2px) !important;
+    box-shadow: 0 15px 35px rgba(102, 126, 234, 0.4) !important;
+  }
+
+  /* Manage subscription button */
+  .btn-primary {
+    background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%) !important;
+    border: none !important;
+    border-radius: 20px !important;
+    padding: 8px 20px !important;
+    font-weight: 600 !important;
+    box-shadow: 0 6px 20px rgba(79, 172, 254, 0.3) !important;
+  }
+
+  .btn-primary:hover {
+    transform: translateY(-1px) !important;
+    box-shadow: 0 10px 25px rgba(79, 172, 254, 0.4) !important;
+  }
+
+  /* Package price styling modernization */
+  .pricing_table_container .plans .plan .price {
+    background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%) !important;
+    border-radius: 12px !important;
+    padding: 12px 16px !important;
+    border: 1px solid rgba(148, 163, 184, 0.2) !important;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05) !important;
+  }
+
+  .pricing_table_container .plans .plan .price h4 {
+    color: #1e293b !important;
+    font-weight: 700 !important;
+    margin: 0 !important;
+  }
+
+  .pricing_table_container .plans .plan .price span {
+    color: #64748b !important;
+    font-size: 12px !important;
+  }
+
+  /* Features section modernization */
+  .pricing_table_container .plans .plan .features ul {
+    list-style: none !important;
+    padding: 0 !important;
+    margin: 20px 0 !important;
+  }
+
+  .pricing_table_container .plans .plan .features ul li {
+    display: flex !important;
+    align-items: center !important;
+    padding: 8px 0 !important;
+    font-size: 14px !important;
+    color: #334155 !important;
+    border-bottom: 1px solid rgba(148, 163, 184, 0.1) !important;
+  }
+
+  .pricing_table_container .plans .plan .features ul li:last-child {
+    border-bottom: none !important;
+  }
+
+  .pricing_table_container .plans .plan .features ul li i {
+    margin-right: 12px !important;
+    color: #059669 !important;
+    font-size: 16px !important;
+    min-width: 20px !important;
+  }
+
+  /* Button styling within packages */
+  .pricing_table_container .plans .plan button {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%) !important;
+    border: none !important;
+    border-radius: 25px !important;
+    padding: 14px 28px !important;
+    font-weight: 600 !important;
+    color: white !important;
+    box-shadow: 0 8px 25px rgba(102, 126, 234, 0.3) !important;
+    transition: all 0.3s ease !important;
+    margin-top: 25px !important;
+    font-size: 15px !important;
+    letter-spacing: 0.5px !important;
+  }
+
+  .pricing_table_container .plans .plan button:hover {
+    transform: translateY(-3px) !important;
+    box-shadow: 0 15px 35px rgba(102, 126, 234, 0.4) !important;
+  }
+
+  .pricing_table_container .plans .plan button a {
+    color: white !important;
+    text-decoration: none !important;
+  }
+
+  /* Title row modernization */
+  .pricing_table_container .plans .plan .title h3 {
+    color: #1e293b !important;
+    font-size: 24px !important;
+    font-weight: 700 !important;
+    margin-bottom: 8px !important;
+  }
+
+  /* Description text modernization */
+  .pricing_table_container .plans .plan .row h5 {
+    color: #dc2626 !important;
+    font-weight: 600 !important;
+    font-size: 14px !important;
+    padding: 15px !important;
+    margin: 15px 0 0 0 !important;
+    background: rgba(220, 38, 38, 0.1) !important;
+    border-radius: 8px !important;
+    border: 1px solid rgba(220, 38, 38, 0.2) !important;
+    text-align: center !important;
+  }
+
+  /* Fix pricing overlapping issues */
+  .pricing_table_container .plans .plan {
+    min-height: 420px !important;
+    display: flex !important;
+    flex-direction: column !important;
+    justify-content: space-between !important;
+  }
+
+  .pricing_table_container .plans .plan .features {
+    flex: 1 !important;
+    display: flex !important;
+    flex-direction: column !important;
+    justify-content: flex-start !important;
+    margin-bottom: 20px !important;
+  }
+
+  .pricing_table_container .plans .plan .price {
+    margin-bottom: 15px !important;
+    padding: 15px !important;
+    line-height: 1.4 !important;
+  }
+
+  .pricing_table_container .plans .plan .price h4 {
+    margin-bottom: 8px !important;
+    line-height: 1.2 !important;
+  }
+
+  .pricing_table_container .plans .plan .price span {
+    display: block !important;
+    margin-top: 5px !important;
+    line-height: 1.3 !important;
+    white-space: normal !important;
+    word-wrap: break-word !important;
+  }
+
+  /* Fix button positioning */
+  .pricing_table_container .plans .plan button {
+    margin-top: auto !important;
+    margin-bottom: 15px !important;
+    z-index: 10 !important;
+    position: relative !important;
+  }
+
+}
+
+/* Asset Dashboard - Use standard box styling which already has modern rounded corners */
+
+// Ensure table rows don't expand when dropdown opens
+table tbody tr {
+  height: auto !important;
+}
+
+table tbody tr td {
+  overflow: visible !important;
+  white-space: nowrap !important;
+}
+
+// Specifically target POS modals to override any container hover effects
+.pos-container .modal,
+.product-container .modal,
+#pos_div .modal,
+.row .modal {
+  position: fixed !important;
+  top: 0 !important;
+  left: 0 !important;
+  right: 0 !important;
+  bottom: 0 !important;
+  
+  .modal-dialog {
+    position: relative !important;
+    margin: 30px auto !important;
+    transform: none !important;
+    left: auto !important;
+    right: auto !important;
+  }
+}
+
+// CRITICAL: Override any container hover effects that might affect modals
+.box:hover .modal,
+.card:hover .modal,
+.panel:hover .modal,
+.product_div:hover .modal,
+.product_row:hover .modal,
+#pos_table:hover .modal,
+#pos_table tbody:hover .modal,
+#pos_table tr:hover .modal,
+#pos_table td:hover .modal {
+  position: fixed !important;
+  
+  .modal-dialog {
+    position: relative !important;
+    margin: 30px auto !important;
+    transform: none !important;
+    left: auto !important;
+    right: auto !important;
+    top: auto !important;
+    bottom: auto !important;
+  }
+  
+  .modal-content {
+    position: relative !important;
+    transform: none !important;
+    left: auto !important;
+    right: auto !important;
+    top: auto !important;
+    bottom: auto !important;
+  }
+}
+
+// Fix modal positioning - use proper Bootstrap modal behavior and disable hover effects
+[id*="row_edit_product_price_modal"] {
+  position: fixed !important;
+  top: 0 !important;
+  left: 0 !important;
+  right: auto !important;
+  bottom: auto !important;
+  width: 100% !important;
+  height: 100% !important;
+  z-index: 1050 !important;
+  
+  .modal-dialog {
+    position: relative !important;
+    margin: 1.75rem auto !important;
+    max-width: 600px !important;
+    width: auto !important;
+    transform: none !important;
+    top: auto !important;
+    left: auto !important;
+    
+    // Disable all hover effects that cause positioning changes
+    &,
+    &:hover,
+    &:focus,
+    &:active {
+      position: relative !important;
+      margin: 1.75rem auto !important;
+      transform: none !important;
+      top: auto !important;
+      left: auto !important;
+      right: auto !important;
+    }
+  }
+  
+  .modal-content {
+    // Disable hover effects on modal content too
+    &,
+    &:hover,
+    &:focus,
+    &:active {
+      position: relative !important;
+      transform: none !important;
+      top: auto !important;
+      left: auto !important;
+      right: auto !important;
+    }
+  }
+}
+
+// Modern card styling similar to dashboard cards
+.card {
+  border-radius: var(--border-radius) !important;
+  padding: 24px !important;
+  margin-bottom: 20px !important;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1) !important;
+  border: 1px solid rgba(255, 255, 255, 0.1) !important;
+  overflow: hidden !important;
+  position: relative !important;
+  
+  .card-header {
+    border-radius: var(--border-radius) var(--border-radius) 0 0 !important;
+  }
+  
+  .card-footer {
+    border-radius: 0 0 var(--border-radius) var(--border-radius) !important;
+  }
+}
+
+// Modern panel styling similar to dashboard cards
+.panel {
+  border-radius: var(--border-radius) !important;
+  padding: 24px !important;
+  margin-bottom: 20px !important;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1) !important;
+  border: 1px solid rgba(255, 255, 255, 0.1) !important;
+  overflow: hidden !important;
+  position: relative !important;
+  
+  .panel-heading {
+    border-radius: var(--border-radius) var(--border-radius) 0 0 !important;
+  }
+  
+  .panel-footer {
+    border-radius: 0 0 var(--border-radius) var(--border-radius) !important;
+  }
+}
+
+// Simple well styling
+.well {
+  border-radius: var(--border-radius) !important;
+}
+
+// Simple alert styling
+.alert {
+  border-radius: var(--border-radius) !important;
+}
+
+// Simple breadcrumb styling
+.breadcrumb {
+  border-radius: var(--border-radius) !important;
+}
+
+// Simple pagination styling
+.pagination > li > a,
+.pagination > li > span {
+  border-radius: var(--border-radius-sm) !important;
+  margin: 0 2px !important;
+}
+
+// Modern dropdown styling similar to dashboard cards
+.dropdown-menu {
+  border-radius: var(--border-radius) !important;
+  padding: 12px !important;
+  margin-top: 8px !important;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1) !important;
+  border: 1px solid rgba(255, 255, 255, 0.1) !important;
+  overflow: hidden !important;
+  position: relative !important;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.15) !important;
+}
+
+// Theme-specific dropdown backgrounds
+.skin-blue .dropdown-menu,
+.skin-green .dropdown-menu,
+.skin-red .dropdown-menu,
+.skin-yellow .dropdown-menu,
+.skin-purple .dropdown-menu,
+.skin-black .dropdown-menu {
+  background: rgba(248, 250, 252, 0.95) !important;
+  border-color: rgba(148, 163, 184, 0.3) !important;
+  color: #334155 !important;
+}
+
+.skin-blue-light .dropdown-menu,
+.skin-green-light .dropdown-menu,
+.skin-red-light .dropdown-menu,
+.skin-yellow-light .dropdown-menu,
+.skin-purple-light .dropdown-menu,
+.skin-black-light .dropdown-menu {
+  background: rgba(248, 250, 252, 0.9) !important;
+  border-color: rgba(148, 163, 184, 0.3) !important;
+  color: #334155 !important;
+}
+
+// Fallback for when no theme is selected
+body:not([class*="skin-"]) .dropdown-menu {
+  background: rgba(248, 250, 252, 0.95) !important;
+  border-color: rgba(148, 163, 184, 0.3) !important;
+  color: #334155 !important;
+}
+
+// Modern dropdown items
+.dropdown-menu > li > a {
+  border-radius: var(--border-radius-sm) !important;
+  margin: 2px 0 !important;
+  padding: 8px 12px !important;
+  transition: all 0.2s ease !important;
+  color: inherit !important;
+}
+
+.dropdown-menu > li > a:hover,
+.dropdown-menu > li > a:focus {
+  background: rgba(59, 130, 246, 0.1) !important;
+  color: #1d4ed8 !important;
+  transform: translateX(4px) !important;
+}
+
+// Active dropdown items
+.dropdown-menu > .active > a,
+.dropdown-menu > .active > a:hover,
+.dropdown-menu > .active > a:focus {
+  background: rgba(59, 130, 246, 0.15) !important;
+  color: #1d4ed8 !important;
+}
+
+// Dropdown dividers
+.dropdown-menu .divider {
+  background: rgba(148, 163, 184, 0.2) !important;
+  margin: 8px 0 !important;
+}
+
+// Select2 dropdown modernization
+.select2-container--default .select2-dropdown {
+  border-radius: var(--border-radius) !important;
+  padding: 8px !important;
+  border: 1px solid rgba(255, 255, 255, 0.1) !important;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.15) !important;
+}
+
+.skin-blue .select2-container--default .select2-dropdown,
+.skin-green .select2-container--default .select2-dropdown,
+.skin-red .select2-container--default .select2-dropdown,
+.skin-yellow .select2-container--default .select2-dropdown,
+.skin-purple .select2-container--default .select2-dropdown,
+.skin-black .select2-container--default .select2-dropdown {
+  background: rgba(248, 250, 252, 0.95) !important;
+  border-color: rgba(148, 163, 184, 0.3) !important;
+}
+
+.skin-blue-light .select2-container--default .select2-dropdown,
+.skin-green-light .select2-container--default .select2-dropdown,
+.skin-red-light .select2-container--default .select2-dropdown,
+.skin-yellow-light .select2-container--default .select2-dropdown,
+.skin-purple-light .select2-container--default .select2-dropdown,
+.skin-black-light .select2-container--default .select2-dropdown {
+  background: rgba(248, 250, 252, 0.9) !important;
+  border-color: rgba(148, 163, 184, 0.3) !important;
+}
+
+body:not([class*="skin-"]) .select2-container--default .select2-dropdown {
+  background: rgba(248, 250, 252, 0.95) !important;
+  border-color: rgba(148, 163, 184, 0.3) !important;
+}
+
+// Select2 results
+.select2-container--default .select2-results__option {
+  border-radius: var(--border-radius-sm) !important;
+  margin: 2px 0 !important;
+  padding: 8px 12px !important;
+  transition: all 0.2s ease !important;
+}
+
+.select2-container--default .select2-results__option--highlighted[aria-selected] {
+  background: rgba(59, 130, 246, 0.1) !important;
+  color: #1d4ed8 !important;
+}
+
+.select2-container--default .select2-results__option[aria-selected=true] {
+  background: rgba(59, 130, 246, 0.15) !important;
+  color: #1d4ed8 !important;
+}
+
+// Select2 selection container modernization
+.select2-container--default .select2-selection--single,
+.select2-container--default .select2-selection--multiple {
+  border-radius: var(--border-radius-sm) !important;
+  border: 1px solid rgba(255, 255, 255, 0.1) !important;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1) !important;
+  min-height: 38px !important;
+  padding: 8px 12px !important;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05) !important;
+}
+
+// Theme-specific selection backgrounds
+.skin-blue .select2-container--default .select2-selection--single,
+.skin-green .select2-container--default .select2-selection--single,
+.skin-red .select2-container--default .select2-selection--single,
+.skin-yellow .select2-container--default .select2-selection--single,
+.skin-purple .select2-container--default .select2-selection--single,
+.skin-black .select2-container--default .select2-selection--single,
+.skin-blue .select2-container--default .select2-selection--multiple,
+.skin-green .select2-container--default .select2-selection--multiple,
+.skin-red .select2-container--default .select2-selection--multiple,
+.skin-yellow .select2-container--default .select2-selection--multiple,
+.skin-purple .select2-container--default .select2-selection--multiple,
+.skin-black .select2-container--default .select2-selection--multiple {
+  background: rgba(248, 250, 252, 0.85) !important;
+  border-color: rgba(148, 163, 184, 0.3) !important;
+  color: #334155 !important;
+}
+
+.skin-blue-light .select2-container--default .select2-selection--single,
+.skin-green-light .select2-container--default .select2-selection--single,
+.skin-red-light .select2-container--default .select2-selection--single,
+.skin-yellow-light .select2-container--default .select2-selection--single,
+.skin-purple-light .select2-container--default .select2-selection--single,
+.skin-black-light .select2-container--default .select2-selection--single,
+.skin-blue-light .select2-container--default .select2-selection--multiple,
+.skin-green-light .select2-container--default .select2-selection--multiple,
+.skin-red-light .select2-container--default .select2-selection--multiple,
+.skin-yellow-light .select2-container--default .select2-selection--multiple,
+.skin-purple-light .select2-container--default .select2-selection--multiple,
+.skin-black-light .select2-container--default .select2-selection--multiple {
+  background: rgba(248, 250, 252, 0.7) !important;
+  border-color: rgba(148, 163, 184, 0.3) !important;
+  color: #334155 !important;
+}
+
+body:not([class*="skin-"]) .select2-container--default .select2-selection--single,
+body:not([class*="skin-"]) .select2-container--default .select2-selection--multiple {
+  background: rgba(248, 250, 252, 0.85) !important;
+  border-color: rgba(148, 163, 184, 0.3) !important;
+  color: #334155 !important;
+}
+
+// Hover and focus states for Select2 selection
+.select2-container--default .select2-selection--single:hover,
+.select2-container--default .select2-selection--multiple:hover {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1) !important;
+  transform: translateY(-1px) !important;
+}
+
+.select2-container--default.select2-container--focus .select2-selection--single,
+.select2-container--default.select2-container--focus .select2-selection--multiple {
+  border-color: rgba(59, 130, 246, 0.5) !important;
+  box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.1) !important;
+}
+
+// Select2 rendered text styling
+.select2-container--default .select2-selection--single .select2-selection__rendered {
+  color: inherit !important;
+  padding: 0 !important;
+  line-height: 22px !important;
+}
+
+// Select2 arrow styling
+.select2-container--default .select2-selection--single .select2-selection__arrow {
+  height: 36px !important;
+  right: 8px !important;
+}
+
+.select2-container--default .select2-selection--single .select2-selection__arrow b {
+  border-color: #64748b transparent transparent transparent !important;
+  border-style: solid !important;
+  border-width: 5px 4px 0 4px !important;
+  height: 0 !important;
+  left: 50% !important;
+  margin-left: -4px !important;
+  margin-top: -2px !important;
+  position: absolute !important;
+  top: 50% !important;
+  width: 0 !important;
+}
+
+.select2-container--default.select2-container--open .select2-selection--single .select2-selection__arrow b {
+  border-color: transparent transparent #64748b transparent !important;
+  border-width: 0 4px 5px 4px !important;
+}
+
+// Simple input group styling
+.input-group {
+  .form-control,
+  .input-group-addon,
+  .input-group-btn > .btn {
+    &:first-child {
+      border-radius: var(--border-radius-sm) 0 0 var(--border-radius-sm) !important;
+    }
+    
+    &:last-child {
+      border-radius: 0 var(--border-radius-sm) var(--border-radius-sm) 0 !important;
+    }
+    
+    &:only-child {
+      border-radius: var(--border-radius-sm) !important;
+    }
+  }
+}
+
+// Simple tooltip styling
+.tooltip,
+.tooltip-inner {
+  border-radius: var(--border-radius-sm) !important;
+}
+
+// Simple popover styling
+.popover {
+  border-radius: var(--border-radius) !important;
+  
+  .popover-header {
+    border-radius: var(--border-radius) var(--border-radius) 0 0 !important;
+  }
+}
+
+// Theme-specific container backgrounds (similar to dashboard cards)
+.skin-blue .box,
+.skin-green .box,
+.skin-red .box,
+.skin-yellow .box,
+.skin-purple .box,
+.skin-black .box,
+.skin-blue .card,
+.skin-green .card,
+.skin-red .card,
+.skin-yellow .card,
+.skin-purple .card,
+.skin-black .card,
+.skin-blue .panel,
+.skin-green .panel,
+.skin-red .panel,
+.skin-yellow .panel,
+.skin-purple .panel,
+.skin-black .panel {
+  background: rgba(248, 250, 252, 0.85) !important;
+  border-color: rgba(148, 163, 184, 0.2) !important;
+  color: #334155 !important;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08) !important;
+}
+
+.skin-blue-light .box,
+.skin-green-light .box,
+.skin-red-light .box,
+.skin-yellow-light .box,
+.skin-purple-light .box,
+.skin-black-light .box,
+.skin-blue-light .card,
+.skin-green-light .card,
+.skin-red-light .card,
+.skin-yellow-light .card,
+.skin-purple-light .card,
+.skin-black-light .card,
+.skin-blue-light .panel,
+.skin-green-light .panel,
+.skin-red-light .panel,
+.skin-yellow-light .panel,
+.skin-purple-light .panel,
+.skin-black-light .panel {
+  background: rgba(248, 250, 252, 0.7) !important;
+  border-color: rgba(148, 163, 184, 0.2) !important;
+  color: #334155 !important;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08) !important;
+}
+
+// Hover effects for containers - but disable transforms that affect modals
+.box:hover,
+.card:hover,
+.panel:hover {
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15) !important;
+  // Removed transform: translateY(-4px) as it causes modal positioning issues
+}
+
+// Specifically disable hover transforms for POS containers to prevent modal flashing
+#pos_table .box:hover,
+#pos_table .card:hover,
+#pos_table .panel:hover,
+.product_div:hover,
+.product_row:hover,
+#pos_table:hover,
+#pos_table tbody:hover,
+#pos_table tr:hover,
+#pos_table td:hover {
+  transform: none !important;
+}
+
+.skin-blue .box:hover,
+.skin-green .box:hover,
+.skin-red .box:hover,
+.skin-yellow .box:hover,
+.skin-purple .box:hover,
+.skin-black .box:hover,
+.skin-blue .card:hover,
+.skin-green .card:hover,
+.skin-red .card:hover,
+.skin-yellow .card:hover,
+.skin-purple .card:hover,
+.skin-black .card:hover,
+.skin-blue .panel:hover,
+.skin-green .panel:hover,
+.skin-red .panel:hover,
+.skin-yellow .panel:hover,
+.skin-purple .panel:hover,
+.skin-black .panel:hover {
+  background: rgba(255, 255, 255, 0.95) !important;
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.12) !important;
+}
+
+.skin-blue-light .box:hover,
+.skin-green-light .box:hover,
+.skin-red-light .box:hover,
+.skin-yellow-light .box:hover,
+.skin-purple-light .box:hover,
+.skin-black-light .box:hover,
+.skin-blue-light .card:hover,
+.skin-green-light .card:hover,
+.skin-red-light .card:hover,
+.skin-yellow-light .card:hover,
+.skin-purple-light .card:hover,
+.skin-black-light .card:hover,
+.skin-blue-light .panel:hover,
+.skin-green-light .panel:hover,
+.skin-red-light .panel:hover,
+.skin-yellow-light .panel:hover,
+.skin-purple-light .panel:hover,
+.skin-black-light .panel:hover {
+  background: rgba(255, 255, 255, 0.9) !important;
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.12) !important;
+}
+
+// Fallback for when no theme is selected - treat as light blue
+body:not([class*="skin-"]) .box,
+body:not([class*="skin-"]) .card,
+body:not([class*="skin-"]) .panel {
+  background: rgba(248, 250, 252, 0.85) !important;
+  border-color: rgba(148, 163, 184, 0.2) !important;
+  color: #334155 !important;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08) !important;
+}
+
+body:not([class*="skin-"]) .box:hover,
+body:not([class*="skin-"]) .card:hover,
+body:not([class*="skin-"]) .panel:hover {
+  background: rgba(255, 255, 255, 0.95) !important;
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.12) !important;
+}
+
+// Mobile responsive adjustments
+@media (max-width: 768px) {
+  :root {
+    --border-radius: 16px;
+    --border-radius-sm: 8px;
+    --border-radius-lg: 20px;
+  }
+  
+  .box,
+  .card,
+  .panel {
+    padding: 20px !important;
+    margin-bottom: 16px !important;
+  }
+  
+  .box:hover,
+  .card:hover,
+  .panel:hover {
+    transform: none !important;
+  }
+}
+
+@media (max-width: 576px) {
+  .box,
+  .card,
+  .panel {
+    padding: 16px !important;
+    margin-bottom: 12px !important;
+  }
+}
+
+// Center sidebar toggle button specifically in the top bar
+.main-header .navbar .navbar-nav > li > .sidebar-toggle,
+.main-header .navbar .sidebar-toggle,
+.navbar .sidebar-toggle {
+  height: 40px !important;
+  min-height: 40px !important;
+  max-height: 40px !important;
+  padding: 8px 12px !important;
+  margin-right: 10px !important;
+  margin-bottom: 0 !important; // Override general bottom margin
+  line-height: 1.3 !important;
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  vertical-align: middle !important;
+  position: relative !important;
+  top: 50% !important;
+  transform: translateY(-50%) !important;
+  
+  // Adjust icon size accordingly
+  &:before {
+    font-size: 18px !important;
+    vertical-align: middle !important;
+  }
+}
+
+// Specific targeting for AdminLTE navbar structure
+.main-header .navbar-nav > li:first-child > a.sidebar-toggle {
+  height: 40px !important;
+  margin-bottom: 0 !important; // Override general bottom margin
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  position: relative !important;
+  top: 50% !important;
+  transform: translateY(-50%) !important;
+}
+
+// Add right margin to user menu to prevent touching right edge
+.main-header .navbar-custom-menu .user-menu,
+.main-header .user-menu,
+.navbar-custom-menu .user-menu {
+  margin-right: 15px !important;
+}
+
+// Mobile-specific sidebar toggle centering
+@media (max-width: 767px) {
+  .main-header .navbar .navbar-nav > li > .sidebar-toggle,
+  .main-header .navbar .sidebar-toggle,
+  .navbar .sidebar-toggle {
+    position: static !important;
+    top: auto !important;
+    transform: none !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    height: 50px !important;
+    min-height: 50px !important;
+    margin: 0 !important;
+    padding: 12px !important;
+    
+    &:before {
+      font-size: 20px !important;
+    }
+  }
+  
+  // Ensure navbar has proper height on mobile
+  .main-header .navbar {
+    min-height: 50px !important;
+  }
+}
+
+
+
+// Print styles
+@media print {
+  .box,
+  .card,
+  .panel {
+    border: 1px solid #000 !important;
+    box-shadow: none !important;
+    transform: none !important;
+    background: white !important;
+  }
+}
+
+// Mobile native select styling for better touch experience
+.mobile-native-select {
+  appearance: none !important;
+  -webkit-appearance: none !important;
+  -moz-appearance: none !important;
+  background-image: url("data:image/svg+xml;charset=utf-8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 4 5'><path fill='%23666' d='m2 0-2 2h4zm0 5 2-2h-4z'/></svg>") !important;
+  background-repeat: no-repeat !important;
+  background-position: right 12px center !important;
+  background-size: 12px 15px !important;
+  padding-right: 36px !important;
+  border: 1px solid #ddd !important;
+  border-radius: var(--border-radius-sm) !important;
+  font-size: 16px !important; // Prevents zoom on iOS
+  min-height: 44px !important; // Better touch target
+  
+  &:focus {
+    border-color: #007bff !important;
+    outline: none !important;
+    box-shadow: 0 0 0 2px rgba(0, 123, 255, 0.25) !important;
+  }
+}

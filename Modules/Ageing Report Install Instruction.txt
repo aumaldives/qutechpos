@@ -1,0 +1,7 @@
+Ageing Module Install Instructions:
+
+Upload the AgeingReport_upload.zip to Modules
+Enter your License Details and Proceed with Installations
+
+
+Replace modules_statuses.json files in POS root Directory with the one attached

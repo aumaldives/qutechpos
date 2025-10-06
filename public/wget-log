@@ -1,0 +1,19 @@
+--2024-07-04 20:24:44--  https://controlroom.islebooks.mv/smb/file-manager/download/domainId/6?file=islebookpos_live_2024-07-05_01-19-09.sql.zip
+Resolving controlroom.islebooks.mv (controlroom.islebooks.mv)... 65.20.69.172
+Connecting to controlroom.islebooks.mv (controlroom.islebooks.mv)|65.20.69.172|:443... connected.
+HTTP request sent, awaiting response... 303 See Other
+Location: https://controlroom.islebooks.mv:443/login.php?success_redirect_url=%2Fsmb%2Ffile-manager%2Fdownload%2FdomainId%2F6%3Ffile%3Dislebookpos_live_2024-07-05_01-19-09.sql.zip [following]
+--2024-07-04 20:24:44--  https://controlroom.islebooks.mv/login.php?success_redirect_url=%2Fsmb%2Ffile-manager%2Fdownload%2FdomainId%2F6%3Ffile%3Dislebookpos_live_2024-07-05_01-19-09.sql.zip
+Reusing existing connection to controlroom.islebooks.mv:443.
+HTTP request sent, awaiting response... 303 See Other
+Location: https://controlroom.islebooks.mv:443/login_up.php?success_redirect_url=%2Fsmb%2Ffile-manager%2Fdownload%2FdomainId%2F6%3Ffile%3Dislebookpos_live_2024-07-05_01-19-09.sql.zip [following]
+--2024-07-04 20:24:44--  https://controlroom.islebooks.mv/login_up.php?success_redirect_url=%2Fsmb%2Ffile-manager%2Fdownload%2FdomainId%2F6%3Ffile%3Dislebookpos_live_2024-07-05_01-19-09.sql.zip
+Reusing existing connection to controlroom.islebooks.mv:443.
+HTTP request sent, awaiting response... 200 OK
+Length: unspecified [text/html]
+Saving to: ‘6?file=islebookpos_live_2024-07-05_01-19-09.sql.zip’
+
+6?file=islebookpos_live_2024-07-05_01-19-09.sql.zip             [<=>                                                                                                                                      ]       0  --.-KB/s               6?file=islebookpos_live_2024-07-05_01-19-09.sql.zip             [ <=>                                                                                                                                     ]  23.37K  --.-KB/s    in 0.05s   
+
+2024-07-04 20:24:44 (519 KB/s) - ‘6?file=islebookpos_live_2024-07-05_01-19-09.sql.zip’ saved [23929]
+

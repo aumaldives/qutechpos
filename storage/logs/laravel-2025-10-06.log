@@ -1,0 +1,199 @@
+[2025-10-06 00:31:39] live.WARNING: VariationGroupPrice not found {"variation_id":"27","price_group_id":"NaN"} 
+[2025-10-06 00:32:21] live.INFO: getCloseRegister - Register ID parameter: null  
+[2025-10-06 00:32:21] live.INFO: getCloseRegister - Register details found: YES (ID: )  
+[2025-10-06 00:32:21] live.INFO: getCloseRegister - No register ID found in register_details  
+[2025-10-06 00:34:37] live.INFO: About to call POS Controller {"authenticated_user_id":1,"business_id":1,"request_method":"POST","request_data_keys":["location_id","contact_id","products","payment","discount_amount","discount_type","shipping_charges","sale_note","status","is_direct_sale","transaction_date","invoice_no","is_quotation","final_total","tax_rate_id","shipping_details","additional_notes","staff_note","commission_agent"],"products_count":1,"location_id":503,"contact_id":13} 
+[2025-10-06 00:43:17] live.INFO: About to call POS Controller {"authenticated_user_id":1,"business_id":1,"request_method":"POST","request_data_keys":["location_id","contact_id","products","payment","discount_amount","discount_type","shipping_charges","sale_note","status","is_direct_sale","transaction_date","invoice_no","is_quotation","final_total","tax_rate_id","shipping_details","additional_notes","staff_note","commission_agent"],"products_count":1,"location_id":503,"contact_id":13} 
+[2025-10-06 00:47:24] live.INFO: About to call POS Controller {"authenticated_user_id":1,"business_id":1,"request_method":"POST","request_data_keys":["location_id","contact_id","products","payment","discount_amount","discount_type","shipping_charges","sale_note","status","is_direct_sale","transaction_date","invoice_no","is_quotation","final_total","tax_rate_id","shipping_details","additional_notes","staff_note","commission_agent"],"products_count":1,"location_id":503,"contact_id":13} 
+[2025-10-06 00:55:06] live.INFO: About to call POS Controller {"authenticated_user_id":1,"business_id":1,"request_method":"POST","request_data_keys":["location_id","contact_id","products","payment","discount_amount","discount_type","shipping_charges","sale_note","status","is_direct_sale","transaction_date","invoice_no","is_quotation","final_total","tax_rate_id","shipping_details","additional_notes","staff_note","commission_agent"],"products_count":1,"location_id":503,"contact_id":13} 
+[2025-10-06 01:00:07] live.INFO: About to call POS Controller {"authenticated_user_id":1,"business_id":1,"request_method":"POST","request_data_keys":["location_id","contact_id","products","payment","discount_amount","discount_type","shipping_charges","sale_note","status","is_direct_sale","transaction_date","invoice_no","is_quotation","final_total","tax_rate_id","shipping_details","additional_notes","staff_note","commission_agent"],"products_count":1,"location_id":503,"contact_id":13} 
+[2025-10-06 01:01:39] live.INFO: About to call POS Controller {"authenticated_user_id":1,"business_id":1,"request_method":"POST","request_data_keys":["location_id","contact_id","products","payment","discount_amount","discount_type","shipping_charges","sale_note","status","is_direct_sale","transaction_date","invoice_no","is_quotation","final_total","tax_rate_id","shipping_details","additional_notes","staff_note","commission_agent"],"products_count":1,"location_id":503,"contact_id":13} 
+[2025-10-06 01:04:29] live.WARNING: VariationGroupPrice not found {"variation_id":"806","price_group_id":"NaN"} 
+[2025-10-06 01:05:14] live.WARNING: VariationGroupPrice not found {"variation_id":"824","price_group_id":"NaN"} 
+[2025-10-06 01:05:33] live.WARNING: VariationGroupPrice not found {"variation_id":"832","price_group_id":"NaN"} 
+[2025-10-06 01:07:10] live.WARNING: VariationGroupPrice not found {"variation_id":"623","price_group_id":"NaN"} 
+[2025-10-06 01:07:11] live.WARNING: VariationGroupPrice not found {"variation_id":"657","price_group_id":"NaN"} 
+[2025-10-06 01:07:11] live.WARNING: VariationGroupPrice not found {"variation_id":"696","price_group_id":"NaN"} 
+[2025-10-06 01:07:11] live.WARNING: VariationGroupPrice not found {"variation_id":"590","price_group_id":"NaN"} 
+[2025-10-06 01:07:12] live.WARNING: VariationGroupPrice not found {"variation_id":"716","price_group_id":"NaN"} 
+[2025-10-06 01:07:36] live.WARNING: VariationGroupPrice not found {"variation_id":"806","price_group_id":"NaN"} 
+[2025-10-06 01:07:55] live.WARNING: VariationGroupPrice not found {"variation_id":"825","price_group_id":"NaN"} 
+[2025-10-06 01:18:16] live.INFO: About to call POS Controller {"authenticated_user_id":1,"business_id":1,"request_method":"POST","request_data_keys":["location_id","contact_id","products","payment","discount_amount","discount_type","shipping_charges","sale_note","status","is_direct_sale","transaction_date","invoice_no","is_quotation","final_total","tax_rate_id","shipping_details","additional_notes","staff_note","commission_agent"],"products_count":1,"location_id":503,"contact_id":13} 
+[2025-10-06 01:18:37] live.INFO: About to call POS Controller {"authenticated_user_id":1,"business_id":1,"request_method":"POST","request_data_keys":["location_id","contact_id","products","payment","discount_amount","discount_type","shipping_charges","sale_note","status","is_direct_sale","transaction_date","invoice_no","is_quotation","final_total","tax_rate_id","shipping_details","additional_notes","staff_note","commission_agent"],"products_count":1,"location_id":503,"contact_id":13} 
+[2025-10-06 01:36:47] live.INFO: About to call POS Controller {"authenticated_user_id":1,"business_id":1,"request_method":"POST","request_data_keys":["location_id","contact_id","products","payment","discount_amount","discount_type","shipping_charges","sale_note","status","is_direct_sale","transaction_date","invoice_no","is_quotation","final_total","tax_rate_id","shipping_details","additional_notes","staff_note","commission_agent"],"products_count":1,"location_id":503,"contact_id":13} 
+[2025-10-06 01:45:53] live.INFO: About to call POS Controller {"authenticated_user_id":1,"business_id":1,"request_method":"POST","request_data_keys":["location_id","contact_id","products","payment","discount_amount","discount_type","shipping_charges","sale_note","status","is_direct_sale","transaction_date","invoice_no","is_quotation","final_total","tax_rate_id","shipping_details","additional_notes","staff_note","commission_agent"],"products_count":1,"location_id":503,"contact_id":13} 
+[2025-10-06 01:47:07] live.INFO: About to call POS Controller {"authenticated_user_id":1,"business_id":1,"request_method":"POST","request_data_keys":["location_id","contact_id","products","payment","discount_amount","discount_type","shipping_charges","sale_note","status","is_direct_sale","transaction_date","invoice_no","is_quotation","final_total","tax_rate_id","shipping_details","additional_notes","staff_note","commission_agent"],"products_count":1,"location_id":503,"contact_id":13} 
+[2025-10-06 01:56:16] live.INFO: About to call POS Controller {"authenticated_user_id":1,"business_id":1,"request_method":"POST","request_data_keys":["location_id","contact_id","products","payment","discount_amount","discount_type","shipping_charges","sale_note","status","is_direct_sale","transaction_date","invoice_no","is_quotation","final_total","tax_rate_id","shipping_details","additional_notes","staff_note","commission_agent"],"products_count":1,"location_id":503,"contact_id":13} 
+[2025-10-06 02:29:37] live.INFO: About to call POS Controller {"authenticated_user_id":1,"business_id":1,"request_method":"POST","request_data_keys":["location_id","contact_id","products","payment","discount_amount","discount_type","shipping_charges","sale_note","status","is_direct_sale","transaction_date","invoice_no","is_quotation","final_total","tax_rate_id","shipping_details","additional_notes","staff_note","commission_agent"],"products_count":1,"location_id":503,"contact_id":13} 
+[2025-10-06 02:35:07] live.INFO: About to call POS Controller {"authenticated_user_id":1,"business_id":1,"request_method":"POST","request_data_keys":["location_id","contact_id","products","payment","discount_amount","discount_type","shipping_charges","sale_note","status","is_direct_sale","transaction_date","invoice_no","is_quotation","final_total","tax_rate_id","shipping_details","additional_notes","staff_note","commission_agent"],"products_count":1,"location_id":503,"contact_id":13} 
+[2025-10-06 02:47:16] live.INFO: About to call POS Controller {"authenticated_user_id":1,"business_id":1,"request_method":"POST","request_data_keys":["location_id","contact_id","products","payment","discount_amount","discount_type","shipping_charges","sale_note","status","is_direct_sale","transaction_date","invoice_no","is_quotation","final_total","tax_rate_id","shipping_details","additional_notes","staff_note","commission_agent"],"products_count":1,"location_id":503,"contact_id":13} 
+[2025-10-06 02:56:20] live.INFO: About to call POS Controller {"authenticated_user_id":1,"business_id":1,"request_method":"POST","request_data_keys":["location_id","contact_id","products","payment","discount_amount","discount_type","shipping_charges","sale_note","status","is_direct_sale","transaction_date","invoice_no","is_quotation","final_total","tax_rate_id","shipping_details","additional_notes","staff_note","commission_agent"],"products_count":1,"location_id":503,"contact_id":13} 
+[2025-10-06 03:10:07] live.INFO: About to call POS Controller {"authenticated_user_id":1,"business_id":1,"request_method":"POST","request_data_keys":["location_id","contact_id","products","payment","discount_amount","discount_type","shipping_charges","sale_note","status","is_direct_sale","transaction_date","invoice_no","is_quotation","final_total","tax_rate_id","shipping_details","additional_notes","staff_note","commission_agent"],"products_count":1,"location_id":503,"contact_id":13} 
+[2025-10-06 03:21:35] live.WARNING: VariationGroupPrice not found {"variation_id":"522","price_group_id":"NaN"} 
+[2025-10-06 03:21:38] live.WARNING: VariationGroupPrice not found {"variation_id":"615","price_group_id":"NaN"} 
+[2025-10-06 03:29:13] live.WARNING: VariationGroupPrice not found {"variation_id":"741","price_group_id":"NaN"} 
+[2025-10-06 04:05:07] live.INFO: About to call POS Controller {"authenticated_user_id":1,"business_id":1,"request_method":"POST","request_data_keys":["location_id","contact_id","products","payment","discount_amount","discount_type","shipping_charges","sale_note","status","is_direct_sale","transaction_date","invoice_no","is_quotation","final_total","tax_rate_id","shipping_details","additional_notes","staff_note","commission_agent"],"products_count":1,"location_id":503,"contact_id":13} 
+[2025-10-06 04:06:06] live.INFO: About to call POS Controller {"authenticated_user_id":1,"business_id":1,"request_method":"POST","request_data_keys":["location_id","contact_id","products","payment","discount_amount","discount_type","shipping_charges","sale_note","status","is_direct_sale","transaction_date","invoice_no","is_quotation","final_total","tax_rate_id","shipping_details","additional_notes","staff_note","commission_agent"],"products_count":1,"location_id":503,"contact_id":13} 
+[2025-10-06 04:57:07] live.INFO: About to call POS Controller {"authenticated_user_id":1,"business_id":1,"request_method":"POST","request_data_keys":["location_id","contact_id","products","payment","discount_amount","discount_type","shipping_charges","sale_note","status","is_direct_sale","transaction_date","invoice_no","is_quotation","final_total","tax_rate_id","shipping_details","additional_notes","staff_note","commission_agent"],"products_count":1,"location_id":503,"contact_id":13} 
+[2025-10-06 05:02:55] live.INFO: About to call POS Controller {"authenticated_user_id":1,"business_id":1,"request_method":"POST","request_data_keys":["location_id","contact_id","products","payment","discount_amount","discount_type","shipping_charges","sale_note","status","is_direct_sale","transaction_date","invoice_no","is_quotation","final_total","tax_rate_id","shipping_details","additional_notes","staff_note","commission_agent"],"products_count":1,"location_id":503,"contact_id":13} 
+[2025-10-06 05:35:41] live.INFO: About to call POS Controller {"authenticated_user_id":1,"business_id":1,"request_method":"POST","request_data_keys":["location_id","contact_id","products","payment","discount_amount","discount_type","shipping_charges","sale_note","status","is_direct_sale","transaction_date","invoice_no","is_quotation","final_total","tax_rate_id","shipping_details","additional_notes","staff_note","commission_agent"],"products_count":1,"location_id":503,"contact_id":13} 
+[2025-10-06 05:44:06] live.INFO: About to call POS Controller {"authenticated_user_id":1,"business_id":1,"request_method":"POST","request_data_keys":["location_id","contact_id","products","payment","discount_amount","discount_type","shipping_charges","sale_note","status","is_direct_sale","transaction_date","invoice_no","is_quotation","final_total","tax_rate_id","shipping_details","additional_notes","staff_note","commission_agent"],"products_count":1,"location_id":503,"contact_id":13} 
+[2025-10-06 06:14:00] live.INFO: getCloseRegister - Register ID parameter: null  
+[2025-10-06 06:14:00] live.INFO: getCloseRegister - Register details found: YES (ID: )  
+[2025-10-06 06:14:00] live.INFO: getCloseRegister - No register ID found in register_details  
+[2025-10-06 06:16:46] live.INFO: About to call POS Controller {"authenticated_user_id":1,"business_id":1,"request_method":"POST","request_data_keys":["location_id","contact_id","products","payment","discount_amount","discount_type","shipping_charges","sale_note","status","is_direct_sale","transaction_date","invoice_no","is_quotation","final_total","tax_rate_id","shipping_details","additional_notes","staff_note","commission_agent"],"products_count":1,"location_id":503,"contact_id":13} 
+[2025-10-06 06:20:44] live.WARNING: VariationGroupPrice not found {"variation_id":"499","price_group_id":"NaN"} 
+[2025-10-06 06:24:44] live.WARNING: VariationGroupPrice not found {"variation_id":"526","price_group_id":"NaN"} 
+[2025-10-06 06:25:38] live.WARNING: VariationGroupPrice not found {"variation_id":"835","price_group_id":"NaN"} 
+[2025-10-06 06:30:07] live.INFO: About to call POS Controller {"authenticated_user_id":1,"business_id":1,"request_method":"POST","request_data_keys":["location_id","contact_id","products","payment","discount_amount","discount_type","shipping_charges","sale_note","status","is_direct_sale","transaction_date","invoice_no","is_quotation","final_total","tax_rate_id","shipping_details","additional_notes","staff_note","commission_agent"],"products_count":1,"location_id":503,"contact_id":13} 
+[2025-10-06 06:32:37] live.INFO: About to call POS Controller {"authenticated_user_id":1,"business_id":1,"request_method":"POST","request_data_keys":["location_id","contact_id","products","payment","discount_amount","discount_type","shipping_charges","sale_note","status","is_direct_sale","transaction_date","invoice_no","is_quotation","final_total","tax_rate_id","shipping_details","additional_notes","staff_note","commission_agent"],"products_count":1,"location_id":503,"contact_id":13} 
+[2025-10-06 06:41:55] live.WARNING: VariationGroupPrice not found {"variation_id":"832","price_group_id":"NaN"} 
+[2025-10-06 06:42:40] live.WARNING: VariationGroupPrice not found {"variation_id":"832","price_group_id":"NaN"} 
+[2025-10-06 06:59:21] live.INFO: About to call POS Controller {"authenticated_user_id":1,"business_id":1,"request_method":"POST","request_data_keys":["location_id","contact_id","products","payment","discount_amount","discount_type","shipping_charges","sale_note","status","is_direct_sale","transaction_date","invoice_no","is_quotation","final_total","tax_rate_id","shipping_details","additional_notes","staff_note","commission_agent"],"products_count":1,"location_id":503,"contact_id":13} 
+[2025-10-06 07:01:21] live.INFO: About to call POS Controller {"authenticated_user_id":1,"business_id":1,"request_method":"POST","request_data_keys":["location_id","contact_id","products","payment","discount_amount","discount_type","shipping_charges","sale_note","status","is_direct_sale","transaction_date","invoice_no","is_quotation","final_total","tax_rate_id","shipping_details","additional_notes","staff_note","commission_agent"],"products_count":1,"location_id":503,"contact_id":13} 
+[2025-10-06 07:07:27] live.WARNING: VariationGroupPrice not found {"variation_id":"633","price_group_id":"NaN"} 
+[2025-10-06 07:08:06] live.INFO: About to call POS Controller {"authenticated_user_id":1,"business_id":1,"request_method":"POST","request_data_keys":["location_id","contact_id","products","payment","discount_amount","discount_type","shipping_charges","sale_note","status","is_direct_sale","transaction_date","invoice_no","is_quotation","final_total","tax_rate_id","shipping_details","additional_notes","staff_note","commission_agent"],"products_count":1,"location_id":503,"contact_id":13} 
+[2025-10-06 07:08:12] live.WARNING: VariationGroupPrice not found {"variation_id":"636","price_group_id":"NaN"} 
+[2025-10-06 07:08:51] live.WARNING: VariationGroupPrice not found {"variation_id":"630","price_group_id":"NaN"} 
+[2025-10-06 07:09:01] live.WARNING: VariationGroupPrice not found {"variation_id":"725","price_group_id":"NaN"} 
+[2025-10-06 07:09:23] live.WARNING: VariationGroupPrice not found {"variation_id":"495","price_group_id":"NaN"} 
+[2025-10-06 07:21:50] live.WARNING: VariationGroupPrice not found {"variation_id":"828","price_group_id":"NaN"} 
+[2025-10-06 07:21:59] live.WARNING: VariationGroupPrice not found {"variation_id":"829","price_group_id":"NaN"} 
+[2025-10-06 07:22:10] live.WARNING: VariationGroupPrice not found {"variation_id":"830","price_group_id":"NaN"} 
+[2025-10-06 07:24:03] live.WARNING: VariationGroupPrice not found {"variation_id":"285","price_group_id":"NaN"} 
+[2025-10-06 07:25:25] live.WARNING: VariationGroupPrice not found {"variation_id":"181","price_group_id":"NaN"} 
+[2025-10-06 07:25:46] live.WARNING: VariationGroupPrice not found {"variation_id":"619","price_group_id":"NaN"} 
+[2025-10-06 07:25:52] live.WARNING: VariationGroupPrice not found {"variation_id":"42","price_group_id":"NaN"} 
+[2025-10-06 07:26:08] live.WARNING: VariationGroupPrice not found {"variation_id":"238","price_group_id":"NaN"} 
+[2025-10-06 07:27:08] live.WARNING: VariationGroupPrice not found {"variation_id":"181","price_group_id":"NaN"} 
+[2025-10-06 07:28:26] live.WARNING: VariationGroupPrice not found {"variation_id":"182","price_group_id":"NaN"} 
+[2025-10-06 07:29:17] live.WARNING: VariationGroupPrice not found {"variation_id":"183","price_group_id":"NaN"} 
+[2025-10-06 07:29:49] live.WARNING: VariationGroupPrice not found {"variation_id":"184","price_group_id":"NaN"} 
+[2025-10-06 07:30:23] live.WARNING: VariationGroupPrice not found {"variation_id":"185","price_group_id":"NaN"} 
+[2025-10-06 07:31:03] live.WARNING: VariationGroupPrice not found {"variation_id":"176","price_group_id":"NaN"} 
+[2025-10-06 07:32:06] live.WARNING: VariationGroupPrice not found {"variation_id":"177","price_group_id":"NaN"} 
+[2025-10-06 07:32:29] live.WARNING: VariationGroupPrice not found {"variation_id":"178","price_group_id":"NaN"} 
+[2025-10-06 07:33:34] live.WARNING: VariationGroupPrice not found {"variation_id":"179","price_group_id":"NaN"} 
+[2025-10-06 07:34:04] live.WARNING: VariationGroupPrice not found {"variation_id":"448","price_group_id":"NaN"} 
+[2025-10-06 07:34:48] live.WARNING: VariationGroupPrice not found {"variation_id":"444","price_group_id":"NaN"} 
+[2025-10-06 07:35:08] live.WARNING: VariationGroupPrice not found {"variation_id":"446","price_group_id":"NaN"} 
+[2025-10-06 07:35:55] live.WARNING: VariationGroupPrice not found {"variation_id":"449","price_group_id":"NaN"} 
+[2025-10-06 07:36:33] live.WARNING: VariationGroupPrice not found {"variation_id":"24","price_group_id":"NaN"} 
+[2025-10-06 07:37:07] live.INFO: About to call POS Controller {"authenticated_user_id":1,"business_id":1,"request_method":"POST","request_data_keys":["location_id","contact_id","products","payment","discount_amount","discount_type","shipping_charges","sale_note","status","is_direct_sale","transaction_date","invoice_no","is_quotation","final_total","tax_rate_id","shipping_details","additional_notes","staff_note","commission_agent"],"products_count":1,"location_id":503,"contact_id":13} 
+[2025-10-06 07:39:30] live.WARNING: VariationGroupPrice not found {"variation_id":"25","price_group_id":"NaN"} 
+[2025-10-06 07:40:01] live.WARNING: VariationGroupPrice not found {"variation_id":"409","price_group_id":"NaN"} 
+[2025-10-06 07:41:10] live.WARNING: VariationGroupPrice not found {"variation_id":"408","price_group_id":"NaN"} 
+[2025-10-06 07:41:37] live.WARNING: VariationGroupPrice not found {"variation_id":"238","price_group_id":"NaN"} 
+[2025-10-06 07:42:51] live.WARNING: VariationGroupPrice not found {"variation_id":"751","price_group_id":"NaN"} 
+[2025-10-06 07:44:31] live.WARNING: VariationGroupPrice not found {"variation_id":"749","price_group_id":"NaN"} 
+[2025-10-06 07:45:28] live.WARNING: VariationGroupPrice not found {"variation_id":"744","price_group_id":"NaN"} 
+[2025-10-06 07:46:58] live.WARNING: VariationGroupPrice not found {"variation_id":"229","price_group_id":"NaN"} 
+[2025-10-06 07:48:22] live.WARNING: VariationGroupPrice not found {"variation_id":"227","price_group_id":"NaN"} 
+[2025-10-06 07:49:22] live.INFO: About to call POS Controller {"authenticated_user_id":1,"business_id":1,"request_method":"POST","request_data_keys":["location_id","contact_id","products","payment","discount_amount","discount_type","shipping_charges","sale_note","status","is_direct_sale","transaction_date","invoice_no","is_quotation","final_total","tax_rate_id","shipping_details","additional_notes","staff_note","commission_agent"],"products_count":1,"location_id":503,"contact_id":13} 
+[2025-10-06 07:49:40] live.WARNING: VariationGroupPrice not found {"variation_id":"228","price_group_id":"NaN"} 
+[2025-10-06 08:05:06] live.INFO: About to call POS Controller {"authenticated_user_id":1,"business_id":1,"request_method":"POST","request_data_keys":["location_id","contact_id","products","payment","discount_amount","discount_type","shipping_charges","sale_note","status","is_direct_sale","transaction_date","invoice_no","is_quotation","final_total","tax_rate_id","shipping_details","additional_notes","staff_note","commission_agent"],"products_count":1,"location_id":503,"contact_id":13} 
+[2025-10-06 08:14:10] live.WARNING: VariationGroupPrice not found {"variation_id":"537","price_group_id":"NaN"} 
+[2025-10-06 08:19:52] live.INFO: About to call POS Controller {"authenticated_user_id":1,"business_id":1,"request_method":"POST","request_data_keys":["location_id","contact_id","products","payment","discount_amount","discount_type","shipping_charges","sale_note","status","is_direct_sale","transaction_date","invoice_no","is_quotation","final_total","tax_rate_id","shipping_details","additional_notes","staff_note","commission_agent"],"products_count":1,"location_id":503,"contact_id":13} 
+[2025-10-06 08:26:05] live.INFO: About to call POS Controller {"authenticated_user_id":1,"business_id":1,"request_method":"POST","request_data_keys":["location_id","contact_id","products","payment","discount_amount","discount_type","shipping_charges","sale_note","status","is_direct_sale","transaction_date","invoice_no","is_quotation","final_total","tax_rate_id","shipping_details","additional_notes","staff_note","commission_agent"],"products_count":1,"location_id":503,"contact_id":13} 
+[2025-10-06 08:28:34] live.WARNING: VariationGroupPrice not found {"variation_id":"396","price_group_id":"NaN"} 
+[2025-10-06 08:39:05] live.WARNING: VariationGroupPrice not found {"variation_id":"12","price_group_id":"NaN"} 
+[2025-10-06 08:41:13] live.WARNING: VariationGroupPrice not found {"variation_id":"800","price_group_id":"NaN"} 
+[2025-10-06 08:41:21] live.WARNING: VariationGroupPrice not found {"variation_id":"572","price_group_id":"NaN"} 
+[2025-10-06 08:44:38] live.INFO: About to call POS Controller {"authenticated_user_id":1,"business_id":1,"request_method":"POST","request_data_keys":["location_id","contact_id","products","payment","discount_amount","discount_type","shipping_charges","sale_note","status","is_direct_sale","transaction_date","invoice_no","is_quotation","final_total","tax_rate_id","shipping_details","additional_notes","staff_note","commission_agent"],"products_count":1,"location_id":503,"contact_id":13} 
+[2025-10-06 08:56:19] live.WARNING: VariationGroupPrice not found {"variation_id":"507","price_group_id":"NaN"} 
+[2025-10-06 08:56:59] live.WARNING: VariationGroupPrice not found {"variation_id":"506","price_group_id":"NaN"} 
+[2025-10-06 09:03:46] live.WARNING: VariationGroupPrice not found {"variation_id":"753","price_group_id":"NaN"} 
+[2025-10-06 09:11:21] live.INFO: About to call POS Controller {"authenticated_user_id":1,"business_id":1,"request_method":"POST","request_data_keys":["location_id","contact_id","products","payment","discount_amount","discount_type","shipping_charges","sale_note","status","is_direct_sale","transaction_date","invoice_no","is_quotation","final_total","tax_rate_id","shipping_details","additional_notes","staff_note","commission_agent"],"products_count":1,"location_id":503,"contact_id":13} 
+[2025-10-06 09:13:26] live.WARNING: VariationGroupPrice not found {"variation_id":"755","price_group_id":"NaN"} 
+[2025-10-06 09:17:05] live.INFO: About to call POS Controller {"authenticated_user_id":1,"business_id":1,"request_method":"POST","request_data_keys":["location_id","contact_id","products","payment","discount_amount","discount_type","shipping_charges","sale_note","status","is_direct_sale","transaction_date","invoice_no","is_quotation","final_total","tax_rate_id","shipping_details","additional_notes","staff_note","commission_agent"],"products_count":1,"location_id":503,"contact_id":13} 
+[2025-10-06 09:18:00] live.WARNING: VariationGroupPrice not found {"variation_id":"345","price_group_id":"NaN"} 
+[2025-10-06 09:21:19] live.WARNING: VariationGroupPrice not found {"variation_id":"643","price_group_id":"NaN"} 
+[2025-10-06 09:21:33] live.WARNING: VariationGroupPrice not found {"variation_id":"643","price_group_id":"NaN"} 
+[2025-10-06 09:21:45] live.WARNING: VariationGroupPrice not found {"variation_id":"651","price_group_id":"NaN"} 
+[2025-10-06 09:21:56] live.WARNING: VariationGroupPrice not found {"variation_id":"649","price_group_id":"NaN"} 
+[2025-10-06 09:22:05] live.WARNING: VariationGroupPrice not found {"variation_id":"647","price_group_id":"NaN"} 
+[2025-10-06 09:26:40] live.WARNING: VariationGroupPrice not found {"variation_id":"668","price_group_id":"NaN"} 
+[2025-10-06 09:26:48] live.WARNING: VariationGroupPrice not found {"variation_id":"665","price_group_id":"NaN"} 
+[2025-10-06 09:28:00] live.WARNING: VariationGroupPrice not found {"variation_id":"669","price_group_id":"NaN"} 
+[2025-10-06 09:28:06] live.INFO: About to call POS Controller {"authenticated_user_id":1,"business_id":1,"request_method":"POST","request_data_keys":["location_id","contact_id","products","payment","discount_amount","discount_type","shipping_charges","sale_note","status","is_direct_sale","transaction_date","invoice_no","is_quotation","final_total","tax_rate_id","shipping_details","additional_notes","staff_note","commission_agent"],"products_count":1,"location_id":503,"contact_id":13} 
+[2025-10-06 09:28:07] live.WARNING: VariationGroupPrice not found {"variation_id":"667","price_group_id":"NaN"} 
+[2025-10-06 09:29:14] live.WARNING: VariationGroupPrice not found {"variation_id":"599","price_group_id":"NaN"} 
+[2025-10-06 09:29:20] live.WARNING: VariationGroupPrice not found {"variation_id":"718","price_group_id":"NaN"} 
+[2025-10-06 09:31:00] live.WARNING: VariationGroupPrice not found {"variation_id":"775","price_group_id":"NaN"} 
+[2025-10-06 09:31:16] live.WARNING: VariationGroupPrice not found {"variation_id":"774","price_group_id":"NaN"} 
+[2025-10-06 09:31:22] live.WARNING: VariationGroupPrice not found {"variation_id":"776","price_group_id":"NaN"} 
+[2025-10-06 09:31:29] live.WARNING: VariationGroupPrice not found {"variation_id":"773","price_group_id":"NaN"} 
+[2025-10-06 09:34:42] live.WARNING: VariationGroupPrice not found {"variation_id":"769","price_group_id":"NaN"} 
+[2025-10-06 09:34:50] live.WARNING: VariationGroupPrice not found {"variation_id":"772","price_group_id":"NaN"} 
+[2025-10-06 09:34:55] live.WARNING: VariationGroupPrice not found {"variation_id":"767","price_group_id":"NaN"} 
+[2025-10-06 09:35:01] live.WARNING: VariationGroupPrice not found {"variation_id":"771","price_group_id":"NaN"} 
+[2025-10-06 09:37:17] live.WARNING: VariationGroupPrice not found {"variation_id":"117","price_group_id":"NaN"} 
+[2025-10-06 09:37:22] live.WARNING: VariationGroupPrice not found {"variation_id":"119","price_group_id":"NaN"} 
+[2025-10-06 09:37:28] live.WARNING: VariationGroupPrice not found {"variation_id":"118","price_group_id":"NaN"} 
+[2025-10-06 09:37:35] live.WARNING: VariationGroupPrice not found {"variation_id":"120","price_group_id":"NaN"} 
+[2025-10-06 09:38:36] live.WARNING: VariationGroupPrice not found {"variation_id":"121","price_group_id":"NaN"} 
+[2025-10-06 09:38:43] live.WARNING: VariationGroupPrice not found {"variation_id":"116","price_group_id":"NaN"} 
+[2025-10-06 09:38:48] live.WARNING: VariationGroupPrice not found {"variation_id":"115","price_group_id":"NaN"} 
+[2025-10-06 09:39:37] live.INFO: About to call POS Controller {"authenticated_user_id":1,"business_id":1,"request_method":"POST","request_data_keys":["location_id","contact_id","products","payment","discount_amount","discount_type","shipping_charges","sale_note","status","is_direct_sale","transaction_date","invoice_no","is_quotation","final_total","tax_rate_id","shipping_details","additional_notes","staff_note","commission_agent"],"products_count":1,"location_id":503,"contact_id":13} 
+[2025-10-06 09:40:50] live.WARNING: VariationGroupPrice not found {"variation_id":"170","price_group_id":"NaN"} 
+[2025-10-06 09:41:32] live.WARNING: VariationGroupPrice not found {"variation_id":"224","price_group_id":"NaN"} 
+[2025-10-06 09:41:38] live.WARNING: VariationGroupPrice not found {"variation_id":"225","price_group_id":"NaN"} 
+[2025-10-06 09:43:44] live.WARNING: VariationGroupPrice not found {"variation_id":"635","price_group_id":"NaN"} 
+[2025-10-06 09:44:08] live.WARNING: VariationGroupPrice not found {"variation_id":"637","price_group_id":"NaN"} 
+[2025-10-06 09:44:21] live.WARNING: VariationGroupPrice not found {"variation_id":"639","price_group_id":"NaN"} 
+[2025-10-06 09:44:28] live.WARNING: VariationGroupPrice not found {"variation_id":"638","price_group_id":"NaN"} 
+[2025-10-06 09:44:44] live.WARNING: VariationGroupPrice not found {"variation_id":"640","price_group_id":"NaN"} 
+[2025-10-06 09:45:10] live.WARNING: VariationGroupPrice not found {"variation_id":"645","price_group_id":"NaN"} 
+[2025-10-06 09:45:21] live.WARNING: VariationGroupPrice not found {"variation_id":"648","price_group_id":"NaN"} 
+[2025-10-06 09:45:33] live.WARNING: VariationGroupPrice not found {"variation_id":"644","price_group_id":"NaN"} 
+[2025-10-06 09:45:46] live.WARNING: VariationGroupPrice not found {"variation_id":"646","price_group_id":"NaN"} 
+[2025-10-06 09:45:57] live.WARNING: VariationGroupPrice not found {"variation_id":"642","price_group_id":"NaN"} 
+[2025-10-06 09:47:38] live.WARNING: VariationGroupPrice not found {"variation_id":"85","price_group_id":"NaN"} 
+[2025-10-06 09:47:51] live.WARNING: VariationGroupPrice not found {"variation_id":"537","price_group_id":"NaN"} 
+[2025-10-06 09:48:29] live.WARNING: VariationGroupPrice not found {"variation_id":"799","price_group_id":"NaN"} 
+[2025-10-06 09:49:20] live.WARNING: VariationGroupPrice not found {"variation_id":"650","price_group_id":"NaN"} 
+[2025-10-06 09:51:02] live.WARNING: VariationGroupPrice not found {"variation_id":"641","price_group_id":"NaN"} 
+[2025-10-06 09:52:37] live.WARNING: VariationGroupPrice not found {"variation_id":"218","price_group_id":"NaN"} 
+[2025-10-06 09:52:46] live.WARNING: VariationGroupPrice not found {"variation_id":"220","price_group_id":"NaN"} 
+[2025-10-06 09:52:56] live.WARNING: VariationGroupPrice not found {"variation_id":"219","price_group_id":"NaN"} 
+[2025-10-06 09:53:05] live.WARNING: VariationGroupPrice not found {"variation_id":"315","price_group_id":"NaN"} 
+[2025-10-06 09:53:15] live.WARNING: VariationGroupPrice not found {"variation_id":"193","price_group_id":"NaN"} 
+[2025-10-06 09:53:45] live.WARNING: VariationGroupPrice not found {"variation_id":"191","price_group_id":"NaN"} 
+[2025-10-06 09:53:51] live.WARNING: VariationGroupPrice not found {"variation_id":"192","price_group_id":"NaN"} 
+[2025-10-06 09:53:59] live.WARNING: VariationGroupPrice not found {"variation_id":"314","price_group_id":"NaN"} 
+[2025-10-06 09:55:53] live.WARNING: VariationGroupPrice not found {"variation_id":"305","price_group_id":"NaN"} 
+[2025-10-06 09:56:22] live.WARNING: VariationGroupPrice not found {"variation_id":"100","price_group_id":"NaN"} 
+[2025-10-06 09:56:36] live.WARNING: VariationGroupPrice not found {"variation_id":"79","price_group_id":"NaN"} 
+[2025-10-06 09:57:07] live.WARNING: VariationGroupPrice not found {"variation_id":"80","price_group_id":"NaN"} 
+[2025-10-06 09:57:55] live.WARNING: VariationGroupPrice not found {"variation_id":"299","price_group_id":"NaN"} 
+[2025-10-06 09:58:22] live.WARNING: VariationGroupPrice not found {"variation_id":"277","price_group_id":"NaN"} 
+[2025-10-06 09:58:34] live.WARNING: VariationGroupPrice not found {"variation_id":"275","price_group_id":"NaN"} 
+[2025-10-06 09:59:08] live.WARNING: VariationGroupPrice not found {"variation_id":"276","price_group_id":"NaN"} 
+[2025-10-06 10:00:28] live.WARNING: VariationGroupPrice not found {"variation_id":"108","price_group_id":"NaN"} 
+[2025-10-06 10:00:37] live.WARNING: VariationGroupPrice not found {"variation_id":"740","price_group_id":"NaN"} 
+[2025-10-06 10:00:54] live.WARNING: VariationGroupPrice not found {"variation_id":"760","price_group_id":"NaN"} 
+[2025-10-06 10:01:09] live.WARNING: VariationGroupPrice not found {"variation_id":"109","price_group_id":"NaN"} 
+[2025-10-06 10:01:38] live.WARNING: VariationGroupPrice not found {"variation_id":"764","price_group_id":"NaN"} 
+[2025-10-06 10:02:04] live.WARNING: VariationGroupPrice not found {"variation_id":"766","price_group_id":"NaN"} 
+[2025-10-06 10:02:20] live.WARNING: VariationGroupPrice not found {"variation_id":"762","price_group_id":"NaN"} 
+[2025-10-06 10:03:35] live.WARNING: VariationGroupPrice not found {"variation_id":"230","price_group_id":"NaN"} 
+[2025-10-06 10:03:43] live.WARNING: VariationGroupPrice not found {"variation_id":"231","price_group_id":"NaN"} 
+[2025-10-06 10:05:26] live.WARNING: VariationGroupPrice not found {"variation_id":"821","price_group_id":"NaN"} 
+[2025-10-06 10:05:33] live.WARNING: VariationGroupPrice not found {"variation_id":"819","price_group_id":"NaN"} 
+[2025-10-06 10:05:38] live.WARNING: VariationGroupPrice not found {"variation_id":"820","price_group_id":"NaN"} 
+[2025-10-06 10:07:08] live.WARNING: VariationGroupPrice not found {"variation_id":"548","price_group_id":"NaN"} 
+[2025-10-06 10:07:21] live.WARNING: VariationGroupPrice not found {"variation_id":"549","price_group_id":"NaN"} 
+[2025-10-06 10:07:34] live.WARNING: VariationGroupPrice not found {"variation_id":"550","price_group_id":"NaN"} 
+[2025-10-06 10:07:48] live.WARNING: VariationGroupPrice not found {"variation_id":"552","price_group_id":"NaN"} 
+[2025-10-06 10:07:58] live.WARNING: VariationGroupPrice not found {"variation_id":"553","price_group_id":"NaN"} 
+[2025-10-06 10:08:09] live.WARNING: VariationGroupPrice not found {"variation_id":"551","price_group_id":"NaN"} 
+[2025-10-06 10:08:28] live.WARNING: VariationGroupPrice not found {"variation_id":"546","price_group_id":"NaN"} 
+[2025-10-06 10:08:41] live.WARNING: VariationGroupPrice not found {"variation_id":"547","price_group_id":"NaN"} 
+[2025-10-06 10:08:52] live.WARNING: VariationGroupPrice not found {"variation_id":"544","price_group_id":"NaN"} 
+[2025-10-06 10:09:05] live.WARNING: VariationGroupPrice not found {"variation_id":"545","price_group_id":"NaN"} 
+[2025-10-06 10:09:15] live.WARNING: VariationGroupPrice not found {"variation_id":"705","price_group_id":"NaN"} 
+[2025-10-06 10:09:28] live.WARNING: VariationGroupPrice not found {"variation_id":"709","price_group_id":"NaN"} 
+[2025-10-06 10:13:20] live.WARNING: VariationGroupPrice not found {"variation_id":"152","price_group_id":"NaN"} 
+[2025-10-06 10:14:11] live.WARNING: VariationGroupPrice not found {"variation_id":"151","price_group_id":"NaN"} 
+[2025-10-06 10:14:51] live.WARNING: VariationGroupPrice not found {"variation_id":"383","price_group_id":"NaN"} 
+[2025-10-06 10:16:06] live.INFO: About to call POS Controller {"authenticated_user_id":1,"business_id":1,"request_method":"POST","request_data_keys":["location_id","contact_id","products","payment","discount_amount","discount_type","shipping_charges","sale_note","status","is_direct_sale","transaction_date","invoice_no","is_quotation","final_total","tax_rate_id","shipping_details","additional_notes","staff_note","commission_agent"],"products_count":1,"location_id":503,"contact_id":13} 
