@@ -14,7 +14,7 @@
 									<div class="box-body">
 										<div class="row">
 											<input type="hidden" class="payment_row_index" value="0">
-											<input type="hidden" class="payment_types_dropdown" name="payment[0][method]" value="cash">
+											<input type="hidden" class="payment_types_dropdown" name="payment[0][method]" value="cash" disabled>
 
 											<div class="col-md-6">
 												<div class="form-group">
@@ -23,7 +23,7 @@
 														<span class="input-group-addon">
 															<i class="fas fa-money-bill-alt"></i>
 														</span>
-														{!! Form::text("payment[0][amount]", 0, ['class' => 'form-control input_number', 'required', 'id' => "cash_amount_0", 'placeholder' => __('sale.amount'), 'autocomplete' => 'off']); !!}
+														{!! Form::text("payment[0][amount]", 0, ['class' => 'form-control input_number', 'required', 'id' => "cash_amount_0", 'placeholder' => __('sale.amount'), 'autocomplete' => 'off', 'disabled' => true]); !!}
 													</div>
 												</div>
 											</div>
@@ -58,7 +58,7 @@
 																<tr>
 																	<td class="text-right">{{$dnm}}</td>
 																	<td class="text-center" >X</td>
-																	<td>{!! Form::number("payment[0][denominations][$dnm]", 0, ['class' => 'form-control cash_denomination input-sm', 'min' => 0, 'data-denomination' => $dnm, 'style' => 'width: 100px; margin:auto;' ]); !!}</td>
+																	<td>{!! Form::number("payment[0][denominations][$dnm]", 0, ['class' => 'form-control cash_denomination input-sm', 'min' => 0, 'data-denomination' => $dnm, 'style' => 'width: 100px; margin:auto;', 'disabled' => true ]); !!}</td>
 																	<td class="text-center">=</td>
 																	<td class="text-left">
 																		<span class="denomination_subtotal">{{@num_format(0)}}</span>
@@ -88,7 +88,7 @@
 											<div class="col-md-12">
 												<div class="form-group">
 													{!! Form::label('cash_note_0', __('lang_v1.payment_note') . ':') !!}
-													{!! Form::textarea('payment[0][note]', null, ['class' => 'form-control', 'rows' => 3, 'id' => 'cash_note_0', 'placeholder' => __('lang_v1.payment_note')]); !!}
+													{!! Form::textarea('payment[0][note]', null, ['class' => 'form-control', 'rows' => 3, 'id' => 'cash_note_0', 'placeholder' => __('lang_v1.payment_note'), 'disabled' => true]); !!}
 												</div>
 											</div>
 										</div>

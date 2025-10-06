@@ -1,0 +1,1267 @@
+/* Modern Login Page Styling with IsleBooks Brand Colors */
+:root {
+    /* IsleBooks Brand Colors */
+    --islebooks-cyan: #06b6d4;
+    --islebooks-purple: #8b5cf6;
+    --islebooks-dark-purple: #7c3aed;
+    
+    /* Primary colors using brand palette */
+    --primary-color: #06b6d4;
+    --primary-gradient: linear-gradient(135deg, #06b6d4 0%, #8b5cf6 100%);
+    --secondary-color: #f093fb;
+    --secondary-gradient: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+    --accent-gradient: linear-gradient(135deg, #06b6d4 0%, #0891b2 100%);
+    
+    /* Brand-inspired gradients */
+    --brand-gradient: linear-gradient(135deg, #06b6d4 0%, #8b5cf6 50%, #7c3aed 100%);
+    --logo-highlight: linear-gradient(135deg, #67e8f9 0%, #c084fc 100%);
+    
+    --surface-color: #ffffff;
+    --surface-dark: #f8fafc;
+    --text-primary: #2d3748;
+    --text-secondary: #718096;
+    --border-color: #e2e8f0;
+    --shadow-light: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+    --shadow-medium: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+    --shadow-large: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+}
+
+/* Reset and base styles */
+* {
+    box-sizing: border-box;
+}
+
+body.modern-login {
+    margin: 0;
+    padding: 0;
+    font-family: 'Inter', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: var(--primary-gradient);
+    min-height: 100vh;
+    overflow-x: hidden;
+}
+
+/* Animated background */
+.login-background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: var(--primary-gradient);
+    z-index: -2;
+}
+
+.login-background::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: 
+        radial-gradient(circle at 25% 25%, rgba(255, 255, 255, 0.1) 0%, transparent 50%),
+        radial-gradient(circle at 75% 75%, rgba(255, 255, 255, 0.1) 0%, transparent 50%);
+    animation: float 6s ease-in-out infinite;
+}
+
+@keyframes float {
+    0%, 100% { transform: translateY(0px); }
+    50% { transform: translateY(-20px); }
+}
+
+/* Container */
+.modern-login-container {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+/* Main card */
+.login-card {
+    background: var(--surface-color);
+    border-radius: 24px;
+    box-shadow: var(--shadow-large);
+    overflow: hidden;
+    width: 100%;
+    max-width: 1000px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    min-height: 600px;
+    position: relative;
+}
+
+/* Left side - Branding with IsleBooks colors */
+.login-branding {
+    background: var(--brand-gradient);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 60px 40px;
+    color: white;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.login-branding::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: 
+        radial-gradient(circle at 20% 20%, rgba(6, 182, 212, 0.3) 0%, transparent 50%),
+        radial-gradient(circle at 80% 80%, rgba(139, 92, 246, 0.3) 0%, transparent 50%),
+        radial-gradient(circle at 40% 90%, rgba(124, 58, 237, 0.3) 0%, transparent 50%);
+    animation: glow 8s ease-in-out infinite;
+}
+
+.login-branding::after {
+    content: '';
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    right: -2px;
+    bottom: -2px;
+    background: linear-gradient(45deg, #06b6d4, #8b5cf6, #7c3aed, #0891b2);
+    z-index: -1;
+    opacity: 0.4;
+    filter: blur(25px);
+    animation: borderGlow 6s ease-in-out infinite;
+}
+
+@keyframes glow {
+    0%, 100% { opacity: 0.8; }
+    50% { opacity: 1; }
+}
+
+@keyframes borderGlow {
+    0%, 100% { opacity: 0.6; }
+    50% { opacity: 0.8; }
+}
+
+.login-logo {
+    width: 180px;
+    height: auto;
+    margin-bottom: 30px;
+    position: relative;
+    z-index: 10;
+    border-radius: 20px;
+    transition: all 0.4s ease;
+    
+    /* High-contrast background container */
+    background: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(20px);
+    padding: 20px;
+    
+    /* Multiple shadow layers for depth */
+    box-shadow: 
+        0 25px 50px -12px rgba(0, 0, 0, 0.25),
+        0 0 40px rgba(255, 255, 255, 0.2),
+        inset 0 1px 0 rgba(255, 255, 255, 0.3);
+    
+    /* Glow effect around logo */
+    filter: drop-shadow(0px 4px 12px rgba(0, 0, 0, 0.3));
+    
+    /* Brand color border */
+    border: 3px solid transparent;
+    background-clip: padding-box;
+}
+
+.login-logo:hover {
+    transform: translateY(-8px) scale(1.08);
+    box-shadow: 
+        0 35px 70px -12px rgba(0, 0, 0, 0.3),
+        0 0 60px rgba(255, 255, 255, 0.3),
+        inset 0 1px 0 rgba(255, 255, 255, 0.4);
+    
+    /* Enhanced glow on hover */
+    filter: drop-shadow(0px 6px 20px rgba(0, 0, 0, 0.4));
+    
+    /* Brand color glow */
+    border-color: rgba(6, 182, 212, 0.3);
+}
+
+.login-title {
+    font-size: 3rem;
+    font-weight: 800;
+    margin-bottom: 20px;
+    position: relative;
+    z-index: 10;
+    background: linear-gradient(135deg, #ffffff 0%, #e0e7ff 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    letter-spacing: -1px;
+}
+
+.login-subtitle {
+    font-size: 1.2rem;
+    opacity: 0.95;
+    line-height: 1.7;
+    position: relative;
+    z-index: 10;
+    margin-bottom: 50px;
+    font-weight: 400;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Right side - Form */
+.login-form-container {
+    padding: 60px 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.login-form-header {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.login-form-title {
+    font-size: 2rem;
+    font-weight: 600;
+    color: var(--text-primary);
+    margin-bottom: 8px;
+}
+
+.login-form-subtitle {
+    color: var(--text-secondary);
+    font-size: 1rem;
+}
+
+/* Form styling */
+.modern-form-group {
+    margin-bottom: 24px;
+    position: relative;
+}
+
+.modern-form-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 500;
+    color: var(--text-primary);
+    font-size: 0.9rem;
+}
+
+.modern-input {
+    width: 100%;
+    padding: 16px 20px;
+    border: 2px solid var(--border-color);
+    border-radius: 12px;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+    background: var(--surface-color);
+    outline: none;
+}
+
+.modern-input:focus {
+    border-color: var(--primary-color);
+    box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.1);
+    transform: translateY(-1px);
+}
+
+.modern-input::placeholder {
+    color: #a0aec0;
+}
+
+/* Input with icon */
+.input-with-icon {
+    position: relative;
+}
+
+.input-with-icon .input-icon {
+    position: absolute;
+    left: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: var(--text-secondary);
+    font-size: 1.1rem;
+}
+
+.input-with-icon .modern-input {
+    padding-left: 55px;
+}
+
+/* Enhanced password toggle */
+.password-toggle {
+    position: absolute;
+    right: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+    color: var(--text-secondary);
+    cursor: pointer;
+    padding: 8px 12px;
+    border-radius: 8px;
+    transition: all 0.2s ease;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 0.85rem;
+    font-weight: 500;
+}
+
+.password-toggle:hover {
+    color: var(--primary-color);
+    background: rgba(102, 126, 234, 0.1);
+}
+
+.password-toggle i {
+    font-size: 1.1rem;
+}
+
+.password-toggle-text {
+    white-space: nowrap;
+    font-size: 0.8rem;
+}
+
+/* Enhanced buttons */
+.modern-btn {
+    width: 100%;
+    padding: 18px 24px;
+    border: none;
+    border-radius: 12px;
+    color: white;
+    font-size: 1.1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 24px;
+}
+
+.primary-btn {
+    background: var(--brand-gradient);
+    box-shadow: 0 8px 32px rgba(6, 182, 212, 0.3);
+}
+
+.primary-btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 12px 40px rgba(6, 182, 212, 0.4);
+}
+
+.primary-btn:active {
+    transform: translateY(-1px);
+}
+
+/* Secondary actions */
+.secondary-actions {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+    margin-bottom: 24px;
+}
+
+.secondary-btn {
+    padding: 14px 20px;
+    background: transparent;
+    border: 2px solid var(--border-color);
+    border-radius: 10px;
+    color: var(--text-primary);
+    font-size: 0.9rem;
+    font-weight: 500;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    text-align: center;
+}
+
+.secondary-btn:hover {
+    border-color: var(--primary-color);
+    color: var(--primary-color);
+    background: rgba(102, 126, 234, 0.05);
+    transform: translateY(-1px);
+    text-decoration: none;
+    box-shadow: var(--shadow-light);
+}
+
+.register-btn {
+    border-color: #10b981;
+    color: #10b981;
+}
+
+.register-btn:hover {
+    border-color: #059669;
+    color: #059669;
+    background: rgba(16, 185, 129, 0.05);
+}
+
+/* Navigation links */
+.navigation-links {
+    display: flex;
+    gap: 8px;
+    margin-top: 20px;
+}
+
+.nav-link-btn {
+    flex: 1;
+    padding: 12px 16px;
+    background: var(--surface-dark);
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    color: var(--text-secondary);
+    font-size: 0.85rem;
+    font-weight: 500;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+    text-align: center;
+}
+
+.nav-link-btn:hover {
+    background: white;
+    color: var(--primary-color);
+    border-color: var(--primary-color);
+    transform: translateY(-1px);
+    text-decoration: none;
+    box-shadow: var(--shadow-light);
+}
+
+/* Language selector */
+.language-selector {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    z-index: 10;
+}
+
+.language-selector select {
+    background: rgba(255, 255, 255, 0.9);
+    border: none;
+    padding: 8px 12px;
+    border-radius: 8px;
+    font-size: 0.9rem;
+    outline: none;
+    cursor: pointer;
+}
+
+/* Registration link */
+.registration-link {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    z-index: 10;
+}
+
+.registration-link a {
+    background: rgba(255, 255, 255, 0.9);
+    color: var(--text-primary);
+    text-decoration: none;
+    padding: 10px 16px;
+    border-radius: 8px;
+    font-size: 0.9rem;
+    font-weight: 500;
+    transition: all 0.2s ease;
+}
+
+.registration-link a:hover {
+    background: white;
+    box-shadow: var(--shadow-light);
+}
+
+/* Demo section */
+.demo-section {
+    background: var(--surface-dark);
+    border-radius: 16px;
+    padding: 30px;
+    box-shadow: var(--shadow-medium);
+}
+
+.demo-title {
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: var(--text-primary);
+    margin-bottom: 8px;
+    text-align: center;
+}
+
+.demo-subtitle {
+    color: var(--text-secondary);
+    text-align: center;
+    margin-bottom: 24px;
+    font-size: 0.9rem;
+}
+
+.demo-buttons {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 12px;
+    margin-bottom: 24px;
+}
+
+.demo-btn {
+    padding: 12px 16px;
+    border: none;
+    border-radius: 8px;
+    color: white;
+    font-size: 0.9rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    text-decoration: none;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    border: 2px solid transparent;
+}
+
+.demo-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-medium);
+    text-decoration: none;
+    color: white;
+}
+
+.demo-btn.primary { 
+    background: linear-gradient(135deg, #38a169 0%, #48bb78 100%); 
+}
+.demo-btn.secondary { 
+    background: linear-gradient(135deg, #805ad5 0%, #9f7aea 100%); 
+}
+.demo-btn.accent { 
+    background: linear-gradient(135deg, #3182ce 0%, #4299e1 100%); 
+}
+.demo-btn.warning { 
+    background: linear-gradient(135deg, #d69e2e 0%, #ecc94b 100%); 
+}
+.demo-btn.danger { 
+    background: linear-gradient(135deg, #e53e3e 0%, #f56565 100%); 
+}
+
+/* Enhanced logo styling with maximum visibility */
+.logo-container {
+    position: relative;
+    z-index: 10;
+    margin-bottom: 40px;
+    
+    /* Logo spotlight container */
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 30px;
+    padding: 25px;
+    backdrop-filter: blur(20px);
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    
+    /* Brand color glow around container */
+    box-shadow: 
+        0 0 50px rgba(6, 182, 212, 0.2),
+        0 0 100px rgba(139, 92, 246, 0.1),
+        inset 0 1px 0 rgba(255, 255, 255, 0.2);
+}
+
+.login-logo-fallback {
+    width: 140px;
+    height: 140px;
+    background: rgba(255, 255, 255, 0.15);
+    border-radius: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 40px;
+    backdrop-filter: blur(20px);
+    border: 2px solid rgba(255, 255, 255, 0.3);
+    box-shadow: 
+        0 25px 50px -12px rgba(0, 0, 0, 0.25),
+        inset 0 1px 0 rgba(255, 255, 255, 0.2);
+}
+
+.login-logo-fallback i {
+    font-size: 4rem;
+    color: rgba(255, 255, 255, 0.9);
+    text-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.login-tagline {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: rgba(255, 255, 255, 0.95);
+    margin-bottom: 16px;
+    position: relative;
+    z-index: 10;
+    background: linear-gradient(135deg, #fbbf24 0%, #f59e0b 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Feature highlights with icons */
+.features-list {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    padding: 0;
+    list-style: none;
+    position: relative;
+    z-index: 10;
+    width: 100%;
+}
+
+.features-list li {
+    padding: 14px 18px;
+    color: rgba(255, 255, 255, 0.95);
+    font-size: 0.95rem;
+    position: relative;
+    margin-bottom: 10px;
+    background: rgba(255, 255, 255, 0.12);
+    border-radius: 12px;
+    backdrop-filter: blur(15px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    font-weight: 500;
+    text-align: left;
+}
+
+.features-list li i {
+    margin-right: 16px;
+    font-size: 1.2rem;
+    color: var(--islebooks-cyan);
+    flex-shrink: 0;
+    width: 24px;
+    text-align: center;
+    filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.2));
+}
+
+.features-list li:hover {
+    background: rgba(255, 255, 255, 0.18);
+    transform: translateY(-1px);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* Feature callouts */
+.feature-callouts {
+    display: flex;
+    gap: 8px;
+    margin-top: 25px;
+    justify-content: center;
+}
+
+.feature-callout {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 12px 8px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.9);
+    font-size: 0.75rem;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+    min-width: 80px;
+}
+
+.feature-callout i {
+    font-size: 1.2rem;
+    margin-bottom: 6px;
+    color: var(--islebooks-cyan);
+    filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.1));
+}
+
+.feature-callout:hover {
+    background: rgba(255, 255, 255, 0.2);
+    transform: translateY(-2px);
+    color: white;
+    text-decoration: none;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .login-card {
+        grid-template-columns: 1fr;
+        margin: 10px;
+        border-radius: 20px;
+    }
+    
+    .login-branding {
+        padding: 30px 25px;
+        min-height: 300px;
+    }
+    
+    .login-form-container {
+        padding: 30px 25px;
+    }
+    
+    .login-title {
+        font-size: 2rem;
+    }
+    
+    .login-form-title {
+        font-size: 1.5rem;
+    }
+
+    .secondary-actions {
+        grid-template-columns: 1fr;
+        gap: 8px;
+    }
+
+    .navigation-links {
+        flex-direction: column;
+        gap: 8px;
+    }
+
+    .feature-callouts {
+        gap: 6px;
+    }
+
+    .feature-callout {
+        min-width: 70px;
+        padding: 10px 6px;
+        font-size: 0.7rem;
+    }
+
+    .password-toggle-text {
+        display: none;
+    }
+
+    .features-list li {
+        padding: 12px 16px;
+        font-size: 0.9rem;
+    }
+}
+
+/* Registration page specific styles */
+.register-card {
+    max-width: 1400px;
+    min-height: 800px;
+    grid-template-columns: 400px 1fr;
+}
+
+.register-form-container {
+    padding: 30px;
+    overflow-y: auto;
+    max-height: 90vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.register-form-wrapper {
+    flex: 1;
+    margin-top: 0;
+}
+
+/* Ensure form is visible and has submit button */
+.register-form-wrapper form {
+    display: block !important;
+    visibility: visible !important;
+    opacity: 1 !important;
+    height: auto;
+    min-height: 500px;
+}
+
+/* Force form visibility */
+#business_register_form {
+    display: block !important;
+    visibility: visible !important;
+    opacity: 1 !important;
+}
+
+/* Apply modern styles directly to form elements */
+#business_register_form .form-group {
+    margin-bottom: 24px;
+    width: 100%;
+}
+
+#business_register_form .input-group {
+    position: relative;
+    margin-bottom: 4px;
+    display: flex;
+    width: 100%;
+}
+
+#business_register_form .input-group .input-group-addon {
+    position: absolute;
+    left: 16px;
+    top: 50%;
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+    z-index: 5;
+    color: var(--text-secondary);
+    font-size: 1.1rem;
+}
+
+#business_register_form .form-control {
+    width: 100%;
+    padding: 16px 20px 16px 55px;
+    border: 2px solid var(--border-color);
+    border-radius: 12px;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+    background: var(--surface-color);
+    outline: none;
+    box-sizing: border-box;
+}
+
+#business_register_form .form-control:focus {
+    border-color: var(--islebooks-cyan);
+    box-shadow: 0 0 0 3px rgba(6, 182, 212, 0.1);
+}
+
+#business_register_form label {
+    font-weight: 500;
+    color: var(--text-primary);
+    margin-bottom: 8px;
+    display: block;
+    font-size: 0.95rem;
+}
+
+/* Add submit button for non-wizard forms */
+.register-form-wrapper .form-actions {
+    margin-top: 30px;
+    padding: 20px 0;
+    border-top: 1px solid var(--border-color);
+}
+
+.register-form-wrapper .btn-submit {
+    width: 100%;
+    padding: 16px 24px;
+    background: var(--brand-gradient);
+    color: white;
+    border: none;
+    border-radius: 12px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.register-form-wrapper .btn-submit:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 32px rgba(6, 182, 212, 0.3);
+}
+
+/* Bootstrap grid system integration */
+.register-form-wrapper .row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -15px;
+    margin-right: -15px;
+}
+
+.register-form-wrapper .col-md-6,
+.register-form-wrapper .col-md-12 {
+    position: relative;
+    width: 100%;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.register-form-wrapper .col-md-6 {
+    flex: 0 0 50%;
+    max-width: 50%;
+}
+
+.register-form-wrapper .col-md-12 {
+    flex: 0 0 100%;
+    max-width: 100%;
+}
+
+.register-form-wrapper .clearfix {
+    clear: both;
+    width: 100%;
+    height: 0;
+}
+
+/* Style existing form elements to match modern design */
+.register-form-wrapper .form-group {
+    margin-bottom: 24px;
+    width: 100%;
+}
+
+.register-form-wrapper .input-group {
+    position: relative;
+    margin-bottom: 4px;
+    display: flex;
+    width: 100%;
+}
+
+.register-form-wrapper .input-group .input-group-addon {
+    position: absolute;
+    left: 16px;
+    top: 50%;
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+    z-index: 5;
+    color: var(--text-secondary);
+    font-size: 1.1rem;
+}
+
+.register-form-wrapper .form-control {
+    width: 100%;
+    padding: 16px 20px 16px 55px;
+    border: 2px solid var(--border-color);
+    border-radius: 12px;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+    background: var(--surface-color);
+    outline: none;
+    box-sizing: border-box;
+}
+
+.register-form-wrapper .form-control:focus {
+    border-color: var(--islebooks-cyan);
+    box-shadow: 0 0 0 3px rgba(6, 182, 212, 0.1);
+    transform: translateY(-1px);
+}
+
+.register-form-wrapper label {
+    font-weight: 500;
+    color: var(--text-primary);
+    margin-bottom: 8px;
+    display: block;
+    font-size: 0.95rem;
+}
+
+/* File input styling */
+.register-form-wrapper input[type="file"] {
+    padding: 12px 16px;
+    border: 2px dashed var(--border-color);
+    border-radius: 12px;
+    background: var(--surface-dark);
+    transition: all 0.3s ease;
+    width: 100%;
+}
+
+.register-form-wrapper input[type="file"]:hover {
+    border-color: var(--islebooks-cyan);
+    background: rgba(6, 182, 212, 0.05);
+}
+
+.register-form-wrapper .btn {
+    padding: 16px 32px;
+    border-radius: 12px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.register-form-wrapper .btn-primary {
+    background: var(--brand-gradient);
+    border: none;
+    box-shadow: 0 8px 32px rgba(6, 182, 212, 0.3);
+}
+
+.register-form-wrapper .btn-primary:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 12px 40px rgba(6, 182, 212, 0.4);
+}
+
+/* Icon fallback for loading issues */
+i[class*="fa-"]:before {
+    font-family: "Font Awesome 6 Free", "Font Awesome 6 Pro", "FontAwesome", sans-serif !important;
+    font-weight: 900;
+}
+
+/* Specific icon fallbacks using Unicode */
+.fa-boxes:before { content: "\f468"; }
+.fa-chart-line:before { content: "\f201"; }
+.fa-building:before { content: "\f1ad"; }
+.fa-chart-bar:before { content: "\f080"; }
+.fa-credit-card:before { content: "\f09d"; }
+.fa-rocket:before { content: "\f135"; }
+.fa-cloud:before { content: "\f0c2"; }
+.fa-mobile-alt:before { content: "\f3cd"; }
+.fa-headset:before { content: "\f590"; }
+.fa-shield-check:before { content: "\f2f7"; }
+.fa-user:before { content: "\f007"; }
+.fa-lock:before { content: "\f023"; }
+.fa-eye:before { content: "\f06e"; }
+.fa-eye-slash:before { content: "\f070"; }
+.fa-sign-in-alt:before { content: "\f2f6"; }
+.fa-key:before { content: "\f084"; }
+.fa-user-plus:before { content: "\f234"; }
+.fa-tags:before { content: "\f02c"; }
+.fa-life-ring:before { content: "\f1cd"; }
+.fa-question-circle:before { content: "\f059"; }
+
+/* Modern jQuery Steps Wizard Styling */
+.register-form-wrapper .wizard,
+.register-form-wrapper .steps {
+    margin-bottom: 30px;
+    counter-reset: step-counter;
+}
+
+/* Steps navigation */
+.register-form-wrapper .wizard > .steps {
+    position: relative;
+    display: block;
+    width: 100%;
+    background: var(--surface-dark);
+    border-radius: 12px;
+    padding: 20px;
+    margin-bottom: 30px;
+}
+
+.register-form-wrapper .wizard > .steps > ul {
+    position: relative;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+}
+
+.register-form-wrapper .wizard > .steps > ul > li {
+    display: block;
+    position: relative;
+    flex: 1;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+.register-form-wrapper .wizard > .steps > ul > li:not(:last-child):after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    right: -50%;
+    width: 100%;
+    height: 2px;
+    background: var(--border-color);
+    z-index: 1;
+}
+
+.register-form-wrapper .wizard > .steps > ul > li.current:not(:last-child):after,
+.register-form-wrapper .wizard > .steps > ul > li.done:not(:last-child):after {
+    background: var(--islebooks-cyan);
+}
+
+.register-form-wrapper .wizard > .steps > ul > li > a {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 15px 20px;
+    color: var(--text-secondary);
+    text-decoration: none;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+    z-index: 2;
+    background: white;
+    border: 2px solid var(--border-color);
+}
+
+.register-form-wrapper .wizard > .steps > ul > li.current > a,
+.register-form-wrapper .wizard > .steps > ul > li.done > a {
+    background: var(--islebooks-cyan);
+    color: white;
+    border-color: var(--islebooks-cyan);
+}
+
+.register-form-wrapper .wizard > .steps > ul > li > a::before {
+    content: counter(step-counter);
+    counter-increment: step-counter;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background: var(--border-color);
+    color: var(--text-secondary);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 600;
+    margin-bottom: 8px;
+    font-size: 0.9rem;
+}
+
+.register-form-wrapper .wizard > .steps > ul > li.current > a::before,
+.register-form-wrapper .wizard > .steps > ul > li.done > a::before {
+    background: white;
+    color: var(--islebooks-cyan);
+    box-shadow: 0 4px 12px rgba(6, 182, 212, 0.3);
+}
+
+/* Step content */
+.register-form-wrapper .wizard > .content {
+    position: relative;
+    background: white;
+    border-radius: 12px;
+    padding: 30px;
+    box-shadow: var(--shadow-light);
+    border: 1px solid var(--border-color);
+    min-height: 400px;
+    overflow: visible;
+}
+
+.register-form-wrapper .wizard > .content > .body {
+    padding: 0;
+    overflow: visible;
+    height: auto;
+    min-height: 350px;
+}
+
+/* Ensure fieldsets are visible */
+.register-form-wrapper fieldset {
+    border: none;
+    padding: 0;
+    margin: 0;
+    min-height: 300px;
+}
+
+.register-form-wrapper legend {
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: var(--text-primary);
+    margin-bottom: 25px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid var(--border-color);
+    width: 100%;
+}
+
+/* Step actions */
+.register-form-wrapper .wizard > .actions {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    padding: 20px 0;
+}
+
+.register-form-wrapper .wizard > .actions ul {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.register-form-wrapper .wizard > .actions a {
+    padding: 14px 28px;
+    border-radius: 10px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.register-form-wrapper .wizard > .actions .disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+.register-form-wrapper .wizard > .actions [href="#previous"] {
+    background: transparent;
+    color: var(--text-secondary);
+    border: 2px solid var(--border-color);
+}
+
+.register-form-wrapper .wizard > .actions [href="#previous"]:hover:not(.disabled) {
+    background: var(--surface-dark);
+    transform: translateY(-1px);
+}
+
+.register-form-wrapper .wizard > .actions [href="#next"],
+.register-form-wrapper .wizard > .actions [href="#finish"] {
+    background: var(--brand-gradient);
+    color: white;
+    border: none;
+    box-shadow: 0 4px 16px rgba(6, 182, 212, 0.3);
+}
+
+.register-form-wrapper .wizard > .actions [href="#next"]:hover:not(.disabled),
+.register-form-wrapper .wizard > .actions [href="#finish"]:hover:not(.disabled) {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 24px rgba(6, 182, 212, 0.4);
+}
+
+/* Select2 dropdown styling for modern design */
+.register-form-wrapper .select2-container .select2-selection--single {
+    height: 54px !important;
+    border: 2px solid var(--border-color) !important;
+    border-radius: 12px !important;
+    padding-left: 35px !important;
+}
+
+.register-form-wrapper .select2-container .select2-selection--single .select2-selection__rendered {
+    line-height: 50px !important;
+    padding-left: 20px !important;
+}
+
+/* Fix Bootstrap conflicts */
+.register-form-wrapper * {
+    box-sizing: border-box;
+}
+
+/* Ensure proper spacing */
+.register-form-wrapper .row + .row {
+    margin-top: 0;
+}
+
+/* Responsive for registration */
+@media (max-width: 768px) {
+    .register-card {
+        grid-template-columns: 1fr;
+        margin: 5px;
+        min-height: auto;
+    }
+    
+    .register-form-container {
+        padding: 25px 20px;
+        max-height: none;
+    }
+    
+    .register-form-wrapper .form-control {
+        padding: 14px 16px 14px 50px;
+    }
+    
+    .register-form-wrapper .wizard > .steps > ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+    
+    .register-form-wrapper .wizard > .steps > ul > li:not(:last-child):after {
+        display: none;
+    }
+    
+    /* Stack columns on mobile */
+    .register-form-wrapper .col-md-6 {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 1200px) {
+    .register-card {
+        grid-template-columns: 350px 1fr;
+    }
+}
+
+@media (max-width: 900px) {
+    .register-card {
+        grid-template-columns: 1fr;
+    }
+    
+    .login-branding {
+        min-height: 200px;
+        padding: 30px 25px;
+    }
+}

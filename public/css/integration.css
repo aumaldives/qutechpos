@@ -1,0 +1,99 @@
+
+.container{
+    height: 100vh;
+    width: 100%;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cardContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.card{
+    padding: 20px 20px 0px 20px;
+    background-color: white;
+    border: 2px solid rgb(236, 231, 231);
+    border-radius: 10px;
+    margin-top: 25px;
+}
+
+.icons{
+    height: 50px;
+    width: auto;
+}
+
+
+.rowOne{
+    display: flex;
+    align-items: center;
+}
+
+.rowOne i{
+    font-size: 25px;
+    width: auto;
+}
+
+.rowTwo{
+    display: flex;
+    margin: 10px 0px 5px 0px;
+}
+
+.iconName{
+    color: black;
+    font-weight: 600;
+}
+
+.rowThree{
+    display: flex;
+    height: 50px;
+}
+
+.rowThree p{
+    color: #656768;
+    font-family: 400;
+}
+
+.custom_btn{
+    margin: 20px 0px;
+    display: flex;
+    justify-content: center;
+}
+
+.connectBtn{
+    padding: 8px;
+    border-radius: 30px;
+    color: black;
+    cursor: pointer;
+    outline: none;
+    width: 350px;
+    border: none;
+    background-color: white;
+    border: 2px solid rgb(236, 231, 231);
+    font-weight: bold;
+    font-size: 15px;
+    margin-bottom:20px;
+}
+ 
+.content-header h1{
+    font-weight:bold;
+    margin-top:15px !important;
+}
+
+.header-row{
+    border:1px solid rgb(236, 231, 231);
+    margin-bottom:0px;
+}
+
+.content{
+    padding-left:40px !important;
+}
+
+.content-header{
+    padding-left:40px !important;
+}

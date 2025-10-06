@@ -1,0 +1,734 @@
+/* Modern Dashboard Cards - IsleBooks POS */
+
+/* Base Modern Card Styles */
+.modern-dashboard-card {
+    position: relative;
+    border-radius: 16px;
+    padding: 24px;
+    margin-bottom: 20px;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    overflow: hidden;
+}
+
+.modern-dashboard-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border-radius: 16px;
+    padding: 1px;
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.05));
+    mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+    mask-composite: exclude;
+    -webkit-mask-composite: xor;
+    pointer-events: none;
+}
+
+.modern-dashboard-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+}
+
+/* Card Content Layout */
+.modern-card-header {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    margin-bottom: 16px;
+}
+
+.modern-card-icon {
+    width: 56px;
+    height: 56px;
+    border-radius: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    position: relative;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    flex-shrink: 0;
+}
+
+.modern-card-content {
+    flex: 1;
+    min-width: 0;
+}
+
+.modern-card-title {
+    font-size: 14px;
+    font-weight: 500;
+    margin: 0 0 8px 0;
+    line-height: 1.2;
+    opacity: 0.8;
+}
+
+.modern-card-value {
+    font-size: 28px;
+    font-weight: 700;
+    margin: 0;
+    line-height: 1.1;
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+}
+
+.modern-card-trend {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    font-size: 12px;
+    font-weight: 600;
+    padding: 4px 8px;
+    border-radius: 8px;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+}
+
+/* LIGHT THEME STYLES - For ALL Theme Colors (including normal/dark themes) */
+.skin-blue .modern-dashboard-card,
+.skin-green .modern-dashboard-card,
+.skin-red .modern-dashboard-card,
+.skin-yellow .modern-dashboard-card,
+.skin-purple .modern-dashboard-card,
+.skin-black .modern-dashboard-card {
+    background: rgba(248, 250, 252, 0.85);
+    border-color: rgba(148, 163, 184, 0.2);
+    color: #334155;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+}
+
+.skin-blue .modern-dashboard-card:hover,
+.skin-green .modern-dashboard-card:hover,
+.skin-red .modern-dashboard-card:hover,
+.skin-yellow .modern-dashboard-card:hover,
+.skin-purple .modern-dashboard-card:hover,
+.skin-black .modern-dashboard-card:hover {
+    background: rgba(255, 255, 255, 0.95);
+    box-shadow: 0 12px 32px rgba(0, 0, 0, 0.12);
+}
+
+.skin-blue .modern-card-title,
+.skin-green .modern-card-title,
+.skin-red .modern-card-title,
+.skin-yellow .modern-card-title,
+.skin-purple .modern-card-title,
+.skin-black .modern-card-title {
+    color: #64748b;
+}
+
+.skin-blue .modern-card-value,
+.skin-green .modern-card-value,
+.skin-red .modern-card-value,
+.skin-yellow .modern-card-value,
+.skin-purple .modern-card-value,
+.skin-black .modern-card-value {
+    color: #1e293b;
+}
+
+/* LIGHT THEME STYLES - For Light Theme Colors */
+.skin-blue-light .modern-dashboard-card,
+.skin-green-light .modern-dashboard-card,
+.skin-red-light .modern-dashboard-card,
+.skin-yellow-light .modern-dashboard-card,
+.skin-purple-light .modern-dashboard-card,
+.skin-black-light .modern-dashboard-card {
+    background: rgba(248, 250, 252, 0.7);
+    border-color: rgba(148, 163, 184, 0.2);
+    color: #334155;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+}
+
+.skin-blue-light .modern-dashboard-card:hover,
+.skin-green-light .modern-dashboard-card:hover,
+.skin-red-light .modern-dashboard-card:hover,
+.skin-yellow-light .modern-dashboard-card:hover,
+.skin-purple-light .modern-dashboard-card:hover,
+.skin-black-light .modern-dashboard-card:hover {
+    background: rgba(255, 255, 255, 0.9);
+    box-shadow: 0 12px 32px rgba(0, 0, 0, 0.12);
+}
+
+.skin-blue-light .modern-card-title,
+.skin-green-light .modern-card-title,
+.skin-red-light .modern-card-title,
+.skin-yellow-light .modern-card-title,
+.skin-purple-light .modern-card-title,
+.skin-black-light .modern-card-title {
+    color: #64748b;
+}
+
+.skin-blue-light .modern-card-value,
+.skin-green-light .modern-card-value,
+.skin-red-light .modern-card-value,
+.skin-yellow-light .modern-card-value,
+.skin-purple-light .modern-card-value,
+.skin-black-light .modern-card-value {
+    color: #1e293b;
+}
+
+/* Theme-specific Icon Colors - All Dark Themes use Light Style */
+.skin-blue .modern-card-icon.icon-sales {
+    background: linear-gradient(135deg, rgba(59, 130, 246, 0.15), rgba(29, 78, 216, 0.1));
+    color: #1d4ed8;
+    border: 1px solid rgba(59, 130, 246, 0.2);
+}
+
+.skin-blue .modern-card-icon.icon-net {
+    background: linear-gradient(135deg, rgba(16, 185, 129, 0.15), rgba(4, 120, 87, 0.1));
+    color: #047857;
+    border: 1px solid rgba(16, 185, 129, 0.2);
+}
+
+.skin-blue .modern-card-icon.icon-due {
+    background: linear-gradient(135deg, rgba(245, 158, 11, 0.15), rgba(217, 119, 6, 0.1));
+    color: #d97706;
+    border: 1px solid rgba(245, 158, 11, 0.2);
+}
+
+.skin-blue .modern-card-icon.icon-return {
+    background: linear-gradient(135deg, rgba(239, 68, 68, 0.15), rgba(220, 38, 38, 0.1));
+    color: #dc2626;
+    border: 1px solid rgba(239, 68, 68, 0.2);
+}
+
+.skin-blue .modern-card-icon.icon-purchase {
+    background: linear-gradient(135deg, rgba(139, 92, 246, 0.15), rgba(124, 58, 237, 0.1));
+    color: #7c3aed;
+    border: 1px solid rgba(139, 92, 246, 0.2);
+}
+
+.skin-blue .modern-card-icon.icon-expense {
+    background: linear-gradient(135deg, rgba(249, 115, 22, 0.15), rgba(234, 88, 12, 0.1));
+    color: #ea580c;
+    border: 1px solid rgba(249, 115, 22, 0.2);
+}
+
+.skin-green .modern-card-icon.icon-sales {
+    background: linear-gradient(135deg, rgba(34, 197, 94, 0.15), rgba(22, 163, 74, 0.1));
+    color: #16a34a;
+    border: 1px solid rgba(34, 197, 94, 0.2);
+}
+
+.skin-green .modern-card-icon.icon-net {
+    background: linear-gradient(135deg, rgba(6, 182, 212, 0.15), rgba(8, 145, 178, 0.1));
+    color: #0891b2;
+    border: 1px solid rgba(6, 182, 212, 0.2);
+}
+
+.skin-green .modern-card-icon.icon-due {
+    background: linear-gradient(135deg, rgba(245, 158, 11, 0.15), rgba(217, 119, 6, 0.1));
+    color: #d97706;
+    border: 1px solid rgba(245, 158, 11, 0.2);
+}
+
+.skin-green .modern-card-icon.icon-return {
+    background: linear-gradient(135deg, rgba(239, 68, 68, 0.15), rgba(220, 38, 38, 0.1));
+    color: #dc2626;
+    border: 1px solid rgba(239, 68, 68, 0.2);
+}
+
+.skin-green .modern-card-icon.icon-purchase {
+    background: linear-gradient(135deg, rgba(139, 92, 246, 0.15), rgba(124, 58, 237, 0.1));
+    color: #7c3aed;
+    border: 1px solid rgba(139, 92, 246, 0.2);
+}
+
+.skin-green .modern-card-icon.icon-expense {
+    background: linear-gradient(135deg, rgba(249, 115, 22, 0.15), rgba(234, 88, 12, 0.1));
+    color: #ea580c;
+    border: 1px solid rgba(249, 115, 22, 0.2);
+}
+
+/* Red Theme Icons */
+.skin-red .modern-card-icon.icon-sales {
+    background: linear-gradient(135deg, rgba(239, 68, 68, 0.15), rgba(220, 38, 38, 0.1));
+    color: #dc2626;
+    border: 1px solid rgba(239, 68, 68, 0.2);
+}
+
+.skin-red .modern-card-icon.icon-net {
+    background: linear-gradient(135deg, rgba(16, 185, 129, 0.15), rgba(4, 120, 87, 0.1));
+    color: #047857;
+    border: 1px solid rgba(16, 185, 129, 0.2);
+}
+
+.skin-red .modern-card-icon.icon-due {
+    background: linear-gradient(135deg, rgba(245, 158, 11, 0.15), rgba(217, 119, 6, 0.1));
+    color: #d97706;
+    border: 1px solid rgba(245, 158, 11, 0.2);
+}
+
+.skin-red .modern-card-icon.icon-return {
+    background: linear-gradient(135deg, rgba(239, 68, 68, 0.15), rgba(220, 38, 38, 0.1));
+    color: #dc2626;
+    border: 1px solid rgba(239, 68, 68, 0.2);
+}
+
+.skin-red .modern-card-icon.icon-purchase {
+    background: linear-gradient(135deg, rgba(139, 92, 246, 0.15), rgba(124, 58, 237, 0.1));
+    color: #7c3aed;
+    border: 1px solid rgba(139, 92, 246, 0.2);
+}
+
+.skin-red .modern-card-icon.icon-expense {
+    background: linear-gradient(135deg, rgba(249, 115, 22, 0.15), rgba(234, 88, 12, 0.1));
+    color: #ea580c;
+    border: 1px solid rgba(249, 115, 22, 0.2);
+}
+
+/* Yellow Theme Icons */
+.skin-yellow .modern-card-icon.icon-sales {
+    background: linear-gradient(135deg, rgba(245, 158, 11, 0.15), rgba(217, 119, 6, 0.1));
+    color: #d97706;
+    border: 1px solid rgba(245, 158, 11, 0.2);
+}
+
+.skin-yellow .modern-card-icon.icon-net {
+    background: linear-gradient(135deg, rgba(16, 185, 129, 0.15), rgba(4, 120, 87, 0.1));
+    color: #047857;
+    border: 1px solid rgba(16, 185, 129, 0.2);
+}
+
+.skin-yellow .modern-card-icon.icon-due {
+    background: linear-gradient(135deg, rgba(245, 158, 11, 0.15), rgba(217, 119, 6, 0.1));
+    color: #d97706;
+    border: 1px solid rgba(245, 158, 11, 0.2);
+}
+
+.skin-yellow .modern-card-icon.icon-return {
+    background: linear-gradient(135deg, rgba(239, 68, 68, 0.15), rgba(220, 38, 38, 0.1));
+    color: #dc2626;
+    border: 1px solid rgba(239, 68, 68, 0.2);
+}
+
+.skin-yellow .modern-card-icon.icon-purchase {
+    background: linear-gradient(135deg, rgba(139, 92, 246, 0.15), rgba(124, 58, 237, 0.1));
+    color: #7c3aed;
+    border: 1px solid rgba(139, 92, 246, 0.2);
+}
+
+.skin-yellow .modern-card-icon.icon-expense {
+    background: linear-gradient(135deg, rgba(249, 115, 22, 0.15), rgba(234, 88, 12, 0.1));
+    color: #ea580c;
+    border: 1px solid rgba(249, 115, 22, 0.2);
+}
+
+/* Purple Theme Icons */
+.skin-purple .modern-card-icon.icon-sales {
+    background: linear-gradient(135deg, rgba(139, 92, 246, 0.15), rgba(124, 58, 237, 0.1));
+    color: #7c3aed;
+    border: 1px solid rgba(139, 92, 246, 0.2);
+}
+
+.skin-purple .modern-card-icon.icon-net {
+    background: linear-gradient(135deg, rgba(16, 185, 129, 0.15), rgba(4, 120, 87, 0.1));
+    color: #047857;
+    border: 1px solid rgba(16, 185, 129, 0.2);
+}
+
+.skin-purple .modern-card-icon.icon-due {
+    background: linear-gradient(135deg, rgba(245, 158, 11, 0.15), rgba(217, 119, 6, 0.1));
+    color: #d97706;
+    border: 1px solid rgba(245, 158, 11, 0.2);
+}
+
+.skin-purple .modern-card-icon.icon-return {
+    background: linear-gradient(135deg, rgba(239, 68, 68, 0.15), rgba(220, 38, 38, 0.1));
+    color: #dc2626;
+    border: 1px solid rgba(239, 68, 68, 0.2);
+}
+
+.skin-purple .modern-card-icon.icon-purchase {
+    background: linear-gradient(135deg, rgba(139, 92, 246, 0.15), rgba(124, 58, 237, 0.1));
+    color: #7c3aed;
+    border: 1px solid rgba(139, 92, 246, 0.2);
+}
+
+.skin-purple .modern-card-icon.icon-expense {
+    background: linear-gradient(135deg, rgba(249, 115, 22, 0.15), rgba(234, 88, 12, 0.1));
+    color: #ea580c;
+    border: 1px solid rgba(249, 115, 22, 0.2);
+}
+
+/* Black Theme Icons */
+.skin-black .modern-card-icon.icon-sales {
+    background: linear-gradient(135deg, rgba(71, 85, 105, 0.15), rgba(30, 41, 59, 0.1));
+    color: #1e293b;
+    border: 1px solid rgba(71, 85, 105, 0.2);
+}
+
+.skin-black .modern-card-icon.icon-net {
+    background: linear-gradient(135deg, rgba(16, 185, 129, 0.15), rgba(4, 120, 87, 0.1));
+    color: #047857;
+    border: 1px solid rgba(16, 185, 129, 0.2);
+}
+
+.skin-black .modern-card-icon.icon-due {
+    background: linear-gradient(135deg, rgba(245, 158, 11, 0.15), rgba(217, 119, 6, 0.1));
+    color: #d97706;
+    border: 1px solid rgba(245, 158, 11, 0.2);
+}
+
+.skin-black .modern-card-icon.icon-return {
+    background: linear-gradient(135deg, rgba(239, 68, 68, 0.15), rgba(220, 38, 38, 0.1));
+    color: #dc2626;
+    border: 1px solid rgba(239, 68, 68, 0.2);
+}
+
+.skin-black .modern-card-icon.icon-purchase {
+    background: linear-gradient(135deg, rgba(139, 92, 246, 0.15), rgba(124, 58, 237, 0.1));
+    color: #7c3aed;
+    border: 1px solid rgba(139, 92, 246, 0.2);
+}
+
+.skin-black .modern-card-icon.icon-expense {
+    background: linear-gradient(135deg, rgba(249, 115, 22, 0.15), rgba(234, 88, 12, 0.1));
+    color: #ea580c;
+    border: 1px solid rgba(249, 115, 22, 0.2);
+}
+
+/* Theme-specific Icon Colors - Light Themes */
+.skin-blue-light .modern-card-icon.icon-sales {
+    background: linear-gradient(135deg, rgba(59, 130, 246, 0.15), rgba(29, 78, 216, 0.1));
+    color: #1d4ed8;
+    border: 1px solid rgba(59, 130, 246, 0.2);
+}
+
+.skin-blue-light .modern-card-icon.icon-net {
+    background: linear-gradient(135deg, rgba(16, 185, 129, 0.15), rgba(4, 120, 87, 0.1));
+    color: #047857;
+    border: 1px solid rgba(16, 185, 129, 0.2);
+}
+
+.skin-blue-light .modern-card-icon.icon-due {
+    background: linear-gradient(135deg, rgba(245, 158, 11, 0.15), rgba(217, 119, 6, 0.1));
+    color: #d97706;
+    border: 1px solid rgba(245, 158, 11, 0.2);
+}
+
+.skin-blue-light .modern-card-icon.icon-return {
+    background: linear-gradient(135deg, rgba(239, 68, 68, 0.15), rgba(220, 38, 38, 0.1));
+    color: #dc2626;
+    border: 1px solid rgba(239, 68, 68, 0.2);
+}
+
+.skin-blue-light .modern-card-icon.icon-purchase {
+    background: linear-gradient(135deg, rgba(139, 92, 246, 0.15), rgba(124, 58, 237, 0.1));
+    color: #7c3aed;
+    border: 1px solid rgba(139, 92, 246, 0.2);
+}
+
+.skin-blue-light .modern-card-icon.icon-expense {
+    background: linear-gradient(135deg, rgba(249, 115, 22, 0.15), rgba(234, 88, 12, 0.1));
+    color: #ea580c;
+    border: 1px solid rgba(249, 115, 22, 0.2);
+}
+
+/* Green Light Theme Icons */
+.skin-green-light .modern-card-icon.icon-sales {
+    background: linear-gradient(135deg, rgba(34, 197, 94, 0.15), rgba(22, 163, 74, 0.1));
+    color: #16a34a;
+    border: 1px solid rgba(34, 197, 94, 0.2);
+}
+
+.skin-green-light .modern-card-icon.icon-net {
+    background: linear-gradient(135deg, rgba(6, 182, 212, 0.15), rgba(8, 145, 178, 0.1));
+    color: #0891b2;
+    border: 1px solid rgba(6, 182, 212, 0.2);
+}
+
+/* Red Light Theme Icons */
+.skin-red-light .modern-card-icon.icon-sales {
+    background: linear-gradient(135deg, rgba(239, 68, 68, 0.15), rgba(220, 38, 38, 0.1));
+    color: #dc2626;
+    border: 1px solid rgba(239, 68, 68, 0.2);
+}
+
+.skin-red-light .modern-card-icon.icon-net {
+    background: linear-gradient(135deg, rgba(16, 185, 129, 0.15), rgba(4, 120, 87, 0.1));
+    color: #047857;
+    border: 1px solid rgba(16, 185, 129, 0.2);
+}
+
+/* Yellow Light Theme Icons */
+.skin-yellow-light .modern-card-icon.icon-sales {
+    background: linear-gradient(135deg, rgba(245, 158, 11, 0.15), rgba(217, 119, 6, 0.1));
+    color: #d97706;
+    border: 1px solid rgba(245, 158, 11, 0.2);
+}
+
+.skin-yellow-light .modern-card-icon.icon-net {
+    background: linear-gradient(135deg, rgba(16, 185, 129, 0.15), rgba(4, 120, 87, 0.1));
+    color: #047857;
+    border: 1px solid rgba(16, 185, 129, 0.2);
+}
+
+/* Purple Light Theme Icons */
+.skin-purple-light .modern-card-icon.icon-sales {
+    background: linear-gradient(135deg, rgba(139, 92, 246, 0.15), rgba(124, 58, 237, 0.1));
+    color: #7c3aed;
+    border: 1px solid rgba(139, 92, 246, 0.2);
+}
+
+.skin-purple-light .modern-card-icon.icon-net {
+    background: linear-gradient(135deg, rgba(16, 185, 129, 0.15), rgba(4, 120, 87, 0.1));
+    color: #047857;
+    border: 1px solid rgba(16, 185, 129, 0.2);
+}
+
+/* Black Light Theme Icons */
+.skin-black-light .modern-card-icon.icon-sales {
+    background: linear-gradient(135deg, rgba(71, 85, 105, 0.15), rgba(30, 41, 59, 0.1));
+    color: #1e293b;
+    border: 1px solid rgba(71, 85, 105, 0.2);
+}
+
+.skin-black-light .modern-card-icon.icon-net {
+    background: linear-gradient(135deg, rgba(16, 185, 129, 0.15), rgba(4, 120, 87, 0.1));
+    color: #047857;
+    border: 1px solid rgba(16, 185, 129, 0.2);
+}
+
+/* Loading State */
+.modern-card-loading {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    opacity: 0.6;
+}
+
+.modern-card-loading .fa-sync {
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+/* Responsive Design */
+@media (max-width: 1200px) {
+    .modern-card-icon {
+        width: 48px;
+        height: 48px;
+        font-size: 20px;
+    }
+    
+    .modern-card-value {
+        font-size: 24px;
+    }
+}
+
+@media (max-width: 768px) {
+    .modern-dashboard-card {
+        padding: 20px;
+        margin-bottom: 16px;
+    }
+    
+    .modern-card-icon {
+        width: 44px;
+        height: 44px;
+        font-size: 18px;
+    }
+    
+    .modern-card-value {
+        font-size: 22px;
+    }
+    
+    .modern-card-title {
+        font-size: 13px;
+    }
+}
+
+@media (max-width: 576px) {
+    .modern-dashboard-card {
+        padding: 16px;
+        margin-bottom: 12px;
+    }
+    
+    .modern-card-icon {
+        width: 40px;
+        height: 40px;
+        font-size: 16px;
+    }
+    
+    .modern-card-value {
+        font-size: 20px;
+    }
+    
+    .modern-card-title {
+        font-size: 12px;
+    }
+}
+
+/* Enhanced hover effects for interactive elements */
+.modern-dashboard-card {
+    cursor: default;
+}
+
+.modern-dashboard-card:hover .modern-card-icon {
+    transform: scale(1.05);
+}
+
+.modern-dashboard-card:hover .modern-card-value {
+    transform: translateX(2px);
+}
+
+/* Additional Icon Types for Extended Cards */
+.modern-card-icon.icon-ot {
+    background: linear-gradient(135deg, #6366f1, #4f46e5);
+    color: white;
+}
+
+.modern-card-icon.icon-leave {
+    background: linear-gradient(135deg, #f59e0b, #d97706);
+    color: white;
+}
+
+.modern-card-icon.icon-attendance {
+    background: linear-gradient(135deg, #10b981, #047857);
+    color: white;
+}
+
+/* Light theme versions for additional icons */
+.skin-blue-light .modern-card-icon.icon-ot,
+.skin-green-light .modern-card-icon.icon-ot,
+.skin-red-light .modern-card-icon.icon-ot,
+.skin-yellow-light .modern-card-icon.icon-ot,
+.skin-purple-light .modern-card-icon.icon-ot,
+.skin-black-light .modern-card-icon.icon-ot {
+    background: linear-gradient(135deg, rgba(99, 102, 241, 0.15), rgba(79, 70, 229, 0.1));
+    color: #4f46e5;
+    border: 1px solid rgba(99, 102, 241, 0.2);
+}
+
+.skin-blue-light .modern-card-icon.icon-leave,
+.skin-green-light .modern-card-icon.icon-leave,
+.skin-red-light .modern-card-icon.icon-leave,
+.skin-yellow-light .modern-card-icon.icon-leave,
+.skin-purple-light .modern-card-icon.icon-leave,
+.skin-black-light .modern-card-icon.icon-leave {
+    background: linear-gradient(135deg, rgba(245, 158, 11, 0.15), rgba(217, 119, 6, 0.1));
+    color: #d97706;
+    border: 1px solid rgba(245, 158, 11, 0.2);
+}
+
+.skin-blue-light .modern-card-icon.icon-attendance,
+.skin-green-light .modern-card-icon.icon-attendance,
+.skin-red-light .modern-card-icon.icon-attendance,
+.skin-yellow-light .modern-card-icon.icon-attendance,
+.skin-purple-light .modern-card-icon.icon-attendance,
+.skin-black-light .modern-card-icon.icon-attendance {
+    background: linear-gradient(135deg, rgba(16, 185, 129, 0.15), rgba(4, 120, 87, 0.1));
+    color: #047857;
+    border: 1px solid rgba(16, 185, 129, 0.2);
+}
+
+/* Fallback for when no theme is selected - treat as light blue */
+body:not([class*="skin-"]) .modern-dashboard-card {
+    background: rgba(248, 250, 252, 0.85);
+    border-color: rgba(148, 163, 184, 0.2);
+    color: #334155;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+}
+
+body:not([class*="skin-"]) .modern-dashboard-card:hover {
+    background: rgba(255, 255, 255, 0.95);
+    box-shadow: 0 12px 32px rgba(0, 0, 0, 0.12);
+}
+
+body:not([class*="skin-"]) .modern-card-title {
+    color: #64748b;
+}
+
+body:not([class*="skin-"]) .modern-card-value {
+    color: #1e293b;
+}
+
+body:not([class*="skin-"]) .modern-card-icon.icon-sales {
+    background: linear-gradient(135deg, rgba(59, 130, 246, 0.15), rgba(29, 78, 216, 0.1));
+    color: #1d4ed8;
+    border: 1px solid rgba(59, 130, 246, 0.2);
+}
+
+body:not([class*="skin-"]) .modern-card-icon.icon-net {
+    background: linear-gradient(135deg, rgba(16, 185, 129, 0.15), rgba(4, 120, 87, 0.1));
+    color: #047857;
+    border: 1px solid rgba(16, 185, 129, 0.2);
+}
+
+body:not([class*="skin-"]) .modern-card-icon.icon-due {
+    background: linear-gradient(135deg, rgba(245, 158, 11, 0.15), rgba(217, 119, 6, 0.1));
+    color: #d97706;
+    border: 1px solid rgba(245, 158, 11, 0.2);
+}
+
+body:not([class*="skin-"]) .modern-card-icon.icon-return {
+    background: linear-gradient(135deg, rgba(239, 68, 68, 0.15), rgba(220, 38, 38, 0.1));
+    color: #dc2626;
+    border: 1px solid rgba(239, 68, 68, 0.2);
+}
+
+body:not([class*="skin-"]) .modern-card-icon.icon-purchase {
+    background: linear-gradient(135deg, rgba(139, 92, 246, 0.15), rgba(124, 58, 237, 0.1));
+    color: #7c3aed;
+    border: 1px solid rgba(139, 92, 246, 0.2);
+}
+
+body:not([class*="skin-"]) .modern-card-icon.icon-expense {
+    background: linear-gradient(135deg, rgba(249, 115, 22, 0.15), rgba(234, 88, 12, 0.1));
+    color: #ea580c;
+    border: 1px solid rgba(249, 115, 22, 0.2);
+}
+
+body:not([class*="skin-"]) .modern-card-icon.icon-ot {
+    background: linear-gradient(135deg, rgba(99, 102, 241, 0.15), rgba(79, 70, 229, 0.1));
+    color: #4f46e5;
+    border: 1px solid rgba(99, 102, 241, 0.2);
+}
+
+body:not([class*="skin-"]) .modern-card-icon.icon-leave {
+    background: linear-gradient(135deg, rgba(245, 158, 11, 0.15), rgba(217, 119, 6, 0.1));
+    color: #d97706;
+    border: 1px solid rgba(245, 158, 11, 0.2);
+}
+
+body:not([class*="skin-"]) .modern-card-icon.icon-attendance {
+    background: linear-gradient(135deg, rgba(16, 185, 129, 0.15), rgba(4, 120, 87, 0.1));
+    color: #047857;
+    border: 1px solid rgba(16, 185, 129, 0.2);
+}
+
+/* Subtle animations */
+.modern-card-icon,
+.modern-card-value {
+    transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Custom scrollbar for overflow content */
+.modern-dashboard-card::-webkit-scrollbar {
+    width: 4px;
+}
+
+.modern-dashboard-card::-webkit-scrollbar-track {
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 2px;
+}
+
+.modern-dashboard-card::-webkit-scrollbar-thumb {
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 2px;
+}
+
+.modern-dashboard-card::-webkit-scrollbar-thumb:hover {
+    background: rgba(255, 255, 255, 0.3);
+}
