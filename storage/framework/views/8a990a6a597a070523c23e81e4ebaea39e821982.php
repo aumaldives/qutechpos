@@ -76,6 +76,29 @@
         #cart-items::-webkit-scrollbar-thumb:hover {
             background: #555;
         }
+
+        /* Logo transitions */
+        #logo-corner {
+            opacity: 0;
+            transform: scale(0.5);
+            transition: all 0.5s ease-in-out;
+        }
+
+        #logo-corner.show {
+            opacity: 1;
+            transform: scale(1);
+        }
+
+        /* Fade transitions */
+        .fade-transition {
+            transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+        }
+
+        .fade-out {
+            opacity: 0;
+            transform: translateY(-10px);
+            pointer-events: none;
+        }
     </style>
 </head>
 <body class="bg-gray-50">
@@ -141,8 +164,16 @@
         </div>
 
         <!-- RIGHT SIDE: Branding -->
-        <div class="bg-gradient-to-br from-green-50 to-green-100 p-6 lg:p-8 flex flex-col items-center justify-center text-center">
-            <div class="space-y-6">
+        <div class="bg-gradient-to-br from-green-50 to-green-100 p-6 lg:p-8 flex flex-col items-center justify-center text-center relative">
+            <!-- Store Logo - Small Corner Position (Hidden by default, shown during payment) -->
+            <div id="logo-corner" class="absolute top-6 left-6 hidden">
+                <img src="<?php echo e(asset('assets/AgroMart.png'), false); ?>"
+                     alt="Store Logo"
+                     class="w-24 h-24 rounded-2xl shadow-lg logo-transition">
+            </div>
+
+            <!-- Default Content Container (Shown by default) -->
+            <div id="default-content" class="space-y-6">
                 <!-- Welcome Text -->
                 <div>
                     <p class="text-xl lg:text-2xl font-light text-gray-600 mb-2">Welcome to</p>
@@ -151,7 +182,7 @@
                     </h1>
                 </div>
 
-                <!-- Store Logo - Made Smaller -->
+                <!-- Store Logo -->
                 <div class="my-4">
                     <img src="<?php echo e(asset('assets/AgroMart.png'), false); ?>"
                          alt="Store Logo"
@@ -187,6 +218,36 @@
                     <p class="text-base lg:text-lg text-gray-600 font-light">
                         Thank you for shopping with us
                     </p>
+                </div>
+            </div>
+
+            <!-- Payment Content Container (Hidden by default) -->
+            <div id="payment-content" class="w-full h-full flex flex-col items-center justify-center hidden">
+                <!-- Payment Details -->
+                <div id="payment-details" class="bg-white rounded-3xl shadow-2xl p-12 w-full max-w-2xl">
+                    <h3 class="text-5xl font-black text-gray-800 mb-8 text-left">Payment - Cash</h3>
+                    <div class="space-y-6">
+                        <div class="flex justify-between items-center border-b-2 border-gray-300 pb-4">
+                            <span class="text-3xl font-bold text-gray-700">Total Items:</span>
+                            <span id="payment-total-items" class="text-4xl font-black text-gray-900">0</span>
+                        </div>
+                        <div class="flex justify-between items-center border-b-2 border-gray-300 pb-4">
+                            <span class="text-3xl font-bold text-gray-700">Total Payable:</span>
+                            <span id="payment-total-payable" class="text-4xl font-black text-blue-600">MVR 0.00</span>
+                        </div>
+                        <div class="flex justify-between items-center border-b-2 border-gray-300 pb-4">
+                            <span class="text-3xl font-bold text-gray-700">Total Paying:</span>
+                            <span id="payment-total-paying" class="text-4xl font-black text-green-600">MVR 0.00</span>
+                        </div>
+                        <div class="flex justify-between items-center border-b-2 border-gray-300 pb-4">
+                            <span class="text-3xl font-bold text-gray-700">Change Return:</span>
+                            <span id="payment-change-return" class="text-4xl font-black text-orange-600">MVR 0.00</span>
+                        </div>
+                        <div class="flex justify-between items-center pt-4">
+                            <span class="text-3xl font-bold text-gray-700">Balance:</span>
+                            <span id="payment-balance" class="text-4xl font-black text-red-600">MVR 0.00</span>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -303,6 +364,12 @@
                 updateCartDisplay(message.data);
             } else if (message.type === 'sale_complete') {
                 showThankYouScreen(message.data.total);
+            } else if (message.type === 'payment_modal_open') {
+                showPaymentDetails(message.data);
+            } else if (message.type === 'payment_modal_close') {
+                hidePaymentDetails();
+            } else if (message.type === 'payment_update') {
+                updatePaymentDetails(message.data);
             }
         }
 
@@ -427,6 +494,87 @@
             cartItemsEl.innerHTML = '<div id="empty-state" class="flex flex-col items-center justify-center h-full text-gray-400"><svg class="w-24 h-24 mb-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z"></path></svg><p class="text-2xl font-light">Scan items to begin</p></div>';
             cartHeadersEl.classList.add('hidden');
             totalsEl.classList.add('hidden');
+        }
+
+        // Show payment details
+        function showPaymentDetails(data) {
+            console.log('═══════════════════════════════════════════════════');
+            console.log('[Customer Display - Receive] 🟢 PAYMENT MODAL OPEN');
+            console.log('[Customer Display - Receive] Data received:', JSON.stringify(data, null, 2));
+
+            // Update values
+            document.getElementById('payment-total-items').textContent = data.total_items || 0;
+            document.getElementById('payment-total-payable').textContent = 'MVR ' + (data.total_payable || 0).toFixed(2);
+            document.getElementById('payment-total-paying').textContent = 'MVR ' + (data.total_paying || 0).toFixed(2);
+            document.getElementById('payment-change-return').textContent = 'MVR ' + (data.change_return || 0).toFixed(2);
+            document.getElementById('payment-balance').textContent = 'MVR ' + (data.balance || 0).toFixed(2);
+
+            // Hide default content, show payment content and corner logo
+            document.getElementById('default-content').classList.add('fade-transition', 'fade-out');
+            setTimeout(function() {
+                document.getElementById('default-content').classList.add('hidden');
+                document.getElementById('payment-content').classList.remove('hidden');
+                document.getElementById('logo-corner').classList.remove('hidden');
+
+                // Trigger animation
+                setTimeout(function() {
+                    document.getElementById('logo-corner').classList.add('show');
+                }, 10);
+            }, 300);
+
+            console.log('[Customer Display - Receive] ✅ Payment layout switched');
+            console.log('═══════════════════════════════════════════════════');
+        }
+
+        // Hide payment details
+        function hidePaymentDetails() {
+            console.log('═══════════════════════════════════════════════════');
+            console.log('[Customer Display - Receive] 🔴 PAYMENT MODAL CLOSE');
+
+            // Hide corner logo
+            document.getElementById('logo-corner').classList.remove('show');
+            setTimeout(function() {
+                document.getElementById('logo-corner').classList.add('hidden');
+            }, 500);
+
+            // Hide payment content, show default content
+            document.getElementById('payment-content').classList.add('hidden');
+            document.getElementById('default-content').classList.remove('hidden', 'fade-out');
+
+            console.log('[Customer Display - Receive] ✅ Default layout restored');
+            console.log('═══════════════════════════════════════════════════');
+        }
+
+        // Update payment details
+        function updatePaymentDetails(data) {
+            console.log('═══════════════════════════════════════════════════');
+            console.log('[Customer Display - Receive] 🔄 PAYMENT UPDATE');
+            console.log('[Customer Display - Receive] Data received:', JSON.stringify(data, null, 2));
+            const paymentContentEl = document.getElementById('payment-content');
+            const paymentDetailsEl = document.getElementById('payment-details');
+            console.log('[Customer Display - Receive] Payment content hidden:', paymentContentEl.classList.contains('hidden'));
+
+            // If payment section is hidden, show it first (fallback for missed payment_modal_open)
+            if (paymentContentEl.classList.contains('hidden')) {
+                console.log('[Customer Display - Receive] ⚠️ Payment section was hidden, showing it now...');
+                showPaymentDetails(data);
+                return;
+            }
+
+            // Update values with pulse animation
+            document.getElementById('payment-total-items').textContent = data.total_items || 0;
+            document.getElementById('payment-total-payable').textContent = 'MVR ' + (data.total_payable || 0).toFixed(2);
+            document.getElementById('payment-total-paying').textContent = 'MVR ' + (data.total_paying || 0).toFixed(2);
+            document.getElementById('payment-change-return').textContent = 'MVR ' + (data.change_return || 0).toFixed(2);
+            document.getElementById('payment-balance').textContent = 'MVR ' + (data.balance || 0).toFixed(2);
+
+            // Add pulse animation
+            paymentDetailsEl.classList.add('pulse-update');
+            setTimeout(function() {
+                paymentDetailsEl.classList.remove('pulse-update');
+            }, 300);
+            console.log('[Customer Display - Receive] ✅ Values updated');
+            console.log('═══════════════════════════════════════════════════');
         }
 
         // Escape HTML

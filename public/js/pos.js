@@ -10,41 +10,61 @@
 var broadcastDebounceTimer = null;
 
 function broadcastToCustomerDisplay(type, data) {
-    console.log('[Customer Display] Attempting broadcast:', type);
-    console.log('[Customer Display] Cart data:', data);
+    console.log('═══════════════════════════════════════════════════');
+    console.log('[Customer Display] 🚀 BROADCAST START');
+    console.log('[Customer Display] Type:', type);
+    console.log('[Customer Display] Data:', JSON.stringify(data, null, 2));
 
     if (!window.ws) {
-        console.error('[Customer Display] WebSocket not initialized');
+        console.error('[Customer Display] ❌ WebSocket not initialized (window.ws is null/undefined)');
+        console.log('═══════════════════════════════════════════════════');
         return;
     }
+
+    console.log('[Customer Display] ✅ WebSocket exists');
+    console.log('[Customer Display] WebSocket readyState:', window.ws.readyState, '(0=CONNECTING, 1=OPEN, 2=CLOSING, 3=CLOSED)');
 
     if (window.ws.readyState !== 1) {
-        console.log('[Customer Display] WebSocket not ready. State:', window.ws.readyState);
+        console.error('[Customer Display] ❌ WebSocket not ready. State:', window.ws.readyState);
+        console.log('═══════════════════════════════════════════════════');
         return;
     }
 
+    console.log('[Customer Display] ✅ WebSocket is OPEN');
+
     var message = { type: type, data: data };
-    console.log('[Customer Display] Message before encryption:', message);
+    console.log('[Customer Display] Message object created:', message);
+
+    console.log('[Customer Display] Checking encryptMessage function...');
+    console.log('[Customer Display] window.encryptMessage exists:', typeof window.encryptMessage);
 
     var encryptedMessage = window.encryptMessage(message);
 
     if (!encryptedMessage) {
-        console.error('[Customer Display] Encryption failed!');
+        console.error('[Customer Display] ❌ Encryption failed! encryptMessage returned:', encryptedMessage);
+        console.log('═══════════════════════════════════════════════════');
         return;
     }
 
+    console.log('[Customer Display] ✅ Encryption successful');
     console.log('[Customer Display] Encrypted message length:', encryptedMessage.length);
+    console.log('[Customer Display] Encrypted message (first 50 chars):', encryptedMessage.substring(0, 50) + '...');
 
     var payload = JSON.stringify({
         encrypted_message: encryptedMessage,
         type: 'pos_update'
     });
 
+    console.log('[Customer Display] Payload created, length:', payload.length);
+
     try {
         window.ws.send(payload);
-        console.log('[Customer Display] ✅ Broadcast sent successfully:', type);
+        console.log('[Customer Display] ✅✅✅ Broadcast sent successfully:', type);
+        console.log('═══════════════════════════════════════════════════');
     } catch (error) {
-        console.error('[Customer Display] Send failed:', error);
+        console.error('[Customer Display] ❌ Send failed:', error);
+        console.error('[Customer Display] Error details:', error.message, error.stack);
+        console.log('═══════════════════════════════════════════════════');
     }
 }
 
@@ -111,6 +131,61 @@ function collectCartData() {
 
     console.log('[Customer Display] Final cart data:', cartData);
     return cartData;
+}
+
+function collectPaymentData() {
+    console.log('[Customer Display - Payment] Collecting payment data...');
+    console.log('[Customer Display - Payment] Modal exists:', $('#modal_cash_payment').length);
+    console.log('[Customer Display - Payment] Modal visible:', $('#modal_cash_payment').is(':visible'));
+
+    // Get values from the cash modal sidebar - read text directly and parse
+    var totalItemsText = $('#modal_cash_payment span.total_quantity').text().trim();
+    var totalPayableText = $('#modal_cash_payment span.total_payable_span').text().trim();
+    var totalPayingText = $('#modal_cash_payment span.total_paying').text().trim();
+    var changeReturnText = $('#modal_cash_payment span.change_return_span').text().trim();
+    var balanceText = $('#modal_cash_payment span.balance_due').text().trim();
+
+    console.log('[Customer Display - Payment] Text values:', {
+        totalItemsText: totalItemsText,
+        totalPayableText: totalPayableText,
+        totalPayingText: totalPayingText,
+        changeReturnText: changeReturnText,
+        balanceText: balanceText
+    });
+
+    console.log('[Customer Display - Payment] Elements found:', {
+        total_quantity: $('#modal_cash_payment span.total_quantity').length,
+        total_payable_span: $('#modal_cash_payment span.total_payable_span').length,
+        total_paying: $('#modal_cash_payment span.total_paying').length,
+        change_return_span: $('#modal_cash_payment span.change_return_span').length,
+        balance_due: $('#modal_cash_payment span.balance_due').length
+    });
+
+    // Parse the text values (remove currency symbols and commas)
+    var totalItems = parseFloat(totalItemsText.replace(/[^\d.-]/g, '')) || 0;
+    var totalPayable = parseFloat(totalPayableText.replace(/[^\d.-]/g, '')) || 0;
+    var totalPaying = parseFloat(totalPayingText.replace(/[^\d.-]/g, '')) || 0;
+    var changeReturn = parseFloat(changeReturnText.replace(/[^\d.-]/g, '')) || 0;
+    var balance = parseFloat(balanceText.replace(/[^\d.-]/g, '')) || 0;
+
+    console.log('[Customer Display - Payment] Parsed values:', {
+        totalItems: totalItems,
+        totalPayable: totalPayable,
+        totalPaying: totalPaying,
+        changeReturn: changeReturn,
+        balance: balance
+    });
+
+    var paymentData = {
+        total_items: totalItems,
+        total_payable: totalPayable,
+        total_paying: totalPaying,
+        change_return: changeReturn,
+        balance: balance
+    };
+
+    console.log('[Customer Display - Payment] Final payment data:', paymentData);
+    return paymentData;
 }
 
 // Debounced broadcast function - prevents too many broadcasts
@@ -1091,9 +1166,13 @@ $(document).ready(function() {
 
     // Cash payment modal handlers - Clean implementation
     var cash_payment_submitting = false;
+    var cash_modal_is_open = false;
 
     // When modal opens, initialize values
     $('#modal_cash_payment').on('shown.bs.modal', function(e) {
+        console.log('[Customer Display - Payment] 🔵 Cash modal OPENED');
+        cash_modal_is_open = true;
+
         // Enable cash modal payment fields
         $('#modal_cash_payment input[name="payment[0][method]"]').prop('disabled', false);
         $('#modal_cash_payment input[name="payment[0][amount]"]').prop('disabled', false);
@@ -1102,6 +1181,45 @@ $(document).ready(function() {
 
         var total_payable = __read_number($('#final_total_input'));
         var total_items = parseFloat($('span.total_quantity').first().text()) || 0;
+
+        console.log('[Customer Display - Payment] Total payable:', total_payable, 'Total items:', total_items);
+
+        // Setup MutationObserver for payment modal sidebar
+        var paymentModalSidebar = document.querySelector('#modal_cash_payment .col-md-3');
+        console.log('[Customer Display - Payment] MutationObserver - Sidebar found:', !!paymentModalSidebar);
+        console.log('[Customer Display - Payment] MutationObserver - Already exists:', !!window.paymentModalObserver);
+
+        if (paymentModalSidebar && !window.paymentModalObserver) {
+            window.paymentModalObserver = new MutationObserver(function(mutations) {
+                console.log('[Customer Display - Payment] 🔄 MutationObserver detected change');
+                console.log('[Customer Display - Payment] MutationObserver - Modal is open:', cash_modal_is_open);
+
+                // Only broadcast if modal is actually open
+                if (!cash_modal_is_open) {
+                    console.log('[Customer Display - Payment] ⚠️ Skipping MutationObserver broadcast - modal is not open');
+                    return;
+                }
+
+                // Debounce broadcasts to avoid sending too many messages
+                if (paymentUpdateDebounceTimer) {
+                    clearTimeout(paymentUpdateDebounceTimer);
+                }
+
+                paymentUpdateDebounceTimer = setTimeout(function() {
+                    console.log('[Customer Display - Payment] 📡 Broadcasting payment_update from MutationObserver...');
+                    var paymentData = collectPaymentData();
+                    broadcastToCustomerDisplay('payment_update', paymentData);
+                }, 150);
+            });
+
+            window.paymentModalObserver.observe(paymentModalSidebar, {
+                childList: true,
+                subtree: true,
+                characterData: true
+            });
+
+            console.log('[Customer Display - Payment] ✅ MutationObserver active');
+        }
 
         // Set initial values in sidebar
         $('#modal_cash_payment .total_quantity').text(total_items);
@@ -1113,6 +1231,53 @@ $(document).ready(function() {
         // Calculate and update sidebar
         update_cash_modal_sidebar();
 
+        // Wait for sidebar values to be populated, then broadcast
+        // Use MutationObserver to detect when values are actually updated
+        var initialBroadcastDone = false;
+        var sidebarObserver = new MutationObserver(function(mutations) {
+            if (!initialBroadcastDone) {
+                var totalPayableText = $('#modal_cash_payment span.total_payable_span').text();
+                console.log('[Customer Display - Payment] Sidebar mutation detected, total_payable_span:', totalPayableText);
+                console.log('[Customer Display - Payment] Sidebar mutation - Modal is open:', cash_modal_is_open);
+
+                // Only broadcast if modal is still open
+                if (!cash_modal_is_open) {
+                    console.log('[Customer Display - Payment] ⚠️ Skipping initial broadcast - modal is not open');
+                    sidebarObserver.disconnect();
+                    return;
+                }
+
+                // Check if values are populated (not empty or zero)
+                if (totalPayableText && totalPayableText !== '0' && totalPayableText.trim() !== '') {
+                    initialBroadcastDone = true;
+                    sidebarObserver.disconnect();
+
+                    setTimeout(function() {
+                        // Double-check modal is still open before broadcasting
+                        if (!cash_modal_is_open) {
+                            console.log('[Customer Display - Payment] ⚠️ Skipping delayed broadcast - modal closed');
+                            return;
+                        }
+                        console.log('[Customer Display - Payment] 📡 Broadcasting payment_modal_open with real values...');
+                        var paymentData = collectPaymentData();
+                        broadcastToCustomerDisplay('payment_modal_open', paymentData);
+                        console.log('[Customer Display - Payment] ✅ Initial broadcast sent');
+                    }, 100);
+                }
+            }
+        });
+
+        // Observe the sidebar for changes
+        var sidebar = document.querySelector('#modal_cash_payment .col-md-3');
+        if (sidebar) {
+            sidebarObserver.observe(sidebar, {
+                childList: true,
+                subtree: true,
+                characterData: true
+            });
+            console.log('[Customer Display - Payment] Initial broadcast observer active');
+        }
+
         // Focus the amount input
         setTimeout(function() {
             $('#cash_amount_0').focus().select();
@@ -1123,6 +1288,9 @@ $(document).ready(function() {
     $(document).on('input keyup', '#cash_amount_0', function() {
         update_cash_modal_sidebar();
     });
+
+    // Debounce timer for payment updates
+    var paymentUpdateDebounceTimer = null;
 
     // Function to update cash modal sidebar
     function update_cash_modal_sidebar() {
@@ -1150,6 +1318,21 @@ $(document).ready(function() {
 
         __highlight(bal_due * -1, $('#modal_cash_payment .balance_due'));
         __highlight(change_return * -1, $('#modal_cash_payment .change_return_span'));
+
+        // Broadcast updates to customer display (debounced) - only if modal is open
+        if (cash_modal_is_open) {
+            if (paymentUpdateDebounceTimer) {
+                clearTimeout(paymentUpdateDebounceTimer);
+            }
+
+            paymentUpdateDebounceTimer = setTimeout(function() {
+                console.log('[Customer Display - Payment] 📡 Broadcasting payment_update from sidebar update...');
+                var paymentData = collectPaymentData();
+                broadcastToCustomerDisplay('payment_update', paymentData);
+            }, 150);
+        } else {
+            console.log('[Customer Display - Payment] ⚠️ Skipping payment_update broadcast - modal is not open');
+        }
     }
 
     // Cash denomination calculation
@@ -1250,6 +1433,20 @@ $(document).ready(function() {
 
     // Reset flag when modal closes
     $('#modal_cash_payment').on('hidden.bs.modal', function() {
+        console.log('[Customer Display - Payment] 🔴 Cash modal CLOSED');
+        cash_modal_is_open = false;
+
+        // Broadcast payment modal close to customer display
+        console.log('[Customer Display - Payment] 📡 Broadcasting payment_modal_close...');
+        broadcastToCustomerDisplay('payment_modal_close', {});
+
+        // Disconnect MutationObserver
+        if (window.paymentModalObserver) {
+            window.paymentModalObserver.disconnect();
+            window.paymentModalObserver = null;
+            console.log('[Customer Display - Payment] ✅ MutationObserver disconnected');
+        }
+
         // Disable cash modal payment fields to prevent submission with other payment methods
         $('#modal_cash_payment input[name="payment[0][method]"]').prop('disabled', true);
         $('#modal_cash_payment input[name="payment[0][amount]"]').prop('disabled', true);
